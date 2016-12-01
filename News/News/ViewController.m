@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor]
     ;
+    UIView * view = [[UIView alloc]init];
 //    234567890
     // Do any additional setup after loading the view, typically from a nib.
 }

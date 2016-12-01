@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  News
+//
+//  Created by 李冬 on 2016/12/1.
+//  Copyright © 2016年 wyzc. All rights reserved.
+//
+
+#define SCREENWIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+//什么是debug 什么是release
+#ifdef DEBUG
+//...可变参数 , __输出多少行的nslog
+#define NSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+//release之后在开发环境不打印
+#define NSLog(...)
+#endif

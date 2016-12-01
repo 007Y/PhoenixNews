@@ -1,0 +1,673 @@
+[
+    {
+        "replaceDoc":"",
+        "combineAdIds":{
+            "10000028":["10000028","10000206"],
+            "10000019":["10000019","10000207"],
+            "10000049":["10000049","10000204"],
+            "10000058":["10000058","10000059"],
+            "10000060":["10000060","10000061"]
+        },
+        "channel": {
+            "sy":
+            {
+                "channelName": "头条",
+                "channelID": "sy",
+                "urlImgNewsID": "",
+                "urlListID": "sy",
+                "pathId":"sy",
+                "adID":"10000002",
+                "listAdId":["10000229","10000107","10000230","10000145","10000146","10000147","10000148","10000149","10000150"]
+            },
+            "phtv":
+            {
+                "channelName": "凤凰卫视",
+                "channelID": "phtv",
+                "urlImgNewsID": "",
+                "urlListID": "phtv",
+                "pathId":"phtv",
+                "adID":"0"
+            },
+            "wine":
+            {
+                "channelName": "酒业",
+                "channelID": "wine",
+                "urlImgNewsID": "",
+                "urlListID": "wine",
+                "pathId":"wine",
+                "adID":"10000235",
+                "listAdId":["10000239","10000240","10000241"]
+            },
+            "disnews":
+            {
+                "channelName": "原创",
+                "channelID": "disnews",
+                "urlImgNewsID": "",
+                "urlListID": "disnews",
+                "pathId":"disnews",
+                "adID":"0"
+            },
+            "rcmd":
+            {
+                "channelName": "推荐",
+                "channelID": "irecommend",
+                "urlImgNewsID": "",
+                "urlListID": "irecommend",
+                "pathId":"rcmd",
+                "adID":""
+            },
+            "cmd":
+            {
+                "channelName": "FUN来了",
+                "channelID": "DZPD",
+                "urlImgNewsID": "",
+                "urlListID": "DZPD",
+                "pathId":"cmd",
+                "adID":""
+            },
+            "ent":
+            {
+                "channelName": "娱乐",
+                "channelID": "YL53",
+                "urlImgNewsID": "",
+                "urlListID": "YL53",
+                "pathId":"ent",
+                "adID":"10000018"
+            },
+            "photo":
+            {
+                "channelName": "图片",
+                "channelID": "PHOTO",
+                "urlImgNewsID": "",
+                "urlListID": "PHOTO",
+                "urlAdID": "",
+                "pathId":"photo"
+            },
+            "sports":
+            {
+                "channelName": "体育",
+                "channelID": "TY43",
+                "urlImgNewsID": "",
+                "urlListID": "TY43",
+                "pathId":"sports",
+                "adID":"10000020"
+            },
+            "finance":
+            {
+                "channelName": "财经",
+                "channelID": "CJ33",
+                "urlImgNewsID": "",
+                "urlListID": "CJ33",
+                "pathId":"finance",
+                "adID":"10000028",
+                "listAdId":["10000134","10000157","10000158","10000159","10000160","10000161","10000162"]
+            },
+            "tech":
+            {
+                "channelName": "科技",
+                "channelID": "KJ123",
+                "urlImgNewsID": "",
+                "urlListID": "KJ123",
+                "pathId":"tech",
+                "adID":"10000019",
+                "listAdId":["10000135","10000168","10000169","10000170","10000171","10000172","10000173"]
+            },
+            "mil":
+            {
+                "channelName": "军事",
+                "channelID": "JS83",
+                "urlImgNewsID": "",
+                "urlListID": "JS83",
+                "pathId":"mil",
+                "adID":"10000030"
+            },
+            "history":
+            {
+                "channelName": "历史",
+                "channelID": "LS153",
+                "urlImgNewsID": "",
+                "urlListID": "LS153",
+                "pathId":"history",
+                "adID":"10000029"
+            },
+            "opinion":
+            {
+                "channelName": "评论",
+                "channelID": "PL40",
+                "urlImgNewsID": "",
+                "urlListID": "PL40",
+                "pathId":"opinion",
+                "adID":"0"
+            },
+            "auto":
+            {
+                "channelName": "汽车",
+                "channelID": "QC45",
+                "urlImgNewsID": "",
+                "urlListID": "QC45",
+                "pathId":"auto",
+                "adID":"10000049",
+                "listAdId":["10000136","10000180","10000181","10000182","10000183","10000184","10000185"]
+            },
+            "fashion":
+            {
+                "channelName": "时尚",
+                "channelID": "SS78",
+                "urlImgNewsID": "",
+                "urlListID": "SS78",
+                "pathId":"fashion",
+                "adID":"10000051",
+                "listAdId":["10000137","10000186","10000187","10000188","10000189","10000190","10000191"]
+            },
+            "house":
+            {
+                "channelName": "房产",
+                "channelID": "FC81",
+                "urlImgNewsID": "",
+                "urlListID": "FC81",
+                "pathId":"house",
+                "adID":"10000070"
+            },
+            "culture":
+            {
+                "channelName": "文化",
+                "channelID": "WH25",
+                "urlImgNewsID": "",
+                "urlListID": "WH25",
+                "pathId":"culture",
+                "adID":"0"
+            },
+            "health":
+            {
+                "channelName": "健康",
+                "channelID": "JK36",
+                "urlImgNewsID": "",
+                "urlListID": "JK36",
+                "pathId":"health",
+                "adID":"0"
+            },
+            "HK":
+            {
+                "channelName": "港澳",
+                "channelID": "GA18",
+                "urlImgNewsID": "",
+                "urlListID": "GA18",
+                "pathId":"HK",
+                "adID":"0"
+            },
+            "book":
+            {
+                "channelName": "读书",
+                "channelID": "DS57",
+                "urlImgNewsID": "",
+                "urlListID": "DS57",
+                "pathId":"book",
+                "adID":"0"
+            },
+            "edu":
+            {
+                "channelName": "教育",
+                "channelID": "JY90",
+                "urlImgNewsID": "",
+                "urlListID": "JY90",
+                "pathId":"edu",
+                "adID":"0"
+            },
+            "fo":
+            {
+                "channelName": "佛教",
+                "channelID": "FJ31",
+                "urlImgNewsID": "",
+                "urlListID": "FJ31",
+                "pathId":"fo",
+                "adID":"0"
+            },
+            "travel":
+            {
+                "channelName": "旅游",
+                "channelID": "LY67",
+                "urlImgNewsID": "",
+                "urlListID": "LY67",
+                "pathId":"travel",
+                "adID":"0"
+            },
+            "astro":
+             {
+                "channelName": "星座",
+                "channelID": "XZ09",
+                "urlImgNewsID": "",
+                "urlListID": "XZ09",
+                "pathId":"astro",
+                "adID":"0"
+            },
+            "zmt":
+             {
+                "channelName": "自媒体",
+                "channelID": "zmt",
+                "urlImgNewsID": "",
+                "urlListID": "zmt",
+                "pathId":"zmt",
+                "adID":"10000108"
+            },
+            "blog":
+             {
+                "channelName": "博报",
+                "channelID": "blog",
+                "urlImgNewsID": "",
+                "urlListID": "blog",
+                "pathId":"blog",
+                "adID":"0"
+            },
+            "game":
+            {
+                "channelName": "游戏",
+                "channelID": "YX11",
+                "urlImgNewsID": "",
+                "urlListID": "YX11",
+                "pathId":"game",
+                "adID":""
+            },
+            "digi":
+            {
+                "channelName": "数码",
+                "channelID": "SM66",
+                "urlImgNewsID": "",
+                "urlListID": "SM66",
+                "pathId":"digi",
+                "adID":""
+            },
+            "city":
+            {
+                "channelName": "城市",
+                "channelID": "CS53",
+                "urlImgNewsID":"",
+                "urlListID": "CS53",
+                "pathId":"city",
+                "adID":""
+            },
+            "live":
+            {
+                "channelName": "直播",
+                "channelID": "ZBPD",
+                "urlImgNewsID":"",
+                "urlListID": "ZBPD",
+                "pathId":"live",
+                "adID":""
+            },
+            "lty":
+            {
+                "channelName": "彩票",
+                "channelID": "CPPD",
+                "urlImgNewsID":"",
+                "urlListID": "CPPD",
+                "pathId":"lty",
+                "adID":""
+            },
+            "topic":
+            {
+                "channelName": "专题",
+                "channelID": "ZTPD",
+                "urlImgNewsID":"",
+                "urlListID": "ZTPD",
+                "pathId":"topic",
+                "adID":""
+            },
+            "future":
+            {
+                "channelName": "未来",
+                "channelID": "WLPD",
+                "urlImgNewsID":"",
+                "urlListID": "WLPD",
+                "pathId":"future",
+                "adID":""
+            },
+            "film":
+            {
+                "channelName": "电影",
+                "channelID": "DYPD",
+                "urlImgNewsID":"",
+                "urlListID": "DYPD",
+                "pathId":"film",
+                "adID":""
+            },
+            "nba":
+            {
+                "channelName": "NBA",
+                "channelID": "NBAPD",
+                "urlImgNewsID":"",
+                "urlListID": "NBAPD",
+                "pathId":"nba",
+                "adID":""
+            },
+            "run":
+            {
+                "channelName": "跑步",
+                "channelID": "PBPD",
+                "urlImgNewsID":"",
+                "urlListID": "PBPD",
+                "pathId":"run",
+                "adID":""
+            },
+            "bike":
+            {
+                "channelName": "自行车",
+                "channelID": "ZXCPD",
+                "urlImgNewsID":"",
+                "urlListID": "ZXCPD",
+                "pathId":"bike",
+                "adID":""
+            },
+            "tw":
+            {
+                "channelName": "台湾",
+                "channelID": "TW73",
+                "urlImgNewsID":"",
+                "urlListID": "TW73",
+                "pathId":"tw",
+                "adID":""
+            }
+        },
+        "version": "1.0.0",
+        "versionRemaindPeriod":"1",
+        "appGradeSwitch":"YES",
+        "defaultChannel": {
+            "channelName": "頭條",
+            "channelID": "SY",
+            "urlImgNewsID": "SYDT10",
+            "urlListID": "sy",
+            "urlAdID": "SYImgAd",
+            "wordADID": "SYwordAD"
+        },
+        "url": {
+            "SYDT10": "http://api.3g.ifeng.com/ClientNews?id=aid=SYDT10&imgwidth=847&type=list&pagesize=3",
+            "sy": "http://api.3g.ifeng.com/list_test?id=TY43",
+            "phtv": "http://newsvcsp.ifeng.com/vcsp/appData/news/recommend.do?useType=iPhone&channelId=000000-0&callBy=news",
+            "LHPD":"http://api.3g.ifeng.com/ClientNews?id=LHPD,LHPDRECOMMEND",
+            "disnews": "http://api.3g.ifeng.com/ClientNews?id=YC10",
+            "irecommend": "http://api.irecommend.ifeng.com/irecommendList.php",
+            "DZPD": "http://api.3g.ifeng.com/ClientNews?id=DZPD",
+            "XW23": "http://api.3g.ifeng.com/ClientNews?id=XW23,FOCUSXW23",
+            "TW73": "http://api.3g.ifeng.com/ClientNews?id=TW73,FOCUSTW73",
+            "JS83": "http://api.3g.ifeng.com/ClientNews?id=JS83,FOCUSJS83",
+            "CJ33": "http://api.3g.ifeng.com/ClientNews?id=CJ33,FOCUSCJ33",
+            "TY43": "http://api.3g.ifeng.com/ClientNews?id=TY43,FOCUSTY43",
+            "YL53": "http://api.3g.ifeng.com/ClientNews?id=YL53,FOCUSYL53",
+            "SH133": "http://api.3g.ifeng.com/ClientNews?id=SH133,FOCUSSH133",
+            "KJ123": "http://api.3g.ifeng.com/ClientNews?id=KJ123,FOCUSKJ123",
+            "LS153": "http://api.3g.ifeng.com/ClientNews?id=LS153,FOCUSLS153",
+            "PHOTO": "http://api.3g.ifeng.com/get_pic_list",
+            "ZTPD":"http://api.3g.ifeng.com/ClientNews?id=ZTPD,FOCUSZTPD",
+            "NBAPD":"http://api.3g.ifeng.com/ClientNews?id=NBAPD",
+            "DYPD":"http://api.3g.ifeng.com/ClientNews?id=DYPD",
+            "WLPD":"http://api.3g.ifeng.com/ClientNews?id=WLPD,FOCUSWLPD",
+            "PBPD":"http://api.3g.ifeng.com/ClientNews?id=PBPD,PBPDFOCUS",
+            "ZXCPD":"http://api.3g.ifeng.com/ClientNews?id=ZXCPD,ZXCPDFOCUS",
+            "wine":"http://api.iclient.ifeng.com/ClientNews?id=JYPD,FOCUSJYPD",
+
+            "AYTJPD":"http://api.3g.ifeng.com/ClientNews?id=AYTJPD",
+
+            "LocalCH":"http://api.irecommend.ifeng.com/local.php?choicetype=%@&choicename=%@",
+            "getLocalCHName":"http://api.irecommend.ifeng.com/local.php?province=%@&city=%@&noneeddata=1",
+            "localCityList":"http://api.irecommend.ifeng.com/citylist.php?province=%@&city=%@",
+            "houseCityList":"http://api.3g.ifeng.com/houseCityList?type=all&city=%@",
+
+            "DJ18547": "http://api.3g.ifeng.com/channel_list_ios?channel=origin&pageindex=1&pagesize=10",
+            "originality":"http://api.3g.ifeng.com/channel_list_ios?channel=origin&pageindex=1&pagesize=10",
+            "photo_news":"http://api.3g.ifeng.com/get_pic_list?channel=news&pageindex=1&pagesize=10",
+            "photo_ent":"http://api.3g.ifeng.com/get_pic_list?channel=ent&pageindex=1&pagesize=10",
+            "photo_sport":"http://api.3g.ifeng.com/get_pic_list?channel=sport&pageindex=1&pagesize=10",
+            "photo_history":"http://api.3g.ifeng.com/get_pic_list?channel=history&pageindex=1&pagesize=10",
+            "photo_fashion":"http://api.3g.ifeng.com/get_pic_list?channel=fashion&pageindex=1&pagesize=10",
+            "imcpPUSH": "http://api.3g.ifeng.com/ipadtestdoc?imgwidth=100&aid=%@&channel=&chid=&android=1",
+            "special": "http://api.3g.ifeng.com/topicList?pageindex=1&pagesize=15",
+            "latestPUSH": "http://api.3g.ifeng.com/ios_push_api_ms?productid=%@&channelid=%@",
+            "downloadURL": "http://api.3g.ifeng.com/newsdocs?imgwidth=300&aid=%@&channel=&chid=&vt=2&piece=3&android=y",
+            "issuePP153": "http://api.3g.ifeng.com/iosNews?id=aid=PP153",
+            "commentary": "http://api.3g.ifeng.com/iosNews?id=aid=SP163",
+            "issuePP183": "http://api.3g.ifeng.com/iosNews?id=aid=PP183",
+            "issuePV173": "http://api.3g.ifeng.com/iosNews?id=aid=PV173",
+
+
+            "getsurvey":"http://api.3g.ifeng.com/iosNews?id=aid=DC213&imgwidth=847&type=list&pagesize=3",
+            "storyImage": "http://exp.3g.ifeng.com/coverAdversApi",
+            "clientHistoryCover":"http://api.3g.ifeng.com/clientHistoryCover",
+            "timestamp": "http://api.iclient.ifeng.com/its",
+            "pushRegist":"http://ios.ipush.ifengcdn.com/register",
+            "surveyBackUrl":"http://api.3g.ifeng.com/news/mydc/surveyresult.f?vt=2&surveyId=%@&version=2",
+            "sendVote":"http://plugins.wap.ifeng.com/poll.php?mid=IYQce",
+            "postComment":"http://icomment.ifeng.com/wappost.php?docName=%@&docUrl=%@&content=%@&rt=sj&client=1&userName=%@&ext2=%@&sid=%@&skey=%@",
+            "postReplayComment":"http://icomment.ifeng.com/wappost.php?quoteId=%@&docName=%@&docUrl=%@&content=%@&rt=sj&client=1&userName=%@&ext2=%@&sid=%@",
+            "getComment":"http://icomment.ifeng.com/geti.php?pagesize=%@&p=%@&docurl=%@&type=all",
+            "getIP":"http://api.3g.ifeng.com/weather_getip",
+            "stadingAddress":"http://stadig.ifeng.com/appsta.js",
+            "stadingAddrForTest":"http://172.28.20.180:8060/stadig.php",
+            "getWeather":"http://api.3g.ifeng.com/phoneweather?city=%@&icon=small",
+            "requestWeather":"http://api.iclient.ifeng.com/weatherReport?city=%@",
+            "locateCity":"http://ipservice.3g.ifeng.com/wry?ip=%@",
+            "appGradeURL":"https://itunes.apple.com/cn/app/id395133418?mt=8",
+            "pushHistory":"http://api.3g.ifeng.com/pushlist?productid=ifengnews&channelid=all",
+            "docComments":"http://icomment.ifeng.com/geti.php?pagesize=%@&p=1&docurl=%@&type=%@",
+            "focus":"http://news.ifeng.com/app/special-api/new-list/client/focus.shtml",
+            "circusee":"http://news.ifeng.com/app/special-api/new-list/client/wg.shtml",
+            "inTheWorld":"http://news.ifeng.com/app/special-api/new-list/client/zrj.shtml",
+            "breakingNews":"http://news.ifeng.com/app/special-api/new-list/client/dsj.shtml",
+            "specialPublication":"http://news.ifeng.com/app/special-api/new-list/client/tekan.shtml",
+            "financeRealize":"http://news.ifeng.com/app/special-api/new-list/client/czd.shtml",
+            "opinion":"http://news.ifeng.com/app/special-api/new-list/client/zyt.shtml",            
+            "worldView":"http://news.ifeng.com/app/special-api/new-list/client/gsb.shtml",
+            "commentSupport":"http://icomment.ifeng.com/vote.php?cmtId=%@&docUrl=%@&job=up&%@&rt=sj",
+            "PL40":"http://api.3g.ifeng.com/ClientNews?id=PL40,FOCUSPL40",
+            "QC45":"http://api.3g.ifeng.com/ClientNews?id=QC45,FOCUSQC45",
+            "SS78":"http://api.3g.ifeng.com/ClientNews?id=SS78,FOCUSSS78",
+            "FC81":"http://api.3g.ifeng.com/ClientNews?id=FC81,FOCUSFC81",
+            "WH25":"http://api.3g.ifeng.com/ClientNews?id=WH25,FOCUSWH25",
+            "JK36":"http://api.3g.ifeng.com/ClientNews?id=JK36,FOCUSJK36",
+            "GA18":"http://api.3g.ifeng.com/ClientNews?id=GA18",
+            "DS57":"http://api.3g.ifeng.com/ClientNews?id=DS57,FOCUSDS57",
+            "JY90":"http://api.3g.ifeng.com/ClientNews?id=JY90,FOCUSJY90",
+            "FJ31":"http://api.3g.ifeng.com/ClientNews?id=FJ31,FOCUSFJ31",
+            "LY67":"http://api.3g.ifeng.com/ClientNews?id=LY67,FOCUSLY67",
+            "XZ09":"http://api.3g.ifeng.com/ClientNews?id=XZ09,FOCUSXZ09",
+            "YX11":"http://api.3g.ifeng.com/ClientNews?id=YX11,FOCUSYX11",
+            "SM66":"http://api.3g.ifeng.com/ClientNews?id=SM66,FOCUSSM66",
+            "CS53":"http://api.3g.ifeng.com/ClientNews?id=CS53,FOCUSCS53",
+            "ZBPD":"http://api.3g.ifeng.com/ClientNews?id=ZBPD,FOCUSZBPD",
+            "CPPD":"http://zx.cp.ifeng.com/client/index_1.js",
+            "TMPD":"http://zx.cp.ifeng.com/client/index_1.js",
+            "getlrinfo":"http://ichat.3g.ifeng.com/interface/getlrinfo?lr_id=%@",
+            "getlchatbycid":"http://ichat.3g.ifeng.com/interface/getlchatbycid?lr_id=%@",
+            "getlchatbycid_drc":"http://ichat.3g.ifeng.com/interface/getlchatbycid?lr_id=%@&c_id=%@&drc=%@",
+            "docFromShare":"http://api.3g.ifeng.com/ipadtestdoc?aid=%@",
+            "topic2FromShare":"http://api.3g.ifeng.com/%@?json=y",
+
+            "FMResource":"http://api.3g.ifeng.com/api_fm_resource",
+            "FMColumn":"http://api.3g.ifeng.com/api_fm_programlist",
+            "videoRelative":"http://api.iclient.ifeng.com/getGuidRelativeVideoList?guid=%@",
+            "videoColumnList":"http://api.3g.ifeng.com/api_vampire_video_channel?pid=5",
+            "videoColumnTVList":"http://newsvcsp.ifeng.com/vcsp/appData/news/columnVideoList.do?columnName=%@&positionNo=%d",
+            "videoLive":"http://newsvcsp.ifeng.com/vcsp/appData/live.do?platformType=ios",
+            "videoDemand":"http://api.3g.ifeng.com/api_phoenixtv_details?guid=%@",
+            "videoPlayTimes":"http://survey.news.ifeng.com//getaccumulator_weight.php?format=json&serverid=2&key=%@",
+            "videoADConfig":"http://c0.ifengimg.com/pdt/cfg/ifeng_news_config.js",
+            "videoList":"http://api.iclient.ifeng.com/ifengvideoList",
+
+            "survey":"http://sv.ifeng.com/index.php/survey/getdata?id=%@",
+            "vote":"http://survey.ifeng.com/api/showmobilevote.php?voteId=%@&format=json",
+            "sendVoteResult":"http://survey.ifeng.com/api/pollmobilevote.php?voteId=%@&itemId=%@&format=json",
+            "sendSurveyResult":"http://sv.ifeng.com/index.php/survey/postsurvey?id=%@",
+            "voteShare":"http://share.iclient.ifeng.com/voteDetail?surveyId=%@&sharefrom=ifengnews",
+            "surveyShare":"http://share.iclient.ifeng.com/surveyDetail?surveyId=%@&sharefrom=ifengnews",
+            "docURL":"http://cdn.iclient.ifeng.com/res/article/%@/%@/%@/%@.html",
+            "subchannelinfo":"http://cdn.iclient.ifeng.com/v/res/c/%@.html",
+            "channelRecommond":"http://cdn.iclient.ifeng.com/v/res/p/list.html",
+            "ifeng_subscribe" : "http://api.3g.ifeng.com/api_vampire_channels",
+            "mySubcribe":"http://api.iclient.ifeng.com/api_vampire_uchannel_list?a=1&cid=%@",
+            "mySubcribeList":"http://api.iclient.ifeng.com/api_vampire_uchannel_list",
+            "mySubscribeOrderState":"http://api.3g.ifeng.com/api_vampire_order_status",
+            "RecommondList":"http://cdn.iclient.ifeng.com/v/res/c/tree.html",
+            "subscribeNewRecommand":"http://api.3g.ifeng.com/api_vampire_recommend",
+            "mySubscribeRecommondList":"http://api.3g.ifeng.com/api_vampire_categroy_recommend?parentid=0&page=%@&pagesize=20&uid=%@",
+            "subscribeUserBind":"http://incss.ifeng.com/incss2/relation/modify?dt=i&did=%@&uid=%@",
+            "subscribeUserUnBind":"http://incss.ifeng.com/incss2/relation/remove?dt=i&did=%@",
+            "registerExtend":"x=%@&y=%@&si=%@",
+            "subscribeSetPushToken":"http://incss.ifeng.com/incss2/push/setToken?dt=i&did=%@&pt=%@",
+            "subscribeSetPushStatus":"http://incss.ifeng.com/incss2/push/setStatus?dt=i&did=%@&ps=%@",
+            "subscribeGetPushStatus":"http://incss.ifeng.com/incss2/push/getStatus?dt=i&did=%@",
+            "subscribeSyncListwithUser":"http://incss.ifeng.com/incss2/subscription/user/sync?uid=%@&ct=%lld",
+            "subscribeSyncListwithDevice":"http://incss.ifeng.com/incss2/subscription/device/sync?dt=i&did=%@",
+            "subscribeGetListwithUser":"http://incss.ifeng.com/incss2/subscription/user/query?uid=%@",
+            "subscribeGetListwithDevice":"http://incss.ifeng.com/incss2/subscription/device/query?dt=i&did=%@",
+            "usercenterGetAuthCode":"https://id.ifeng.com/index.php/public/authcode",
+            "usercenterLoginByUserNameAndPassword":"https://id.ifeng.com/api/simplelogin?u=%@&k=%@&type=%@&x=%f&y=%f&mac=%@&auth=%@",
+            "usercenterForgetPasswdWeb":"http://id.ifeng.com/muser/findpass",
+            "usercenterRegisterByEmailCheck":"https://id.ifeng.com/api/checkmail?u=%@",
+            "usercenterRegisterByEmail":"https://id.ifeng.com/api/register?comefrom=7&pf=2&u=%@&k=%@&auth=%@",
+            "usercenterRegisterByMobileCheck":"https://id.ifeng.com/api/checkMobile?u=%@",
+            "usercenterRegisterByMobileGetSMS":"https://id.ifeng.com/api/sendmsg?mobile=%@&auth=%@",
+            "usercenterRegisterByMobile":"https://id.ifeng.com/api/mobileregister?comefrom=7&pf=2&u=%@&k=%@&cert=%@",
+            "usercenterThirdRegisterCheckName":"https://id.ifeng.com/api/checkUname?u=%@",
+            "usercenterThirdRegister":"https://id.ifeng.com/api/trdptyreg?cf=7&pf=2&uid=%@&sns=%@&n=%@",
+            "usercenterThirdLogin":"https://id.ifeng.com/api/trdptylogin?cf=7&pf=2&uid=%@&sns=%@",
+            "usercenterThirdAddBindInfo":"https://id.ifeng.com/api/addtrdptyinfo?sns=%@&otk=%@&uid=%@&epr=%@&info=%@",
+            "usercenterThirdRemoveBindInfo":"https://id.ifeng.com/api/trdptyunbindshare?sid=%@&sns=%@&uid=%@",
+            "usercenterThirdCheckIsRegister":"https://id.ifeng.com/api/checktrdptybind?uid=%@&sns=%@",
+            "usercenterMainPage":"https://id.ifeng.com/api/getuserinfo?sid=%@",
+            "usercenterMainPageExchange":"http://up.iclient.ifeng.com/upload.php",
+            "usercenterMainPageChangeHeadURL":"https://id.ifeng.com/api/setavatar?sid=%@&ma=%@",
+            "usercenterMainPageChangeNickName":"https://id.ifeng.com/api/setnick?sid=%@&nn=%@",
+            "usercenterCheckIsLogin":"https://id.ifeng.com/api/checklogin?sid=%@",
+            "docOrderRecommend":"http://cdn.iclient.ifeng.com/v/res/r/%@.html",
+            "zmt":"http://api.iclient.ifeng.com/api_vampire_index?id=FOCUSZMT10",
+            "myzmt":"http://api.iclient.ifeng.com/api_vampire_index?id=FOCUSZMT10",
+            "blog":"http://api.3g.ifeng.com/ClientNews?id=BB10,FOCUSBB10",
+            "wcp":"http://api.3g.ifeng.com/sportTopic?json=y&from=channel",
+            "caipiao":"http://8.ifeng.com/ifengIndex.do?aid=231&frm=fh_news&sid=%@",
+
+            "getUserMsgList":"http://user.iclient.ifeng.com/api_user_feeds/getlist",
+
+            "msgBoxUnreadCount":"http://user.iclient.ifeng.com/api_user_feeds/getMsgBoxUnreadCount",
+            "msgBoxUnreadCount_test":"http://172.28.20.181:450/api_user_feeds/getMsgBoxUnreadCount",
+
+            "getMsgBoxList":"http://user.iclient.ifeng.com/api_user_feeds/getMsgBoxList",
+            "getMsgBoxList_test":"http://iclient.gray.ifeng.com/api_user_feeds/getMsgBoxList",
+
+            "getRecommendList":"http://user.iclient.ifeng.com/read.php?uid=%@",
+
+            "getReadHistoryRank":"http://user.iclient.ifeng.com/api_user_news/checkRankingByNewsNumbers?newsnumber=",
+
+            "getMsgDetail":"http://user.iclient.ifeng.com/api_user_feeds/getByFeedsId",
+            "getMsgDetail_new":"http://comment.ifeng.com/get.php?job=5&cmtid=%@&format=json",
+
+            "newsSearch":"http://api.3g.ifeng.com/clientsearch",
+            "searchHotWord":"http://api.3g.ifeng.com/ClientSearchIndex",
+            "channelSearchHotWord":"http://api.3g.ifeng.com/clientAggregateSearch?k=%@",
+            "searchRecommendWord":"http://api.3g.ifeng.com/clientChannelRecommend",
+
+            "uninterestedReport":"http://api.3g.ifeng.com/uninterestedReport",
+
+
+            "newsAggregateSearch":"http://api.3g.ifeng.com/clientAggregateSearch",
+            "newNewsSearch":"http://api.3g.ifeng.com/clientNewsSearch",
+            "searchSubscribe":"http://api.3g.ifeng.com/clientVampireCategorySearch",
+
+            "foWorldUrl":"http://api.iclient.ifeng.com/ClientNews?id=FJXSJ",
+
+            "tourismLeftUrl":"http://api.iclient.ifeng.com/ClientNews?id=QQG789",
+            "tourismRightUrl":"http://api.iclient.ifeng.com/ClientNews?id=SHMSJ",
+            "searchChannel":"http://api.3g.ifeng.com/clientChannelNewsSearch",
+            "twentyFourChannel_test":"http://api.iclient.ifeng.com/list_test?id=24HTEST&search_date=%@",
+            "twentyFourChannel":"http://api.3g.ifeng.com/ClientNews?id=24H&search_date=%@",
+            "isShowSpringFestival":"http://api.3g.ifeng.com/showSpringFestival?isios=1",
+            "sheepADUrl":"http://api.iapps.ifeng.com/news/adTipConfig",
+            "sheepADUrl1":"http://api.iapps.ifeng.com/news/ad_test",
+            "mallNotice":"http://cdn.user.iclient.ifeng.com/mall_api/notice",
+            "commentReportUrl":"http://news.ifeng.com/ask/index.shtml",
+            "userCenterActivity":"http://mall.iclient.ifeng.com/active_clientactivity/api",
+            "userCenterGameEntrance":"http://mall.iclient.ifeng.com/active_newclientactivity/api",
+            "userCenterCharity":"http://mall.iclient.ifeng.com/active_newclientactivity/charity",
+            "sendADDeviceInfo":"http://iis3g.deliver.ifeng.com/LogReceiver/savelog",
+            "sendPGDeviceInfo":"http://iis3g.deliver.ifeng.com/LogReceiver/howkeyelog",
+            "syFoucsADMore":"http://api.newad.ifeng.com/ClientAdversApiMore?adid=%@&index_id=%@&%@",
+            "sportsRelative":"http://api.3g.ifeng.com/sportsLiveNewsList?matchid=%@",
+            "ADMore":"http://api.newad.ifeng.com/ClientAdversApiMore1508?adid=%@&%@",
+            "liveRoom":{
+                    "getlrinfo":"http://ichat.3g.ifeng.com/interface/getlrinfo2?lr_id=%@",
+                    "getlchatbycid":"http://ichat.3g.ifeng.com/interface/get?lr_id=%@&c_id=%@&count=%d&drc=%@&type=%@",
+                    "add":"http://ichat.3g.ifeng.com/interface/add",
+                    "praise":"http://ichat.3g.ifeng.com/interface/praise",
+                    "share":"http://liveshare.iclient.ifeng.com/live_share?liveId=%@&vt=5",
+                    "livesendvote":"http://ichat.3g.ifeng.com/interface/sendvote",
+                    "livesportvote":"http://sports.live.ifeng.com/API/VoteAPI"
+            },
+
+             "sports":{
+                    "getSPinfo":"http://sports.live.ifeng.com/API/MatchAPI?matchid=%@&type=matchinfo",
+                    "support":"http://sports.live.ifeng.com/API/MatchAPI?matchid=%@&type=vote",
+                    "getLive":"http://sports.live.ifeng.com/API/LiveAPI?matchid=%@&type=%@&liveid=%@&count=20",
+                    "getChat":"http://sports.live.ifeng.com/API/ChatAPI?matchid=%@&type=%@&chatid=%@&count=20",
+                    "share":"http://share.iclient.ifeng.com/sports/newLivePage.h?vt=5&mt=%@",
+                    "add":"http://sports.live.ifeng.com/API/sendChat",
+                    "report":"http://sports.live.ifeng.com/API/MatchAPI?matchid=%@&type=report",
+                    "dovote":"http://sports.live.ifeng.com/API/MatchAPI?matchid=%@&type=dovote&side=%d",
+                    "online":"http://sports.live.ifeng.com/API/MatchAPI?matchid=%@&type=online",
+                    "source":"http://api.3g.ifeng.com/live_score?mt=%@"
+            },
+
+
+            "deleteCollect":"http://iclient.iuser.ifeng.com/EditCollection.php",
+            "addCollect":"http://iclient.iuser.ifeng.com/EditCollection.php",
+            "getCollect":"http://iclient.iuser.ifeng.com/getUserCollection.php",
+
+
+            "collect":"http://user.iclient.ifeng.com/Api_User_FavoriteV2/add",
+            "uncollect":"http://user.iclient.ifeng.com/Api_User_FavoriteV2/del",
+            "uncollectByDocID":"http://user.iclient.ifeng.com/Api_User_FavoriteV2/delBydocid",
+            "collections":"http://user.iclient.ifeng.com/Api_User_FavoriteV2/getlist",
+
+            "sportMatchSummary":"http://api.3g.ifeng.com/sports_schedule",
+
+            "usrScore":{
+                "share":"http://user.iclient.ifeng.com/api_user_credit/addbyshareurl",
+                "login":"http://user.iclient.ifeng.com/api_user_credit/addbyLogin",
+                "setToken":"http://user.iclient.ifeng.com/Api_User_Userbasic/Login",
+                "setName":"http://user.iclient.ifeng.com/Api_User_Info/updateImgAndName",
+                "sub":"http://user.iclient.ifeng.com/api_user_credit/addByViewSubscribeNews",
+                "comment":"http://user.iclient.ifeng.com/api_user_credit/addByComment",
+                "signIn":"http://user.iclient.ifeng.com/api_user_credit/addBySignIn",
+                "video":"http://user.iclient.ifeng.com/api_user_credit/addByOpenVedio",
+                "advert":"http://user.iclient.ifeng.com/api_user_credit/addByOpenAD",
+                "screemShot":"http://user.iclient.ifeng.com/api_user_credit/addBySnapshot",
+                "userInfo":"http://user.iclient.ifeng.com/api_user_info/setPersonalInfo",
+                "commentVideo":"http://user.iclient.ifeng.com/api_user_credit/addByVedioComment",
+                "timeLine":"http://user.iclient.ifeng.com/api_user_exp/timeline?guid=%@",
+                "exp":"http://user.iclient.ifeng.com/user_tasks/exp?os=%@&guid=%@&token=%@&deviceid=%@&os=%@",
+                "credit":"http://user.iclient.ifeng.com/user_tasks/credit?os=%@&guid=%@&token=%@&deviceid=%@&os=%@"
+            },
+            "thridShareUrl":"http://share.iclient.ifeng.com/sharenews.f?&fromType=vampire&aid=%@",
+            "userExp":"http://cdn.user.iclient.ifeng.com/api_user_exp/list/%@.v2.html",
+            "scoreUpgrade":"http://user.iclient.ifeng.com/api_user_exp/upgrade",
+            "scoreUpgradeCheck":"http://user.iclient.ifeng.com/api_user_exp/check",
+            "integralmall":"http://mall.iclient.ifeng.com/mall_list",
+            "usercenterlevel":"http://mall.iclient.ifeng.com/mall_rating/index?guid=%@",
+            "usercentermoney":"http://mall.iclient.ifeng.com/mall_rating/index?guid=%@",
+            "totalProfile":"http://api.iclient.ifeng.com/totalProfile",
+            "syncUserProfile":"http://user.iclient.ifeng.com/Api_User_Profile/syncUserProfile",
+            "getUserProfile":"http://user.iclient.ifeng.com/Api_User_Profile/getUserProfile",
+            "localapi":"http://api.irecommend.ifeng.com/local.php",
+            "shortNews":"http://api.3g.ifeng.com/clientShortNewsDetail?id=%@",
+            "youqian":"http://api.tongji.ifeng.com:9090/CooperationInterface/FilterUid?yqid=%@&uid=%@",
+            "zbpd":"http://api.iclient.ifeng.com/zbpd",
+            "sports_live_list":"http://api.iclient.ifeng.com/sports/competitionList",
+            "channelSquare":"http://api.3g.ifeng.com/api_search_channel_class?pid=%@&page=%@",
+            "getPersonalInfo":"http://user.iclient.ifeng.com/api_user_info/getPersonalInfo?guid=%@&token=%@&deviceid=%@&gv=%@&os=%@&login_channel=%@",
+            "setPersonalInfo":"http://user.iclient.ifeng.com/api_user_info/setPersonalInfo",
+            "addFeedBack":"http://topic.iclient.ifeng.com/api/reply/addreply",
+            "sendUserInfoStat":"http://user.iclient.ifeng.com/api_user_info/collect",
+            "feedBackWebPage":"http://api.iclient.ifeng.com/feedback?tid=40&guid=%@&sys=%@&ch=%@&version=%@&imei=%@&mobile=%@&network=%@&country=%@&city=%@&apptype=%@&newreply=%d",
+            "jspath":"http://api.iclient.ifeng.com/ifengnewsjspath",
+            "ifengad":"http://ifengad.3g.ifeng.com/ad/adExposure.php?%@"
+        },
+        "suppVersions": ["4.4.7"],
+        "useADRealod":"YES"
+    }
+]

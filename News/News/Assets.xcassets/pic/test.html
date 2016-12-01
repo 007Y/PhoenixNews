@@ -1,0 +1,143 @@
+<html>
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>HouJia</title>
+<!--    <script  src="./ground.js"></script>-->
+    <script language="javascript">
+        function shaeback(){
+            alert('摇动');
+        }
+        
+        
+        function callBackTest(testStr){
+            alert(testStr);
+        }
+    function checkShake(){
+        try{
+            alert(ground);
+        }catch(e){
+            alert(e);
+        }
+
+    }
+    
+    function userLogin(){
+        try{
+            grounds.login(function(a){
+                          
+                          alert(a);
+            });
+        }catch(e){
+            alert(e);
+        }
+        
+    }
+    
+    function json2str(o) {
+        var arr = [];
+        var fmt = function(s) {
+            if (typeof s == 'object' && s != null) return json2str(s);
+            return /^(string|number)$/.test(typeof s) ? "\"" + s + "\"" : s;
+        }
+        for (var i in o) arr.push("\"" + i + "\":" + fmt(o[i]));
+        return '{' + arr.join(',') + '}';
+    }
+
+
+        function shakeOpen(){
+            try{
+                var obj= ground.isTiming(['2323','2323','23232']);
+                alert(obj);
+                             // alert(navigator.userAgent);
+               // grounds.nalog(navigator.userAgent);
+          /*      var abc=function (result) {
+                    alert('result=' + result);
+                };
+                
+                ground.login(function(result){
+                            alert('result2=' + result);        
+                                    });*/
+                
+                
+            
+            }catch(e){
+                alert(e);
+            }
+
+      }
+    
+    function subject_callback(uid,nickName,avatar,content,images,tid,replyId,toGuid,toNickName,toAvatar){
+        alert(images);
+    }
+
+    
+      function shakeClose(){
+          try{
+            
+                               
+             grounds.userLogin();
+          }catch(e){
+              alert(e);
+          }
+      }
+    
+    try{
+  
+        
+    grounds.setShakeCallback(function(){alert(123);});
+    }catch(e){
+        alert(e);
+    }
+    
+    function checkInfo(){
+        
+    }
+
+try{
+   function parallelLoadScripts(scripts,callback) {
+ 
+    if(typeof(scripts) != "object") var scripts = [scripts];
+    var HEAD = document.getElementsByTagName("head").item(0) || document.documentElement, s = new Array(), loaded = 0;
+    for(var i=0; i<scripts.length; i++) {
+        s[i] = document.createElement("script");
+        s[i].setAttribute("type","text/javascript");
+        s[i].onload = s[i].onreadystatechange = function() { //Attach handlers for all browsers
+            if(!/*@cc_on!@*/0 || this.readyState == "loaded" || this.readyState == "complete") {
+                loaded++;
+                this.onload = this.onreadystatechange = null; this.parentNode.removeChild(this);
+                if(loaded == scripts.length && typeof(callback) == "function") callback();
+            }
+        };
+        s[i].setAttribute("src",scripts[i]);
+        HEAD.appendChild(s[i]);
+    }
+};
+    parallelLoadScripts('http://i.ifeng.com/test_fengxiaowei2',null);
+
+
+}catch(e){
+    alert(e);
+}
+
+    </script>
+  </head>
+	<body>
+		<!-- a href="http://i.ifeng.com/ground.js">download</a></br -->
+    <div style="height:60px;"></div>
+    <button type="button" onclick="shakeOpen();" style="margin-left:60;width:185px;height:60px;">获取用户信息</button>
+    <div style="height:40px;"></div>
+    <button type="button" onclick="shakeOpen();" style="margin-left:60;width:185px;height:60px;">a</button>
+    <div style="height:40px;"></div>
+    <button type="button" onclick="shakeClose();" style="margin-left:60;width:185px;height:60px;">定制</button>
+    <div style="height:40px;"></div>
+    <button type="button" onclick="userLogin();" style="margin-left:60;width:185px;height:60px;">登陆</button>
+    <a href="test2.html">测试测试</a>
+    
+    <form action="test.php" method="post" enctype="multipart/form-data">
+        <label for="file">Filename:</label>
+        <input type="file" name="file" id="file"><br>
+            <input type="submit" name="submit" value="Submit">
+    </form>
+	</body>
+</html>

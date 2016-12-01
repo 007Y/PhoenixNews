@@ -1,0 +1,633 @@
+{
+
+"version": 0,
+"defaultChannel": [
+{
+"channelID": "sy",
+"channelName": "头条",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10,SYRECOMMEND",
+"order": "YES",
+"adID": "10000002",
+"foucsAdId": [
+{
+"position": "10000002",
+"framesNumber": "3"
+},
+{
+"position": "10000283",
+"framesNumber": "5"
+}
+],
+"listAdId": [
+"10000107",
+"10000253",
+"10000255",
+"10000145",
+"10000146",
+"10000147",
+"10000148",
+"10000149",
+"10000150"
+]
+},
+{
+"channelID": "rcmd",
+"channelName": "推荐",
+"api": "http://api.irecommend.ifeng.com/irecommendList.php",
+"order": "YES",
+
+},
+{
+"channelID": "ent",
+"channelName": "娱乐",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=YL53,FOCUSYL53",
+"order": "YES",
+"adID": "10000018",
+"foucsAdId": [
+{
+"position": "10000018",
+"framesNumber": "2"
+}
+],
+"listAdId": [
+"10000339",
+"10000340",
+"10000341",
+"10000342",
+"10000343",
+"10000344",
+"10000345",
+"10000346",
+"10000347",
+"10000348"
+]
+},
+{
+"channelID": "local",
+"channelName": "本地",
+"api": "http://api.irecommend.ifeng.com/local.php",
+"order": "YES",
+"catAdId": [
+"10000359",
+"10000360",
+"10000361",
+"10000362"
+],
+"listAdId": [
+"10000442",
+"10000443",
+"10000444",
+"10000445",
+"10000446",
+"10000447",
+"10000448",
+"10000449",
+"10000450",
+"10000451"
+]
+},
+{
+"channelID": "finance",
+"channelName": "财经",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=CJ33,FOCUSCJ33,HNCJ33",
+"order": "YES",
+"adID": "10000028",
+"foucsAdId": [
+{
+"position": "10000028",
+"framesNumber": "2"
+},
+{
+"position": "10000206",
+"framesNumber": "4"
+}
+],
+"listAdId": [
+"10000257",
+"10000134",
+"10000259",
+"10000280",
+"10000261",
+"10000157",
+"10000158",
+"10000159",
+"10000160",
+"10000161",
+"10000162"
+]
+},
+{
+"channelID": "zmt",
+"channelName": "凤凰号",
+"api": "http://api.iclient.ifeng.com/api_vampire_index?id=FOCUSZMT10",
+"order": "YES",
+"adID": "10000108",
+"foucsAdId": [
+{
+"position": "10000108",
+"framesNumber": "2"
+}
+],
+"listAdId": [
+"10000319",
+"10000320",
+"10000321",
+"10000322",
+"10000323",
+"10000324",
+"10000325",
+"10000326",
+"10000327",
+"10000328"
+]
+},
+{
+"channelID": "phtv",
+"channelName": "凤凰卫视",
+"api": "http://newsvcsp.ifeng.com/vcsp/appData/news/recommend.do?useType=iPhone&channelId=000000-0&callBy=news&pageSize=20",
+"order": "YES",
+"listAdId": [
+"10000393",
+"10000394",
+"10000395",
+"10000396",
+"10000397",
+"10000398",
+"10000399",
+"10000400",
+"10000401",
+"10000402"
+]
+},
+{
+"channelID": "tech",
+"channelName": "科技",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=KJ123,FOCUSKJ123",
+"order": "YES",
+"adID": "10000019",
+"foucsAdId": [
+{
+"position": "10000019",
+"framesNumber": "2"
+},
+{
+"position": "10000207",
+"framesNumber": "4"
+}
+],
+"listAdId": [
+"10000269",
+"10000135",
+"10000271",
+"10000371",
+"10000273",
+"10000168",
+"10000169",
+"10000170",
+"10000171",
+"10000172",
+"10000173"
+]
+},
+{
+"channelID": "mil",
+"channelName": "军事",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=JS83,FOCUSJS83",
+"order": "YES",
+"adID": "10000030",
+"foucsAdId": [
+{
+"position": "10000030",
+"framesNumber": "2"
+}
+],
+"listAdId": [
+"10000415",
+"10000416",
+"10000417",
+"10000418",
+"10000419",
+"10000420",
+"10000421",
+"10000422",
+"10000423",
+"10000424"
+]
+},
+{
+"channelID": "sports",
+"channelName": "体育",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=TY43,FOCUSTY43,TYLIVE",
+"order": "YES",
+"adID": "10000020",
+"foucsAdId": [
+{
+"position": "10000020",
+"framesNumber": "2"
+}
+]
+},
+{
+"channelID": "history",
+"channelName": "历史",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=LS153,FOCUSLS153",
+"order": "YES",
+"adID": "10000029",
+"foucsAdId": [
+{
+"position": "10000029",
+"framesNumber": "2"
+}
+]
+},
+{
+"channelID": "fm",
+"channelName": "FM",
+"api": "http://api.3g.ifeng.com/api_fm_homepage",
+"order": "YES",
+"type": "fm"
+},
+{
+"channelID": "auto",
+"channelName": "汽车",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=QC45,FOCUSQC45",
+"order": "YES",
+"adID": "10000049",
+"foucsAdId": [
+{
+"position": "10000049",
+"framesNumber": "2"
+},
+{
+"position": "10000204",
+"framesNumber": "4"
+}
+],
+"listAdId": [
+"10000275",
+"10000136",
+"10000277",
+"10000279",
+"10000180",
+"10000181",
+"10000182",
+"10000183",
+"10000184",
+"10000185"
+]
+},
+{
+"channelID": "fashion",
+"channelName": "时尚",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=SS78,FOCUSSS78",
+"order": "YES",
+"adID": "10000051",
+"foucsAdId": [
+{
+"position": "10000051",
+"framesNumber": "2"
+}
+],
+"listAdId": [
+"10000263",
+"10000137",
+"10000265",
+"10000267",
+"10000186",
+"10000187",
+"10000188",
+"10000189",
+"10000190",
+"10000191"
+]
+},
+{
+"channelID": "house",
+"channelName": "房产",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=FC81,FOCUSFC81",
+"order": "YES",
+"adID": "10000070",
+"foucsAdId": [
+{
+"position": "10000070",
+"framesNumber": "2"
+},
+{
+"position": "10000413",
+"framesNumber": "3"
+}
+],
+"listAdId": [
+"10000288",
+"10000289",
+"10000290",
+"10000291",
+"10000292",
+"10000293",
+"10000294",
+"10000295",
+"10000296",
+"10000297",
+"10014603"
+]
+},
+{
+"channelID": "cmd",
+"channelName": "FUN来了",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=DZPD,FOCUSDZPD",
+"order": "YES"
+},
+{
+"channelID": "funny",
+"channelName": "段子",
+"api": "http://api.3g.ifeng.com/clientShortNews?type=joke",
+"order": "YES",
+"type": "shortNews"
+},
+{
+"channelID": "pet",
+"channelName": "萌物",
+"api": "http://api.iclient.ifeng.com/clientShortNews?type=pet",
+"order": "YES",
+"type": "shortNews"
+}
+],
+"more": [
+{
+"channelID": "curpol",
+"channelName": "时政",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=SZPD,FOCUSSZPD",
+"order": "NO"
+},
+{
+"channelID": "wnews",
+"channelName": "暖新闻",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=NXWPD,FOCUSNXWPD",
+"order": "NO"
+},
+{
+"channelID": "live",
+"channelName": "直播",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=ZBPD",
+"order": "NO"
+},
+{
+"channelID": "digi",
+"channelName": "数码",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=SM66,FOCUSSM66",
+"order": "NO"
+},
+{
+"channelID": "photo",
+"channelName": "图片",
+"api": "http://api.iclient.ifeng.com/get_pic_list",
+"order": "NO"
+},
+{
+"channelID": "game",
+"channelName": "游戏",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=YX11,FOCUSYX11",
+"order": "NO"
+},
+{
+"channelID": "futureh5",
+"channelName": "未来",
+"api": "http://i.audi-future.ifeng.com/news/mobile/mindex.html",
+"order": "NO"
+},
+{
+"channelID": "HK",
+"channelName": "港澳",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=GA18",
+"order": "NO"
+},
+{
+"channelID": "culture",
+"channelName": "文化",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=WH25,FOCUSWH25",
+"order": "NO"
+},
+{
+"channelID": "blog",
+"channelName": "博报",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=BB10,FOCUSBB10",
+"order": "NO"
+},
+{
+"channelID": "disnews",
+"channelName": "原创",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=YC10",
+"order": "NO"
+},
+{
+"channelID": "health",
+"channelName": "健康",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=JK36,FOCUSJK36",
+"order": "NO"
+},
+{
+"channelID": "book",
+"channelName": "读书",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=DS57,FOCUSDS57",
+"order": "NO"
+},
+{
+"channelID": "astro",
+"channelName": "星座",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=XZ09,FOCUSXZ09",
+"order": "NO"
+},
+{
+"channelID": "opinion",
+"channelName": "评论",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=PL40,FOCUSPL40",
+"order": "NO"
+},
+{
+"channelID": "fo",
+"channelName": "佛教",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=FJ31,FOCUSFJ31",
+"order": "NO"
+},
+{
+"channelID": "travel",
+"channelName": "旅游",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=LY67,FOCUSLY67",
+"order": "NO",
+"adID": "10015309",
+"foucsAdId": [
+{
+"position": "10015309",
+"framesNumber": "2"
+}
+],
+"listAdId": [
+"10015297",
+"10015298",
+"10015299",
+"10015300",
+"10015301",
+"10015302",
+"10015303"
+]
+},
+{
+"channelID": "tw",
+"channelName": "台湾",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=TW73",
+"order": "NO"
+},
+{
+"channelID": "film",
+"channelName": "电影",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=DYPD",
+"order": "NO"
+},
+{
+"channelID": "nba",
+"channelName": "NBA",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=NBAPD",
+"order": "NO"
+},
+{
+"channelID": "topic",
+"channelName": "专题",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=ZTPD,FOCUSZTPD",
+"order": "NO"
+},
+{
+"channelID": "run",
+"channelName": "跑步",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=PBPD,PBPDFOCUS",
+"order": "NO"
+},
+{
+"channelID": "bike",
+"channelName": "自行车",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=ZXCPD,ZXCPDFOCUS",
+"order": "NO"
+},
+{
+"channelID": "wine",
+"channelName": "酒业",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=JYPD,FOCUSJYPD",
+"order": "NO",
+"adID": "10000235",
+"foucsAdId": [
+{
+"position": "10000235",
+"framesNumber": "2"
+}
+],
+"listAdId": [
+"10000239",
+"10000240",
+"10000241"
+]
+},
+{
+"channelID": "home",
+"channelName": "家居",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=JJPD,FOCUSJJPD",
+"order": "NO",
+"adID": "10000470",
+"foucsAdId": [
+{
+"position": "10000470",
+"framesNumber": "2"
+}
+],
+"listAdId": [
+"10000459",
+"10000460",
+"10000461",
+"10000462",
+"10000463",
+"10000464",
+"10000465"
+]
+},
+{
+"channelID": "influ",
+"channelName": "凤凰影响",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=FHYX,FOCUSFHYX",
+"order": "NO"
+},
+{
+"channelID": "antiwar",
+"channelName": "抗战",
+"api": "http://api.3g.ifeng.com/ClientNews?id=KZPD",
+"order": "NO"
+},
+{
+"channelID": "vent",
+"channelName": "创投",
+"api": "http://api.3g.ifeng.com/ClientNews?id=CTPD",
+"order": "NO"
+},
+{
+"channelID": "editor",
+"channelName": "主笔",
+"api": "http://api.3g.ifeng.com/zbpd",
+"order": "NO",
+"type": "editor"
+},
+{
+"channelID": "youth",
+"channelName": "青年",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=QN39,FOCUSQN39",
+"order": "NO",
+"adID": "10016366",
+"foucsAdId": [
+{
+"position": "10016366",
+"framesNumber": "2"
+}
+],
+"listAdId": [
+"10016352",
+"10016353",
+"10016354",
+"10016355",
+"10016356",
+"10016357",
+"10016358"
+]
+},
+{
+"channelID": "studyzh",
+"channelName": "国学",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=GXPD",
+"order": "NO"
+},
+{
+"channelID": "welfare",
+"channelName": "公益",
+"api": "http://api.iclient.ifeng.com/ClientNews?id=GYPD",
+"order": "NO"
+},
+{
+"channelID": "dress",
+"type": "sale",
+"channelName": "时装",
+"api": "http://dress.iclient.ifeng.com/Api/Article/getList",
+"order": "NO",
+"adID": "10014867",
+"foucsAdId": [
+{
+"position": "10014867",
+"framesNumber": "2"
+}
+],
+"listAdId": [
+"10014585",
+"10014586",
+"10014587",
+"10014589",
+"10014590",
+"10014591",
+"10014592"
+]
+}
+]
+}

@@ -150,12 +150,12 @@
 		C60E6A5A1DF0131700390805 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C60E6A651DF0131700390805 /* News(新闻) */,
+				C60E6A6F1DF0131700390805 /* Public(公共) */,
 				C60E6A781DF0131700390805 /* Videos(视频) */,
+				C60E6A651DF0131700390805 /* News(新闻) */,
 				C60E6A5B1DF0131700390805 /* Found(发现) */,
 				C60E6A601DF0131700390805 /* My(我的) */,
 				C60E6A6A1DF0131700390805 /* Others(其他) */,
-				C60E6A6F1DF0131700390805 /* Public(公共) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -321,9 +321,9 @@
 			children = (
 				C60E6A701DF0131700390805 /* AppDelegate.h */,
 				C60E6A711DF0131700390805 /* AppDelegate.m */,
+				C60E6A861DF0136900390805 /* PrefixHeader.pch */,
 				C60E6A751DF0131700390805 /* ViewController.h */,
 				C60E6A761DF0131700390805 /* ViewController.m */,
-				C60E6A861DF0136900390805 /* PrefixHeader.pch */,
 				C60E6A721DF0131700390805 /* Controllers */,
 				C60E6A731DF0131700390805 /* Models */,
 				C60E6A741DF0131700390805 /* Tool */,

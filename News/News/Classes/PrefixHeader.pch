@@ -27,11 +27,12 @@
 // 屏幕尺寸
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
-
-#import "UIView+Category.h"
+#define NewsTopUrl @"http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10,SYRECOMMEND&page=1"
+//#import "UIView+Category.h"
 #import "AFNetworking.h"
 #import "MJRefresh.h"
 #import "UIImageView+WebCache.h"
+#import "MJExtension.h"
 
 #import "SVProgressHUD.h"
 

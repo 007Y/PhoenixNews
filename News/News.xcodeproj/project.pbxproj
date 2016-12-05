@@ -21,7 +21,6 @@
 		C66BE1AE1DF1894700C36593 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1881DF1894700C36593 /* ViewController.m */; };
 		C66BE1AF1DF1894700C36593 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1901DF1894700C36593 /* MyTableViewController.m */; };
 		C66BE1B01DF1894700C36593 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1941DF1894700C36593 /* NewsModel.m */; };
-		C66BE1B11DF1894700C36593 /* NewsSlideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1961DF1894700C36593 /* NewsSlideModel.m */; };
 		C66BE1B21DF1894700C36593 /* NewsPicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE19B1DF1894700C36593 /* NewsPicTableViewCell.m */; };
 		C66BE1B31DF1894700C36593 /* NewsPicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C66BE19C1DF1894700C36593 /* NewsPicTableViewCell.xib */; };
 		C66BE1B41DF1894700C36593 /* NewsTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE19E1DF1894700C36593 /* NewsTopTableViewCell.m */; };
@@ -31,6 +30,13 @@
 		C66BE1B81DF1894700C36593 /* NewsNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1A51DF1894700C36593 /* NewsNavViewController.m */; };
 		C66BE1B91DF1894700C36593 /* NewsTopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1A71DF1894700C36593 /* NewsTopTableViewController.m */; };
 		C66BE1BA1DF1894700C36593 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1A91DF1894700C36593 /* NewsViewController.m */; };
+		C69EC42F1DF53FCF0033B4A4 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC4221DF53FCF0033B4A4 /* TAAbstractDotView.m */; };
+		C69EC4301DF53FCF0033B4A4 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC4241DF53FCF0033B4A4 /* TAAnimatedDotView.m */; };
+		C69EC4311DF53FCF0033B4A4 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC4261DF53FCF0033B4A4 /* TADotView.m */; };
+		C69EC4321DF53FCF0033B4A4 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC4281DF53FCF0033B4A4 /* TAPageControl.m */; };
+		C69EC4331DF53FCF0033B4A4 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC42A1DF53FCF0033B4A4 /* SDCollectionViewCell.m */; };
+		C69EC4341DF53FCF0033B4A4 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC42C1DF53FCF0033B4A4 /* SDCycleScrollView.m */; };
+		C69EC4351DF53FCF0033B4A4 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC42E1DF53FCF0033B4A4 /* UIView+SDExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +86,6 @@
 		C66BE1901DF1894700C36593 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		C66BE1931DF1894700C36593 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		C66BE1941DF1894700C36593 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
-		C66BE1951DF1894700C36593 /* NewsSlideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsSlideModel.h; sourceTree = "<group>"; };
-		C66BE1961DF1894700C36593 /* NewsSlideModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsSlideModel.m; sourceTree = "<group>"; };
 		C66BE19A1DF1894700C36593 /* NewsPicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsPicTableViewCell.h; sourceTree = "<group>"; };
 		C66BE19B1DF1894700C36593 /* NewsPicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsPicTableViewCell.m; sourceTree = "<group>"; };
 		C66BE19C1DF1894700C36593 /* NewsPicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsPicTableViewCell.xib; sourceTree = "<group>"; };
@@ -97,6 +101,20 @@
 		C66BE1A71DF1894700C36593 /* NewsTopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTopTableViewController.m; sourceTree = "<group>"; };
 		C66BE1A81DF1894700C36593 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		C66BE1A91DF1894700C36593 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		C69EC4211DF53FCF0033B4A4 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		C69EC4221DF53FCF0033B4A4 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		C69EC4231DF53FCF0033B4A4 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		C69EC4241DF53FCF0033B4A4 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		C69EC4251DF53FCF0033B4A4 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		C69EC4261DF53FCF0033B4A4 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		C69EC4271DF53FCF0033B4A4 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		C69EC4281DF53FCF0033B4A4 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		C69EC4291DF53FCF0033B4A4 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		C69EC42A1DF53FCF0033B4A4 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		C69EC42B1DF53FCF0033B4A4 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		C69EC42C1DF53FCF0033B4A4 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		C69EC42D1DF53FCF0033B4A4 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		C69EC42E1DF53FCF0033B4A4 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		D7BFEA6B611361A70EF91961 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -426,8 +444,6 @@
 			children = (
 				C66BE1931DF1894700C36593 /* NewsModel.h */,
 				C66BE1941DF1894700C36593 /* NewsModel.m */,
-				C66BE1951DF1894700C36593 /* NewsSlideModel.h */,
-				C66BE1961DF1894700C36593 /* NewsSlideModel.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -435,6 +451,7 @@
 		C66BE1971DF1894700C36593 /* SDKs */ = {
 			isa = PBXGroup;
 			children = (
+				C69EC41F1DF53FCF0033B4A4 /* SDCycleScrollView */,
 			);
 			path = SDKs;
 			sourceTree = "<group>";
@@ -473,6 +490,35 @@
 				C66BE1A91DF1894700C36593 /* NewsViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C69EC41F1DF53FCF0033B4A4 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C69EC4201DF53FCF0033B4A4 /* PageControl */,
+				C69EC4291DF53FCF0033B4A4 /* SDCollectionViewCell.h */,
+				C69EC42A1DF53FCF0033B4A4 /* SDCollectionViewCell.m */,
+				C69EC42B1DF53FCF0033B4A4 /* SDCycleScrollView.h */,
+				C69EC42C1DF53FCF0033B4A4 /* SDCycleScrollView.m */,
+				C69EC42D1DF53FCF0033B4A4 /* UIView+SDExtension.h */,
+				C69EC42E1DF53FCF0033B4A4 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		C69EC4201DF53FCF0033B4A4 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				C69EC4211DF53FCF0033B4A4 /* TAAbstractDotView.h */,
+				C69EC4221DF53FCF0033B4A4 /* TAAbstractDotView.m */,
+				C69EC4231DF53FCF0033B4A4 /* TAAnimatedDotView.h */,
+				C69EC4241DF53FCF0033B4A4 /* TAAnimatedDotView.m */,
+				C69EC4251DF53FCF0033B4A4 /* TADotView.h */,
+				C69EC4261DF53FCF0033B4A4 /* TADotView.m */,
+				C69EC4271DF53FCF0033B4A4 /* TAPageControl.h */,
+				C69EC4281DF53FCF0033B4A4 /* TAPageControl.m */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 		F84AC16E55227FB9722A48F9 /* Frameworks */ = {
@@ -671,20 +717,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				C66BE1AE1DF1894700C36593 /* ViewController.m in Sources */,
+				C69EC42F1DF53FCF0033B4A4 /* TAAbstractDotView.m in Sources */,
 				C66BE1AA1DF1894700C36593 /* AppDelegate.m in Sources */,
 				C66BE1B91DF1894700C36593 /* NewsTopTableViewController.m in Sources */,
 				C66BE1B61DF1894700C36593 /* NewsVideoTableViewCell.m in Sources */,
 				C66BE1AC1DF1894700C36593 /* PublicTabBarViewController.m in Sources */,
 				704C3D121DF0F8DD0058C379 /* main.m in Sources */,
+				C69EC4351DF53FCF0033B4A4 /* UIView+SDExtension.m in Sources */,
 				C66BE1B01DF1894700C36593 /* NewsModel.m in Sources */,
-				C66BE1B11DF1894700C36593 /* NewsSlideModel.m in Sources */,
+				C69EC4301DF53FCF0033B4A4 /* TAAnimatedDotView.m in Sources */,
+				C69EC4331DF53FCF0033B4A4 /* SDCollectionViewCell.m in Sources */,
 				C66BE1B81DF1894700C36593 /* NewsNavViewController.m in Sources */,
 				C66BE1AF1DF1894700C36593 /* MyTableViewController.m in Sources */,
 				C66BE1AB1DF1894700C36593 /* FoundViewController.m in Sources */,
 				C66BE1B41DF1894700C36593 /* NewsTopTableViewCell.m in Sources */,
 				C66BE1BA1DF1894700C36593 /* NewsViewController.m in Sources */,
 				C66BE1AD1DF1894700C36593 /* VideosViewController.m in Sources */,
+				C69EC4311DF53FCF0033B4A4 /* TADotView.m in Sources */,
 				C66BE1B21DF1894700C36593 /* NewsPicTableViewCell.m in Sources */,
+				C69EC4321DF53FCF0033B4A4 /* TAPageControl.m in Sources */,
+				C69EC4341DF53FCF0033B4A4 /* SDCycleScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

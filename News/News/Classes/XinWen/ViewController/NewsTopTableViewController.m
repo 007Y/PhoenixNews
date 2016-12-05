@@ -11,12 +11,10 @@
 #import "NewsTopTableViewCell.h"
 #import "NewsPicTableViewCell.h"
 #import "NewsModel.h"
-#import "NewsSlideModel.h"
 @interface NewsTopTableViewController ()
 @property(nonatomic,strong)NSMutableArray *dataArray;
-@property(nonatomic,strong)NSMutableArray *newsTopArray;
-@property(nonatomic,strong)NSMutableArray *newsPicArray;
 @property(nonatomic,strong)NSMutableArray * picArray;
+@property(nonatomic,assign)int long page;
 @end
 static NSString * const topRedifier = @"topRedifier";
 static NSString * const videoRedifier = @"videoRedifier";
@@ -26,18 +24,23 @@ static NSString * const picRedifier = @"picRedifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     _picArray = [NSMutableArray array];
+//    _dataArray = [NSMutableArray array];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+
+   
     
-//    SDCycleScrollView *scrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREENWIDTH, 100) imageURLStringsGroup:_picArray];
-//    self.tableView.tableHeaderView = scrollView;
-    
-    
+    //更改自带tableView的位置
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
+    //同时更改右侧指示条的位置
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass(NewsTopTableViewCell.class) bundle:nil] forCellReuseIdentifier:topRedifier];
     
@@ -46,29 +49,56 @@ static NSString * const picRedifier = @"picRedifier";
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass(NewsPicTableViewCell.class) bundle:nil] forCellReuseIdentifier:picRedifier];
     
     
-    [self requestData];
+    [self refresh];
     
 }
+- (void)refresh{
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(requestData)];
+    [self.tableView.mj_header beginRefreshing];
+    self.tableView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingTarget:self refreshingAction:@selector(requestMoreData)];
+}
+
+
 - (void)requestData{
+    WeakSelf;
+    _page = 1;
     AFHTTPSessionManager * session = [AFHTTPSessionManager manager];
-    [session GET:NewsTopUrl parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        
+    [session GET:NewsTopUrl(_page) parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray * arr = responseObject[0][@"item"];
-        
         _dataArray = [NewsModel mj_objectArrayWithKeyValuesArray:arr];
         
-               for (NewsModel * model in _dataArray) {
-                   NSLog(@"%@",model.type);
-//                   if (model.type && [model.type isEqualToString:@"slide"] ) {
-//                       [_picArray addObject:model.thumbnail];
-//
-//                   }
+        for (int i = 0; i < _dataArray.count; i++) {
+            NewsModel * model = _dataArray[i];
+            if ([model.type containsString:@"slide"]) {
+                [_picArray addObject:model.thumbnail];
+            }
         }
-        [self.tableView reloadData];
-        [self.tableView.mj_header endRefreshing];
+        SDCycleScrollView *scrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, 200) imageURLStringsGroup:_picArray];
+        weakSelf.tableView.tableHeaderView = scrollView;
+        
+                      [weakSelf.tableView reloadData];
+        [weakSelf.tableView.mj_header endRefreshing];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                [self.tableView.mj_header endRefreshing];
+                [weakSelf.tableView.mj_header endRefreshing];
+    }];
+}
+- (void)requestMoreData{
+    WeakSelf;
+    _page ++;
+    AFHTTPSessionManager * session = [AFHTTPSessionManager manager];
+    [session GET:NewTopUrl(_page) parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray * arr = responseObject[0][@"item"];
+        NSMutableArray * mu = [NewsModel mj_objectArrayWithKeyValuesArray:arr];
+        
+        [_dataArray addObjectsFromArray:mu];
+       
+        
+        [weakSelf.tableView reloadData];
+        [weakSelf.tableView.mj_footer endRefreshing];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [weakSelf.tableView.mj_footer endRefreshing];
     }];
 }
 
@@ -89,29 +119,45 @@ static NSString * const picRedifier = @"picRedifier";
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
-    NewsTopTableViewCell *topCell = [tableView dequeueReusableCellWithIdentifier:topRedifier forIndexPath:indexPath];
-    NewsPicTableViewCell * picCell = [tableView dequeueReusableCellWithIdentifier:picRedifier forIndexPath:indexPath];
-    NewsVideoTableViewCell * videoCell = [tableView dequeueReusableCellWithIdentifier:videoRedifier forIndexPath:indexPath];
-    if ([_dataArray[indexPath.row][@"type"] isEqualToString:@"slide"]) {
+
+    NewsModel * model = _dataArray[indexPath.row];
+        if ([model.type isEqualToString:@"slide"]) {
+         NewsPicTableViewCell * picCell = [tableView dequeueReusableCellWithIdentifier:picRedifier forIndexPath:indexPath];
+            picCell.accessoryType = UITableViewCellAccessoryNone;
+
+        picCell.model = _dataArray[indexPath.row];
         return picCell;
-    }else if ([_dataArray[indexPath.row][@"type"] containsString:@"video"]){
+    }else if ([model.type containsString:@"video"]){
+        NewsVideoTableViewCell * videoCell = [tableView dequeueReusableCellWithIdentifier:videoRedifier forIndexPath:indexPath];
+        videoCell.accessoryType = UITableViewCellAccessoryNone;
+
+
+        videoCell.model = _dataArray[indexPath.row];
         return videoCell;
     }
     
     
     // Configure the cell...
     
-    
-    
-//    topCell.model = _dataArray[indexPath.row];
+    NewsTopTableViewCell *topCell = [tableView dequeueReusableCellWithIdentifier:topRedifier forIndexPath:indexPath];
+    topCell.model = _dataArray[indexPath.row];
+    topCell.accessoryType = UITableViewCellAccessoryNone;
+
     return topCell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 150;
+    NewsModel * model = _dataArray[indexPath.row];
+    
+    
+    if ([model.type containsString:@"video"] || [model.type containsString:@"live"]) {
+        
+        return 250;
+    }else if([model.type containsString:@"slide"])
+    {
+        return 150;
+    }
+    return 100;
 }
-
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -120,17 +166,6 @@ static NSString * const picRedifier = @"picRedifier";
 }
 */
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
 /*
 // Override to support rearranging the table view.

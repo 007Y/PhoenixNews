@@ -27,7 +27,8 @@
 // 屏幕尺寸
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define NewsTopUrl @"http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10,SYRECOMMEND&page=1"
+#define NewsTopUrl(page) [NSString stringWithFormat:@"http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10,SYRECOMMEND&page=%ld&newShowType=0",page]
+#define NewTopUrl(page) [NSString stringWithFormat:@"http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10,SYRECOMMEND&page=%ld&newShowType=1",page]
 //#import "UIView+Category.h"
 #import "AFNetworking.h"
 #import "MJRefresh.h"
@@ -35,6 +36,7 @@
 #import "MJExtension.h"
 
 #import "SVProgressHUD.h"
+#import "SDCycleScrollView.h"
 
 #define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS

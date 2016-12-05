@@ -18,28 +18,34 @@
 
 @end
 @implementation NewsTopTableViewCell
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
 
 
 
 
 - (void)setModel:(NewsModel *)model{
     _model = model;
-    [_thumbnailImage sd_setImageWithURL:[NSURL URLWithString:model.thumbnail]];
-    _title.text = model.title;
+    [self.thumbnailImage sd_setImageWithURL:[NSURL URLWithString:model.thumbnail]];
+    self.title.text = model.title;
     _commetsall.text = model.commentsall;
     if (model.hasVideo) {
         _timeLbel.text = model.updateTime;
 
-        [self.icon setImage:[UIImage imageNamed:@""]];
+        [self.icon setImage:[UIImage imageNamed:@"list_cell_video"]];
         return;
     }else if(model.hasSlide){
         _timeLbel.text = model.updateTime;
 
-        [self.icon setImage:[UIImage imageNamed:@""]];
+        [self.icon setImage:[UIImage imageNamed:@"i_picturyArray"]];
         return;
     }else if([model.type isEqualToString: @"topic2"]){
         self.timeLbel.hidden = YES;
-        self.timeLbel.text = nil;
+        self.timeLbel.text = @"专题";
+//        self.timeLbel.layer.borderWidth = 0.5;
+        self.timeLbel.textColor = [UIColor redColor];
     }else{
         _timeLbel.text = model.updateTime;
         self.icon.hidden = YES;
@@ -47,10 +53,6 @@
 }
 
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

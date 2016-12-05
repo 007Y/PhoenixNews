@@ -20,7 +20,7 @@
 @implementation NewsPicTableViewCell
 - (void)setModel:(NewsModel *)model{
     _model = model;
-    NSArray * arr = model.style[@"image"];
+    NSArray * arr = model.style[@"images"];
     [self.image1 sd_setImageWithURL:[NSURL URLWithString:arr[0]]];
     [self.image2 sd_setImageWithURL:[NSURL URLWithString:arr[1]]];
     [self.image3 sd_setImageWithURL:[NSURL URLWithString:arr[2]]];

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NewsModel : NSString
+@interface NewsModel : NSObject
 //头像
 @property(nonatomic,strong)NSString *thumbnail;
 //标题
@@ -24,9 +24,9 @@
 //来源
 @property(nonatomic,strong)NSString *source;
 //有视频
-@property(nonatomic,assign)BOOL * hasVideo;
+@property(nonatomic,assign,getter=hasvideo)BOOL * hasVideo;
 //有slider
-@property(nonatomic,assign)BOOL * hasSlide;
+@property(nonatomic,assign,getter=hasslide)BOOL * hasSlide;
 //更新时间
 @property(nonatomic,strong)NSString *updateTime;
 //style( slideCount  NSArray image)

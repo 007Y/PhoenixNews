@@ -41,6 +41,7 @@
 		C69EC43C1DF574AF0033B4A4 /* BeautyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC43A1DF574AF0033B4A4 /* BeautyTableViewCell.m */; };
 		C69EC43D1DF574AF0033B4A4 /* BeautyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69EC43B1DF574AF0033B4A4 /* BeautyTableViewCell.xib */; };
 		C6B804961DF57E6600332972 /* BeautyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B804951DF57E6600332972 /* BeautyTableViewController.m */; };
+		C6E0A1861DF662FD005EC263 /* BeautyCateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E0A1851DF662FD005EC263 /* BeautyCateTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,8 @@
 		C69EC43B1DF574AF0033B4A4 /* BeautyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeautyTableViewCell.xib; sourceTree = "<group>"; };
 		C6B804941DF57E6600332972 /* BeautyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyTableViewController.h; sourceTree = "<group>"; };
 		C6B804951DF57E6600332972 /* BeautyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyTableViewController.m; sourceTree = "<group>"; };
+		C6E0A1841DF662FD005EC263 /* BeautyCateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyCateTableViewController.h; sourceTree = "<group>"; };
+		C6E0A1851DF662FD005EC263 /* BeautyCateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyCateTableViewController.m; sourceTree = "<group>"; };
 		D7BFEA6B611361A70EF91961 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -506,6 +509,8 @@
 				C69EC4371DF55AE50033B4A4 /* HoursTableViewController.m */,
 				C6B804941DF57E6600332972 /* BeautyTableViewController.h */,
 				C6B804951DF57E6600332972 /* BeautyTableViewController.m */,
+				C6E0A1841DF662FD005EC263 /* BeautyCateTableViewController.h */,
+				C6E0A1851DF662FD005EC263 /* BeautyCateTableViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -745,6 +750,7 @@
 				C69EC4351DF53FCF0033B4A4 /* UIView+SDExtension.m in Sources */,
 				C66BE1B01DF1894700C36593 /* NewsModel.m in Sources */,
 				C69EC43C1DF574AF0033B4A4 /* BeautyTableViewCell.m in Sources */,
+				C6E0A1861DF662FD005EC263 /* BeautyCateTableViewController.m in Sources */,
 				C69EC4301DF53FCF0033B4A4 /* TAAnimatedDotView.m in Sources */,
 				C69EC4331DF53FCF0033B4A4 /* SDCollectionViewCell.m in Sources */,
 				C66BE1B81DF1894700C36593 /* NewsNavViewController.m in Sources */,

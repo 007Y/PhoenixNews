@@ -35,7 +35,8 @@
 @property(nonatomic,assign)int likes;
 //beauty img(获取size)
 @property(nonatomic,strong)NSArray * img;
-
+//bearty name
+@property(nonatomic,strong)NSString *name;
 - (CGFloat)cellHeight;
 
 @end

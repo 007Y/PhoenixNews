@@ -29,17 +29,15 @@
     [self.image sd_setImageWithURL:[NSURL URLWithString:model.img[0][@"url"]]];
     self.zanLabel.text = [NSString stringWithFormat:@"%d",model.likes];
     self.comentLabel.text  = model.commentsall;
-    
-//    NSDictionary * sizeDic = model.img[0];
-//    _width1 = [sizeDic[@"size"][@"width"] intValue];
-//    _height1 = [sizeDic[@"size"][@"height"] intValue];
-//    self.height.constant = ScreenWidth * (_height1 / _width1);
+//     [self.image addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imageClick)]];
+
     
 }
 
 
 
 - (IBAction)share:(id)sender {
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

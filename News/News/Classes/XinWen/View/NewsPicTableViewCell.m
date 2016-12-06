@@ -28,6 +28,7 @@
     self.title.text = model.title;
     self.updateTime.text = model.updateTime;
     self.slideCount.text = [NSString stringWithFormat:@"%@",model.style[@"slideCount"]];
+    
 }
 - (void)awakeFromNib {
     [super awakeFromNib];

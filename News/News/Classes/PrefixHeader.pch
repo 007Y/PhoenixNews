@@ -31,6 +31,8 @@
 #define NewTopUrl(page) [NSString stringWithFormat:@"http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10,SYRECOMMEND&page=%ld&newShowType=1",page]
 #define HoursUrl @"http://api.3g.ifeng.com/ClientNews?id=24H&search_date="
 #define Beauty(page)   [NSString stringWithFormat:@"http://api.3g.ifeng.com/clientShortNews?type=beauty&page=%d&ltime=0",page]
+#define BeautyCate(page)   [NSString stringWithFormat:@"http://api.3g.ifeng.com/clientShortNews?type=%@&page=1&ltime=0",page]
+
 
 //#import "UIView+Category.h"
 #import "AFNetworking.h"

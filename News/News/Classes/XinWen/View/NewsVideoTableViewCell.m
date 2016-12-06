@@ -23,10 +23,7 @@
     _model = model;
     self.titleLabel.text = model.title;
     [self.thumbnailImage sd_setImageWithURL:[NSURL URLWithString:model.thumbnail]];
-    NSLog(@"%f",self.thumbnailImage.frame.size.height);
-    
-    
-    
+   
     self.commentsall.text = model.commentsall;
     if (![model.type containsString:@"live"]) {
         self.liveImage.hidden = YES;

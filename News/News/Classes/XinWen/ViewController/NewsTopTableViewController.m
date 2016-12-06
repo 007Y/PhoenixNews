@@ -13,7 +13,6 @@
 #import "NewsModel.h"
 @interface NewsTopTableViewController ()
 @property(nonatomic,strong)NSMutableArray *dataArray;
-@property(nonatomic,strong)NSMutableArray * picArray;
 @property(nonatomic,assign)int long page;
 @end
 static NSString * const topRedifier = @"topRedifier";
@@ -24,9 +23,6 @@ static NSString * const picRedifier = @"picRedifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    _picArray = [NSMutableArray array];
-//    _dataArray = [NSMutableArray array];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -37,7 +33,7 @@ static NSString * const picRedifier = @"picRedifier";
    
     
     //更改自带tableView的位置
-    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(64+35, 0, 49, 0);
     //同时更改右侧指示条的位置
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
 
@@ -48,12 +44,13 @@ static NSString * const picRedifier = @"picRedifier";
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass(NewsPicTableViewCell.class) bundle:nil] forCellReuseIdentifier:picRedifier];
     
-    
     [self refresh];
     
 }
 - (void)refresh{
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(requestData)];
+    self.tableView.mj_header.automaticallyChangeAlpha = YES;
+
     [self.tableView.mj_header beginRefreshing];
     self.tableView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingTarget:self refreshingAction:@selector(requestMoreData)];
 }
@@ -63,19 +60,31 @@ static NSString * const picRedifier = @"picRedifier";
     WeakSelf;
     _page = 1;
     AFHTTPSessionManager * session = [AFHTTPSessionManager manager];
+    [session GET:NewTopUrl(_page) parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray * arr = responseObject[1][@"item"];
+        NSArray * arr1 = [NewsModel mj_objectArrayWithKeyValuesArray:arr];
+        NSMutableArray * picArr = [NSMutableArray array];
+        for (int i = 0; i < arr1.count; i++) {
+            NewsModel * model = arr1[i];
+                [picArr addObject:model.thumbnail];
+            
+        }
+        SDCycleScrollView *scrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, 200) imageURLStringsGroup:picArr];
+        weakSelf.tableView.tableHeaderView = scrollView;
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    }];
+
+    
+    
+    
+    
     [session GET:NewsTopUrl(_page) parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray * arr = responseObject[0][@"item"];
         _dataArray = [NewsModel mj_objectArrayWithKeyValuesArray:arr];
-        
-        for (int i = 0; i < _dataArray.count; i++) {
-            NewsModel * model = _dataArray[i];
-            if ([model.type containsString:@"slide"]) {
-                [_picArray addObject:model.thumbnail];
-            }
-        }
-        SDCycleScrollView *scrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, 200) imageURLStringsGroup:_picArray];
-        weakSelf.tableView.tableHeaderView = scrollView;
         
                       [weakSelf.tableView reloadData];
         [weakSelf.tableView.mj_header endRefreshing];
@@ -83,6 +92,7 @@ static NSString * const picRedifier = @"picRedifier";
                 [weakSelf.tableView.mj_header endRefreshing];
     }];
 }
+
 - (void)requestMoreData{
     WeakSelf;
     _page ++;

@@ -8,6 +8,8 @@
 
 #import "NewsViewController.h"
 #import "NewsTopTableViewController.h"
+#import "HoursTableViewController.h"
+#import "BeautyTableViewController.h"
 @interface NewsViewController ()<UIScrollViewDelegate>
 @property(nonatomic,strong)NSMutableArray * buttonArray;
 @property(nonatomic,strong)UIButton *selectedTitleButton;
@@ -36,7 +38,7 @@
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"appicon"]];
     
-    
+
     
     UIButton *LeftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [LeftButton addTarget:self action:@selector(leftClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -52,7 +54,8 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
 }
 - (void)leftClick:(UIButton *)sender{
-    
+    HoursTableViewController * hour = [[HoursTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
+    [self.navigationController pushViewController:hour animated:YES];
 }
 - (void)rightClick:(UIButton *)sender{
     
@@ -123,7 +126,10 @@
     [self addChildViewController:top];
     top.view.frame = self.scroll.bounds;
     [self.scroll addSubview:top.view];
-    
+    BeautyTableViewController *beauty = [[BeautyTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self addChildViewController:beauty];
+    beauty.view.frame = CGRectMake(ScreenWidth * 2, 0, ScreenWidth, ScreenHeight);
+    [self.scroll addSubview:beauty.view];
     
     
     

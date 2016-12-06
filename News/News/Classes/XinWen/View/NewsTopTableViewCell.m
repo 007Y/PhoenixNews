@@ -30,6 +30,8 @@
     _model = model;
     [self.thumbnailImage sd_setImageWithURL:[NSURL URLWithString:model.thumbnail]];
     self.title.text = model.title;
+    self.timeLbel.text = model.updateTime;
+    self.icon.hidden = YES;
     _commetsall.text = model.commentsall;
     if (model.hasVideo) {
         _timeLbel.text = model.updateTime;
@@ -46,9 +48,6 @@
         self.timeLbel.text = @"专题";
 //        self.timeLbel.layer.borderWidth = 0.5;
         self.timeLbel.textColor = [UIColor redColor];
-    }else{
-        _timeLbel.text = model.updateTime;
-        self.icon.hidden = YES;
     }
 }
 

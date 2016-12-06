@@ -31,4 +31,11 @@
 @property(nonatomic,strong)NSString *updateTime;
 //style( slideCount  NSArray image)
 @property(nonatomic,strong)NSDictionary *style;
+//点赞数
+@property(nonatomic,assign)int likes;
+//beauty img(获取size)
+@property(nonatomic,strong)NSArray * img;
+
+- (CGFloat)cellHeight;
+
 @end

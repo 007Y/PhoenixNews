@@ -37,6 +37,10 @@
 		C69EC4331DF53FCF0033B4A4 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC42A1DF53FCF0033B4A4 /* SDCollectionViewCell.m */; };
 		C69EC4341DF53FCF0033B4A4 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC42C1DF53FCF0033B4A4 /* SDCycleScrollView.m */; };
 		C69EC4351DF53FCF0033B4A4 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC42E1DF53FCF0033B4A4 /* UIView+SDExtension.m */; };
+		C69EC4381DF55AE50033B4A4 /* HoursTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC4371DF55AE50033B4A4 /* HoursTableViewController.m */; };
+		C69EC43C1DF574AF0033B4A4 /* BeautyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C69EC43A1DF574AF0033B4A4 /* BeautyTableViewCell.m */; };
+		C69EC43D1DF574AF0033B4A4 /* BeautyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69EC43B1DF574AF0033B4A4 /* BeautyTableViewCell.xib */; };
+		C6B804961DF57E6600332972 /* BeautyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B804951DF57E6600332972 /* BeautyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +119,13 @@
 		C69EC42C1DF53FCF0033B4A4 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		C69EC42D1DF53FCF0033B4A4 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		C69EC42E1DF53FCF0033B4A4 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		C69EC4361DF55AE50033B4A4 /* HoursTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursTableViewController.h; sourceTree = "<group>"; };
+		C69EC4371DF55AE50033B4A4 /* HoursTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursTableViewController.m; sourceTree = "<group>"; };
+		C69EC4391DF574AF0033B4A4 /* BeautyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyTableViewCell.h; sourceTree = "<group>"; };
+		C69EC43A1DF574AF0033B4A4 /* BeautyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyTableViewCell.m; sourceTree = "<group>"; };
+		C69EC43B1DF574AF0033B4A4 /* BeautyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeautyTableViewCell.xib; sourceTree = "<group>"; };
+		C6B804941DF57E6600332972 /* BeautyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyTableViewController.h; sourceTree = "<group>"; };
+		C6B804951DF57E6600332972 /* BeautyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyTableViewController.m; sourceTree = "<group>"; };
 		D7BFEA6B611361A70EF91961 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -475,6 +486,9 @@
 				C66BE1A01DF1894700C36593 /* NewsVideoTableViewCell.h */,
 				C66BE1A11DF1894700C36593 /* NewsVideoTableViewCell.m */,
 				C66BE1A21DF1894700C36593 /* NewsVideoTableViewCell.xib */,
+				C69EC4391DF574AF0033B4A4 /* BeautyTableViewCell.h */,
+				C69EC43A1DF574AF0033B4A4 /* BeautyTableViewCell.m */,
+				C69EC43B1DF574AF0033B4A4 /* BeautyTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -488,6 +502,10 @@
 				C66BE1A71DF1894700C36593 /* NewsTopTableViewController.m */,
 				C66BE1A81DF1894700C36593 /* NewsViewController.h */,
 				C66BE1A91DF1894700C36593 /* NewsViewController.m */,
+				C69EC4361DF55AE50033B4A4 /* HoursTableViewController.h */,
+				C69EC4371DF55AE50033B4A4 /* HoursTableViewController.m */,
+				C6B804941DF57E6600332972 /* BeautyTableViewController.h */,
+				C6B804951DF57E6600332972 /* BeautyTableViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -638,6 +656,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69EC43D1DF574AF0033B4A4 /* BeautyTableViewCell.xib in Resources */,
 				704C3D201DF0F8DD0058C379 /* LaunchScreen.storyboard in Resources */,
 				C66BE1B31DF1894700C36593 /* NewsPicTableViewCell.xib in Resources */,
 				C66BE1B51DF1894700C36593 /* NewsTopTableViewCell.xib in Resources */,
@@ -725,11 +744,13 @@
 				704C3D121DF0F8DD0058C379 /* main.m in Sources */,
 				C69EC4351DF53FCF0033B4A4 /* UIView+SDExtension.m in Sources */,
 				C66BE1B01DF1894700C36593 /* NewsModel.m in Sources */,
+				C69EC43C1DF574AF0033B4A4 /* BeautyTableViewCell.m in Sources */,
 				C69EC4301DF53FCF0033B4A4 /* TAAnimatedDotView.m in Sources */,
 				C69EC4331DF53FCF0033B4A4 /* SDCollectionViewCell.m in Sources */,
 				C66BE1B81DF1894700C36593 /* NewsNavViewController.m in Sources */,
 				C66BE1AF1DF1894700C36593 /* MyTableViewController.m in Sources */,
 				C66BE1AB1DF1894700C36593 /* FoundViewController.m in Sources */,
+				C6B804961DF57E6600332972 /* BeautyTableViewController.m in Sources */,
 				C66BE1B41DF1894700C36593 /* NewsTopTableViewCell.m in Sources */,
 				C66BE1BA1DF1894700C36593 /* NewsViewController.m in Sources */,
 				C66BE1AD1DF1894700C36593 /* VideosViewController.m in Sources */,
@@ -737,6 +758,7 @@
 				C66BE1B21DF1894700C36593 /* NewsPicTableViewCell.m in Sources */,
 				C69EC4321DF53FCF0033B4A4 /* TAPageControl.m in Sources */,
 				C69EC4341DF53FCF0033B4A4 /* SDCycleScrollView.m in Sources */,
+				C69EC4381DF55AE50033B4A4 /* HoursTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

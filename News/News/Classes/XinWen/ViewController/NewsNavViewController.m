@@ -15,11 +15,18 @@
 @implementation NewsNavViewController
 
 
++ (void)initialize{
+    
+    //创建 bar 实例
+    UINavigationBar * bar = [UINavigationBar appearance];
+    
+    [bar setBackgroundImage:[UIImage imageNamed:@"tou_1242"] forBarMetrics:UIBarMetricsDefault];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.interactivePopGestureRecognizer.delegate = self;
-
     // Do any additional setup after loading the view.
 }
 

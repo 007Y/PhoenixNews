@@ -9,9 +9,6 @@
 #import "NewsModel.h"
 
 @implementation NewsModel
-- (NSString *)description{
-    return [NSString stringWithFormat:@"%d %d",self.hasSlide,self.hasVideo];
-}
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
     
 }
@@ -23,10 +20,13 @@
     }];
 }
 - (NSString *)updateTime{
-    
-    NSArray * arrtime = [_updateTime componentsSeparatedByString:@" "];
-    NSString * timeb = [arrtime.lastObject substringToIndex:5];
-    return timeb;
+    if (_updateTime.length > 0) {
+        NSArray * arrtime = [_updateTime componentsSeparatedByString:@" "];
+        NSString * timeb = [arrtime.lastObject substringToIndex:5];
+        return timeb;
+
+    }
+    return _updateTime;
 }
 - (NSString *)commentsall{
     int all = [_commentsall intValue];
@@ -36,4 +36,13 @@
     }
     return _commentsall;
 }
+- (CGFloat)cellHeight{
+    NSDictionary * sizeDic = self.img[0];
+    int width = [sizeDic[@"size"][@"width"] intValue];
+    int height = [sizeDic[@"size"][@"height"] intValue];
+    return height * ScreenWidth / width +10 + 10 + 15;
+}
+
+
+
 @end

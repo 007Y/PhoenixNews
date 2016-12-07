@@ -10,7 +10,7 @@
 #import "NewsModel.h"
 #import "NewsTopTableViewCell.h"
 #import "WebViewController.h"
-#import "DetailTableViewController.h"
+#import "DetailViewController.h"
 @interface HoursTableViewController ()
 @property(nonatomic,strong)NSMutableArray * dataArray;
 @property(nonatomic,strong)NSMutableArray * timeArray;
@@ -20,6 +20,7 @@ static NSString * const topRedifier = @"topRedifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"24小时";
     _dataArray = [NSMutableArray array];
     _timeArray = [NSMutableArray array];
     // Uncomment the following line to preserve selection between presentations.
@@ -116,7 +117,7 @@ static NSString * const topRedifier = @"topRedifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
      NSArray * ar = _dataArray[indexPath.section];
     NewsModel * model = ar[indexPath.row];
-    DetailTableViewController * detail = [[DetailTableViewController alloc] init];
+    DetailViewController * detail = [[DetailViewController alloc] init];
     detail.url = model.ID;
 //    WebViewController * web = [[WebViewController alloc] init];
 //    web.url = model.commentsUrl;

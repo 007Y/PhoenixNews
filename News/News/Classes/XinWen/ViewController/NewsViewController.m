@@ -10,6 +10,7 @@
 #import "NewsTopTableViewController.h"
 #import "HoursTableViewController.h"
 #import "BeautyTableViewController.h"
+#import "NuanTableViewController.h"
 @interface NewsViewController ()<UIScrollViewDelegate>
 @property(nonatomic,strong)NSMutableArray * buttonArray;
 @property(nonatomic,strong)UIButton *selectedTitleButton;
@@ -125,7 +126,14 @@
     [self addChildViewController:top];
     top.view.frame = self.scroll.bounds;
     [self.scroll addSubview:top.view];
+    NuanTableViewController * nuan = [[NuanTableViewController alloc] init];
+    [self addChildViewController:nuan];
+    
+    nuan.view.frame = CGRectMake(ScreenWidth * 1, 0, ScreenWidth, ScreenHeight);
+    [self.scroll addSubview:nuan.view];
+    
     BeautyTableViewController *beauty = [[BeautyTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    
     [self addChildViewController:beauty];
     beauty.view.frame = CGRectMake(ScreenWidth * 2, 0, ScreenWidth, ScreenHeight);
     [self.scroll addSubview:beauty.view];

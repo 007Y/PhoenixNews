@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>GDataXML-HTML.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -62,6 +67,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>29740D369C31353FFBFC45399F54C189</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3EB4BB385D2092B349825F3F4F8DC8A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54453B0D641D4191A7711B7ECD9DB0F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>692726478DC2581E7EEC829BAD9C58A2</key>
 		<dict>
 			<key>primary</key>
@@ -92,6 +112,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B40E5CDDDD93BF2B887FFBFB5B28A037</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BF0CEC458C0E3DE358C4DD98B906C454</key>
 		<dict>
 			<key>primary</key>
@@ -103,6 +128,11 @@
 			<true/>
 		</dict>
 		<key>CCB7CB485E21C0801790635C83376BA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEA433434E73E2E09F093C65198A9D3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

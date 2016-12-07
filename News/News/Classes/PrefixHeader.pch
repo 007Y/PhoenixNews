@@ -32,6 +32,7 @@
 #define Beauty(page)   [NSString stringWithFormat:@"http://api.3g.ifeng.com/clientShortNews?type=beauty&page=%d&ltime=0",page]
 #define BeautyCate(page)   [NSString stringWithFormat:@"http://api.3g.ifeng.com/clientShortNews?type=%@&page=1&ltime=0",page]
 
+#define warmPage(page) [NSString stringWithFormat:@"http://api.iclient.ifeng.com/ClientNews?id=NXWPD,FOCUSNXWPD&page=%d",page]
 
 //#import "UIView+Category.h"
 #import "AFNetworking.h"
@@ -41,7 +42,7 @@
 
 #import "SVProgressHUD.h"
 #import "SDCycleScrollView.h"
-
+#import "GDataXMLNode.h"
 #define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
 

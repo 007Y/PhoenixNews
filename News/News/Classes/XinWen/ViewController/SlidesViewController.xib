@@ -42,6 +42,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="35" id="Gj4-je-em0"/>
                             </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                             <state key="normal" backgroundImage="video_comment">
                                 <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>

@@ -23,7 +23,7 @@
 // 屏幕尺寸
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define NewsTopUrl(page) [NSString stringWithFormat:@"http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10,SYRECOMMEND&page=%ld&gv=5.3.2&av=5.3.2",page]
+#define NewsTopUrl(page) [NSString stringWithFormat:@"http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10,SYRECOMMEND&page=%d&gv=5.3.2&av=5.3.2",page]
 
 #define NewsComment(url) [NSString stringWithFormat:@"http://icomment.ifeng.com/geti.php?pagesize=20&p=0&docurl=%@",url]
 

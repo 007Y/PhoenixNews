@@ -11,9 +11,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UILabel *zanLabel;
 @property (weak, nonatomic) IBOutlet UILabel *comentLabel;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *height;
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *width;
 @property(nonatomic,assign)int width1;
 @property(nonatomic,assign)int height1;
 

@@ -50,10 +50,10 @@ static NSString * const MyRedifier = @"MyRedifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyRedifier forIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = _titles[indexPath.row];
-    NSArray *pics= @[@"userCenter_NightMode",@"userCenter_setting",@"setting_clearCache"];
+//    NSArray *pics= @[@"userCenter_NightMode",@"userCenter_setting",@"setting_clearCache"];
 
     
-    [cell.left.view addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:pics[indexPath.row]]]];
+//    [cell.left.view addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:pics[indexPath.row]]]];
     return cell;
 }
 

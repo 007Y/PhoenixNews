@@ -43,8 +43,8 @@
 #import "SVProgressHUD.h"
 #import "SDCycleScrollView.h"
 #import "GDataXMLNode.h"
-#define MAS_SHORTHAND
-#define MAS_SHORTHAND_GLOBALS
+//#define MAS_SHORTHAND
+//#define MAS_SHORTHAND_GLOBALS
 
 #import "Masonry.h"
 

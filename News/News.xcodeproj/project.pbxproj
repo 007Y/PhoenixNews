@@ -19,6 +19,8 @@
 		0542CC1F1DF959E0000C7FDE /* SuperViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0542CC161DF959E0000C7FDE /* SuperViewTableViewCell.xib */; };
 		0542CC201DF959E0000C7FDE /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CC181DF959E0000C7FDE /* CommentTableViewCell.m */; };
 		0542CC211DF959E0000C7FDE /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0542CC191DF959E0000C7FDE /* CommentTableViewCell.xib */; };
+		0542CC261DF96202000C7FDE /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CC241DF96202000C7FDE /* CommentViewController.m */; };
+		0542CC271DF96202000C7FDE /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0542CC251DF96202000C7FDE /* CommentViewController.xib */; };
 		107FBE5D6BA07EA466134910 /* libPods-News.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6695801003149B944C365E5 /* libPods-News.a */; };
 		704C3D121DF0F8DD0058C379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 704C3D111DF0F8DD0058C379 /* main.m */; };
 		704C3D1B1DF0F8DD0058C379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704C3D191DF0F8DD0058C379 /* Main.storyboard */; };
@@ -127,6 +129,9 @@
 		0542CC171DF959E0000C7FDE /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
 		0542CC181DF959E0000C7FDE /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
 		0542CC191DF959E0000C7FDE /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		0542CC231DF96202000C7FDE /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		0542CC241DF96202000C7FDE /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		0542CC251DF96202000C7FDE /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
 		52DA1627C4D7149FD5D23F2B /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
 		704C3D0D1DF0F8DD0058C379 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704C3D111DF0F8DD0058C379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -686,6 +691,9 @@
 				C6B804951DF57E6600332972 /* BeautyTableViewController.m */,
 				C6E0A1841DF662FD005EC263 /* BeautyCateTableViewController.h */,
 				C6E0A1851DF662FD005EC263 /* BeautyCateTableViewController.m */,
+				0542CC231DF96202000C7FDE /* CommentViewController.h */,
+				0542CC241DF96202000C7FDE /* CommentViewController.m */,
+				0542CC251DF96202000C7FDE /* CommentViewController.xib */,
 				C6626A551DF7AA0600E45C8F /* DetailViewController.h */,
 				C6626A561DF7AA0600E45C8F /* DetailViewController.m */,
 				C6E886841DF90DAC00360E67 /* DetailViewController.xib */,
@@ -867,6 +875,7 @@
 				70F8AEA31DF94EEF0092880C /* VideoTableViewCell.xib in Resources */,
 				C6072B491DF7F53500AF91F5 /* MyViewHeader.xib in Resources */,
 				70F8AE9B1DF94EEF0092880C /* DetailVideoViewController.xib in Resources */,
+				0542CC271DF96202000C7FDE /* CommentViewController.xib in Resources */,
 				70F8AEA61DF94EEF0092880C /* ViewController.xib in Resources */,
 				C66BE1B51DF1894700C36593 /* NewsTopTableViewCell.xib in Resources */,
 				704C3D1D1DF0F8DD0058C379 /* Assets.xcassets in Resources */,
@@ -992,6 +1001,7 @@
 				C6E886A81DF933E200360E67 /* NewsCommentViewController.m in Sources */,
 				C66BE1B21DF1894700C36593 /* NewsPicTableViewCell.m in Sources */,
 				C69EC4321DF53FCF0033B4A4 /* TAPageControl.m in Sources */,
+				0542CC261DF96202000C7FDE /* CommentViewController.m in Sources */,
 				70F8AE971DF94EEF0092880C /* CommentVideoModel.m in Sources */,
 				70F8AE991DF94EEF0092880C /* CommentHeaderView.m in Sources */,
 				C69EC4341DF53FCF0033B4A4 /* SDCycleScrollView.m in Sources */,

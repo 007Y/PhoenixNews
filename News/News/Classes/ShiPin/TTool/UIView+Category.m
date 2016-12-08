@@ -10,6 +10,12 @@
 
 @implementation UIView (Category)
 
+
++ (instancetype)viewFromXib
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+}
+
 - (void)setX:(CGFloat)x
 {
     //self.frame结构体不能直接赋值

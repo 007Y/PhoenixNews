@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentViewController">
+            <connections>
+                <outlet property="bottomSpace" destination="afx-hB-XSB" id="aFL-1d-Qoh"/>
+                <outlet property="tableView" destination="59Z-KD-s3r" id="lUg-hl-ni3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOB-0Q-Nts">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfC-2K-5oA">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="YLs-d7-v0H"/>
+                            </constraints>
+                            <state key="normal" image="comment-bar-voice"/>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AZ2-2N-kaH">
+                            <rect key="frame" x="44" y="5" width="287" height="34"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9V-2z-tX0">
+                            <rect key="frame" x="331" y="0.0" width="44" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="0Qa-ae-kVr"/>
+                            </constraints>
+                            <state key="normal" image="comment_bar_at_icon"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dfC-2K-5oA" firstAttribute="top" secondItem="cOB-0Q-Nts" secondAttribute="top" id="5qy-cg-2Ny"/>
+                        <constraint firstItem="X9V-2z-tX0" firstAttribute="leading" secondItem="AZ2-2N-kaH" secondAttribute="trailing" id="CKp-dx-7sF"/>
+                        <constraint firstAttribute="bottom" secondItem="AZ2-2N-kaH" secondAttribute="bottom" constant="5" id="MRs-Sb-PrI"/>
+                        <constraint firstAttribute="trailing" secondItem="X9V-2z-tX0" secondAttribute="trailing" id="OYu-LS-hSn"/>
+                        <constraint firstItem="AZ2-2N-kaH" firstAttribute="top" secondItem="cOB-0Q-Nts" secondAttribute="top" constant="5" id="Qrc-8d-nhu"/>
+                        <constraint firstItem="AZ2-2N-kaH" firstAttribute="leading" secondItem="dfC-2K-5oA" secondAttribute="trailing" id="YIw-04-DOg"/>
+                        <constraint firstAttribute="height" constant="44" id="YWL-JD-wv7"/>
+                        <constraint firstItem="dfC-2K-5oA" firstAttribute="leading" secondItem="cOB-0Q-Nts" secondAttribute="leading" id="fa1-eL-HKX"/>
+                        <constraint firstAttribute="bottom" secondItem="X9V-2z-tX0" secondAttribute="bottom" constant="6" id="kBb-df-Y3h"/>
+                        <constraint firstItem="X9V-2z-tX0" firstAttribute="top" secondItem="cOB-0Q-Nts" secondAttribute="top" id="qFC-DM-x3i"/>
+                        <constraint firstAttribute="bottom" secondItem="dfC-2K-5oA" secondAttribute="bottom" id="yJS-rl-39K"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="59Z-KD-s3r">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="59Z-KD-s3r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dob-pH-UKr"/>
+                <constraint firstItem="59Z-KD-s3r" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X2f-be-jca"/>
+                <constraint firstAttribute="bottom" secondItem="cOB-0Q-Nts" secondAttribute="bottom" id="afx-hB-XSB"/>
+                <constraint firstAttribute="trailing" secondItem="59Z-KD-s3r" secondAttribute="trailing" id="itu-6g-x9w"/>
+                <constraint firstItem="cOB-0Q-Nts" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iu3-WI-lm3"/>
+                <constraint firstAttribute="trailing" secondItem="cOB-0Q-Nts" secondAttribute="trailing" id="jfm-UT-ZdM"/>
+                <constraint firstItem="cOB-0Q-Nts" firstAttribute="top" secondItem="59Z-KD-s3r" secondAttribute="bottom" id="pqg-2D-ulu"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="83.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="comment-bar-voice" width="29" height="29"/>
+        <image name="comment_bar_at_icon" width="27" height="27"/>
+    </resources>
+</document>

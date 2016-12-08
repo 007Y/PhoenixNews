@@ -12,7 +12,7 @@
 
 #import "MJExtension.h"
 
-#import "DetailViewController.h"
+#import "CommentViewController.h"
 
 @interface SuperViewController ()
 /** 请求 */
@@ -211,7 +211,7 @@ static NSString * const SuperCellId = @"suwerperCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    DetailViewController *comment = [[DetailViewController alloc] init];
+    CommentViewController *comment = [[CommentViewController alloc] init];
     
     comment.model = self.topics[indexPath.row];
     

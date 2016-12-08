@@ -43,6 +43,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="35" id="ivS-V6-MDq"/>
                             </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                             <state key="normal" backgroundImage="video_comment">
                                 <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -52,7 +53,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="pcU-ad-jkZ"/>
                             </constraints>
-                            <state key="normal" title="Button" image="tb_lit_collect"/>
+                            <state key="normal" image="tb_lit_collect"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoA-b3-wDM">
                             <rect key="frame" x="335" y="10" width="30" height="30"/>

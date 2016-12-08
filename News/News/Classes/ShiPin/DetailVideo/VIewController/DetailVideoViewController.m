@@ -128,6 +128,8 @@ static NSString * const HeaderId = @"reuse";
 - (void)setUpTableView{
     [self requestData];
     
+    self.detailTableView.separatorColor = [UIColor clearColor];
+
     self.detailTableView.delegate = self;
     self.detailTableView.dataSource = self;
     

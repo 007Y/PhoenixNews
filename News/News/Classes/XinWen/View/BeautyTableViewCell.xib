@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -86,6 +86,7 @@
                     <constraint firstItem="Bup-lQ-0sy" firstAttribute="top" secondItem="Pow-EN-12J" secondAttribute="top" id="e8L-cl-MZm"/>
                     <constraint firstAttribute="bottom" secondItem="h50-YQ-1Oe" secondAttribute="bottom" constant="10" id="imE-he-yHQ"/>
                     <constraint firstItem="WWk-rK-hjD" firstAttribute="leading" secondItem="6UW-zu-ftn" secondAttribute="trailing" constant="5" id="t8F-Wi-Fsv"/>
+                    <constraint firstAttribute="trailing" secondItem="rdM-af-jzf" secondAttribute="trailing" id="zlY-Mt-Lok"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

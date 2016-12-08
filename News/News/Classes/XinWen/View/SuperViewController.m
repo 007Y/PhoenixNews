@@ -215,7 +215,7 @@ static NSString * const SuperCellId = @"suwerperCell";
     
     comment.model = self.topics[indexPath.row];
     
-    [self.navigationController pushViewController:comment animated:YES];
+    [self presentViewController:comment animated:YES completion:nil];
     
 }
 

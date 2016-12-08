@@ -21,24 +21,24 @@
     
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
+    scrollView.backgroundColor = [UIColor redColor];
     scrollView.frame = [UIScreen mainScreen].bounds;
     scrollView.backgroundColor = [UIColor blackColor];
     
     //如果不加在最下面, 按钮没办法显示出来
-//    [self.view insertSubview:scrollView atIndex:0];
+    [self.view insertSubview:scrollView atIndex:0];
     
     
     _imageView = [[UIImageView alloc] init];
-    [_imageView sd_setImageWithURL:[NSURL URLWithString:self.model.large_image]];
+    [_imageView sd_setImageWithURL:[NSURL URLWithString:self.model.img[0][@"url"]]];
     
     [scrollView addSubview:_imageView];
     // 图片的尺寸
     _imageView.x = 0;
     _imageView.width = ScreenWidth;
-    NSLog(@"%f",self.model.width);
     
-    if(self.model.width != 0){
-    _imageView.height = self.model.height * ScreenWidth / self.model.width;
+    if([self.model.img[0][@"size"][@"width"] intValue] != 0){
+    _imageView.height = [self.model.img[0][@"size"][@"height"] intValue] * ScreenWidth / [self.model.img[0][@"size"][@"width"] intValue];
     }else{
         return;
     }

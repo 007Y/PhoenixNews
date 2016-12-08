@@ -11,7 +11,7 @@
 #import <WebKit/WebKit.h>
 #import "VideoCommentTableViewCell.h"
 #import "DetailsPage.h"
-#define CELLHOTCOMMNETVIDEOURL(page,guid) [NSString stringWithFormat:@"http://icomment.ifeng.com/geti.php?pagesize=20&p=%d&docurl=%@",page,guid]
+#define CELLHOTCOMMNETVIDEOUR(page,guid) [NSString stringWithFormat:@"http://icomment.ifeng.com/geti.php?pagesize=20&p=%d&docurl=%@",page,guid]
 
 #import "NewsCommentViewController.h"
 @interface DetailViewController ()<UITableViewDelegate,UITableViewDataSource,UIWebViewDelegate>

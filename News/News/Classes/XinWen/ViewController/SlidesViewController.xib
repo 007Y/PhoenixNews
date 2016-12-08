@@ -21,7 +21,7 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="doK-eJ-5dh">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FM-ry-Gbb">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
@@ -104,7 +104,7 @@
                 <constraint firstAttribute="trailing" secondItem="5FM-ry-Gbb" secondAttribute="trailing" id="dXQ-Ky-jxS"/>
                 <constraint firstItem="5FM-ry-Gbb" firstAttribute="leading" secondItem="doK-eJ-5dh" secondAttribute="leading" id="xZO-ym-cI5"/>
             </constraints>
-            <point key="canvasLocation" x="31" y="97"/>
+            <point key="canvasLocation" x="-29" y="89"/>
         </view>
     </objects>
     <resources>

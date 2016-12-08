@@ -29,7 +29,10 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="44" id="YLs-d7-v0H"/>
                             </constraints>
-                            <state key="normal" image="comment-bar-voice"/>
+                            <state key="normal" image="liveRoom_reporter_back"/>
+                            <connections>
+                                <action selector="backClick:" destination="-1" eventType="touchUpInside" id="9uN-z9-qdp"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AZ2-2N-kaH">
                             <rect key="frame" x="44" y="5" width="287" height="34"/>
@@ -42,7 +45,6 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="44" id="0Qa-ae-kVr"/>
                             </constraints>
-                            <state key="normal" image="comment_bar_at_icon"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,7 +81,6 @@
         </view>
     </objects>
     <resources>
-        <image name="comment-bar-voice" width="29" height="29"/>
-        <image name="comment_bar_at_icon" width="27" height="27"/>
+        <image name="liveRoom_reporter_back" width="60" height="60"/>
     </resources>
 </document>

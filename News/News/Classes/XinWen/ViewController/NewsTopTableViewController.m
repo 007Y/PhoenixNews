@@ -87,7 +87,7 @@ static NSString * const picRedifier = @"picRedifier";
         NSMutableArray * liArray = [NSMutableArray array];
         for (NewsModel * model in _dataArray) {
             
-            if ([model.type containsString:@"live"] || [model.type containsString:@"topic"]) {
+            if ([model.type containsString:@"live"] || [model.type containsString:@"topic"] || [model.type containsString:@"video"]) {
                 [liArray addObject:model];
             }
         }
@@ -113,7 +113,7 @@ static NSString * const picRedifier = @"picRedifier";
         NSMutableArray * liArray = [NSMutableArray array];
         for (NewsModel * model in _dataArray) {
             
-            if ([model.type containsString:@"live"] || [model.type containsString:@"topic"]) {
+            if ([model.type containsString:@"live"] || [model.type containsString:@"topic"]|| [model.type containsString:@"video"]) {
                 [liArray addObject:model];
             }
         }
@@ -213,8 +213,9 @@ static NSString * const picRedifier = @"picRedifier";
     NewsModel * model = _slideArray[index];
     SlidesViewController * slide = [[SlidesViewController alloc] init];
     slide.url = model.ID;
-    [self.navigationController pushViewController:slide animated:YES];
-
+    slide.commentall = model.commentsall;
+    slide.commenturl = model.commentsUrl;
+    [self presentViewController:slide animated:YES completion:nil];
 }
 
 /*

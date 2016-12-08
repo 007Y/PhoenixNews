@@ -52,14 +52,15 @@
     
 }
 - (void)getscroll{
-    UIScrollView * scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 60)];
+    UIScrollView * scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 120)];
     scroll.pagingEnabled = YES;
+    _scroll = scroll;
     scroll.showsVerticalScrollIndicator = NO;
     scroll.showsHorizontalScrollIndicator = NO;
     scroll.delegate = self;
     scroll.contentSize =CGSizeMake(ScreenWidth * _slideArray.count, ScreenHeight);
     for (int i = 0 ; i < _slideArray.count; i ++) {
-        UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, ScreenHeight - 60)];
+        UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, ScreenHeight)];
         
         
         SlideModel * model = _slideArray[i];
@@ -70,7 +71,7 @@
         CGRect rect = [str boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 40,2000)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]} context:nil];
         UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(i * ScreenWidth + 10, ScreenHeight - 200 - rect.size.height, ScreenWidth - 20, rect.size.height)];
         label.textColor = [UIColor whiteColor];
-        label.userInteractionEnabled = YES;
+//        label.userInteractionEnabled = YES;
         label.numberOfLines = 0;
         label.tag = 500 + i;
         label.text = str;

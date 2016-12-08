@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SuperModel.h"
+#import "NewsModel.h"
 @interface BigImageViewController : UIViewController
-@property (nonatomic, strong)SuperModel * model;
+@property (nonatomic, strong)NewsModel * model;
 @end

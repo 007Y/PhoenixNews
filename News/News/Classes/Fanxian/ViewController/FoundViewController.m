@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"猜你喜欢";
     LikeTableViewController * like1 = [[LikeTableViewController alloc] init];
     [self addChildViewController:like1];
      [self.view addSubview:like1.view];

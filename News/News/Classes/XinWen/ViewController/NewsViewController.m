@@ -48,11 +48,11 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:LeftButton];
     
     
-    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightButton addTarget:self action:@selector(rightClick:) forControlEvents:UIControlEventTouchUpInside];
-    [rightButton setImage:[UIImage imageNamed:@"24icon"] forState:UIControlStateNormal];
-    [rightButton sizeToFit];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+//    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [rightButton addTarget:self action:@selector(rightClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [rightButton setImage:[UIImage imageNamed:@"24icon"] forState:UIControlStateNormal];
+//    [rightButton sizeToFit];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
 }
 - (void)leftClick:(UIButton *)sender{
     HoursTableViewController * hour = [[HoursTableViewController alloc]initWithStyle:UITableViewStyleGrouped];

@@ -187,7 +187,12 @@ static NSString * const picRedifier = @"picRedifier";
     if ([model.type isEqualToString:@"slide"]) {
         SlidesViewController * slide = [[SlidesViewController alloc] init];
         slide.url = model.ID;
-        [self.navigationController pushViewController:slide animated:YES];
+        slide.commentall = model.commentsall;
+        slide.commenturl = model.commentsUrl;
+        [self presentViewController:slide animated:YES completion:^{
+            
+        }];
+
     
     }else if ([model.type containsString:@"video"] || [model.type containsString:@"live"]){
 
@@ -195,7 +200,10 @@ static NSString * const picRedifier = @"picRedifier";
         DetailViewController * detail = [[DetailViewController alloc] init];
         detail.url = model.ID;
         detail.commenturl = model.commentsUrl;
-        [self.navigationController pushViewController:detail animated:YES];
+        detail.commentall = model.commentsall;
+        [self presentViewController:detail animated:YES completion:^{
+            
+        }];
     }
 
 }

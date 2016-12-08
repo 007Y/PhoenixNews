@@ -17,7 +17,6 @@
 		C6072B411DF7EA2F00AF91F5 /* NuanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6072B401DF7EA2F00AF91F5 /* NuanTableViewController.m */; };
 		C6072B471DF7F52400AF91F5 /* MyViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C6072B461DF7F52400AF91F5 /* MyViewHeader.m */; };
 		C6072B491DF7F53500AF91F5 /* MyViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6072B481DF7F53500AF91F5 /* MyViewHeader.xib */; };
-		C6072B4C1DF8057900AF91F5 /* TopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6072B4B1DF8057900AF91F5 /* TopicTableViewController.m */; };
 		C6626A571DF7AA0600E45C8F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6626A561DF7AA0600E45C8F /* DetailViewController.m */; };
 		C6626A5A1DF7AFFB00E45C8F /* SlideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6626A591DF7AFFB00E45C8F /* SlideModel.m */; };
 		C6626A5D1DF7B24600E45C8F /* SlidesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6626A5C1DF7B24600E45C8F /* SlidesViewController.m */; };
@@ -50,7 +49,6 @@
 		C6B804961DF57E6600332972 /* BeautyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B804951DF57E6600332972 /* BeautyTableViewController.m */; };
 		C6E0A1861DF662FD005EC263 /* BeautyCateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E0A1851DF662FD005EC263 /* BeautyCateTableViewController.m */; };
 		C6E0A2281DF6C80F005EC263 /* DetailsPage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E0A2271DF6C80F005EC263 /* DetailsPage.m */; };
-		C6E0A22E1DF6C8F3005EC263 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E0A22C1DF6C8F3005EC263 /* WebViewController.m */; };
 		C6E8867E1DF8F89D00360E67 /* FoundSlidesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E8867D1DF8F89D00360E67 /* FoundSlidesTableViewCell.m */; };
 		C6E886801DF8F8B200360E67 /* FoundSlidesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E8867F1DF8F8B200360E67 /* FoundSlidesTableViewCell.xib */; };
 		C6E886831DF8FC5300360E67 /* LikeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E886821DF8FC5300360E67 /* LikeTableViewController.m */; };
@@ -62,6 +60,8 @@
 		C6E8869D1DF91F5500360E67 /* UIImageView+Header.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E886991DF91F5500360E67 /* UIImageView+Header.m */; };
 		C6E8869E1DF91F5500360E67 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E8869B1DF91F5500360E67 /* UIView+Category.m */; };
 		C6E886A81DF933E200360E67 /* NewsCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E886A71DF933E200360E67 /* NewsCommentViewController.m */; };
+		C6E886AA1DF93FCB00360E67 /* SlidesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E886A91DF93FCB00360E67 /* SlidesViewController.xib */; };
+		C6E886AC1DF9422700360E67 /* NewsCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E886AB1DF9422700360E67 /* NewsCommentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,8 +101,6 @@
 		C6072B451DF7F52400AF91F5 /* MyViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewHeader.h; sourceTree = "<group>"; };
 		C6072B461DF7F52400AF91F5 /* MyViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewHeader.m; sourceTree = "<group>"; };
 		C6072B481DF7F53500AF91F5 /* MyViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewHeader.xib; sourceTree = "<group>"; };
-		C6072B4A1DF8057900AF91F5 /* TopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicTableViewController.h; sourceTree = "<group>"; };
-		C6072B4B1DF8057900AF91F5 /* TopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTableViewController.m; sourceTree = "<group>"; };
 		C6626A551DF7AA0600E45C8F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		C6626A561DF7AA0600E45C8F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C6626A581DF7AFFB00E45C8F /* SlideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideModel.h; sourceTree = "<group>"; };
@@ -164,8 +162,6 @@
 		C6E0A1851DF662FD005EC263 /* BeautyCateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyCateTableViewController.m; sourceTree = "<group>"; };
 		C6E0A2261DF6C80F005EC263 /* DetailsPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsPage.h; sourceTree = "<group>"; };
 		C6E0A2271DF6C80F005EC263 /* DetailsPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsPage.m; sourceTree = "<group>"; };
-		C6E0A22B1DF6C8F3005EC263 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		C6E0A22C1DF6C8F3005EC263 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		C6E8867C1DF8F89D00360E67 /* FoundSlidesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoundSlidesTableViewCell.h; path = News/Classes/XinWen/ViewController/FoundSlidesTableViewCell.h; sourceTree = SOURCE_ROOT; };
 		C6E8867D1DF8F89D00360E67 /* FoundSlidesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoundSlidesTableViewCell.m; path = News/Classes/XinWen/ViewController/FoundSlidesTableViewCell.m; sourceTree = SOURCE_ROOT; };
 		C6E8867F1DF8F8B200360E67 /* FoundSlidesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FoundSlidesTableViewCell.xib; path = News/Classes/XinWen/ViewController/FoundSlidesTableViewCell.xib; sourceTree = SOURCE_ROOT; };
@@ -185,6 +181,8 @@
 		C6E8869B1DF91F5500360E67 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		C6E886A61DF933E200360E67 /* NewsCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCommentViewController.h; sourceTree = "<group>"; };
 		C6E886A71DF933E200360E67 /* NewsCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCommentViewController.m; sourceTree = "<group>"; };
+		C6E886A91DF93FCB00360E67 /* SlidesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlidesViewController.xib; sourceTree = "<group>"; };
+		C6E886AB1DF9422700360E67 /* NewsCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCommentViewController.xib; sourceTree = "<group>"; };
 		D7BFEA6B611361A70EF91961 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -595,14 +593,12 @@
 				C6E886841DF90DAC00360E67 /* DetailViewController.xib */,
 				C6626A5B1DF7B24600E45C8F /* SlidesViewController.h */,
 				C6626A5C1DF7B24600E45C8F /* SlidesViewController.m */,
+				C6E886A91DF93FCB00360E67 /* SlidesViewController.xib */,
 				C6072B3F1DF7EA2F00AF91F5 /* NuanTableViewController.h */,
 				C6072B401DF7EA2F00AF91F5 /* NuanTableViewController.m */,
 				C6E886A61DF933E200360E67 /* NewsCommentViewController.h */,
 				C6E886A71DF933E200360E67 /* NewsCommentViewController.m */,
-				C6072B4A1DF8057900AF91F5 /* TopicTableViewController.h */,
-				C6072B4B1DF8057900AF91F5 /* TopicTableViewController.m */,
-				C6E0A22B1DF6C8F3005EC263 /* WebViewController.h */,
-				C6E0A22C1DF6C8F3005EC263 /* WebViewController.m */,
+				C6E886AB1DF9422700360E67 /* NewsCommentViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -755,12 +751,14 @@
 			files = (
 				C69EC43D1DF574AF0033B4A4 /* BeautyTableViewCell.xib in Resources */,
 				704C3D201DF0F8DD0058C379 /* LaunchScreen.storyboard in Resources */,
+				C6E886AC1DF9422700360E67 /* NewsCommentViewController.xib in Resources */,
 				C66BE1B31DF1894700C36593 /* NewsPicTableViewCell.xib in Resources */,
 				C6E886801DF8F8B200360E67 /* FoundSlidesTableViewCell.xib in Resources */,
 				C6072B491DF7F53500AF91F5 /* MyViewHeader.xib in Resources */,
 				C66BE1B51DF1894700C36593 /* NewsTopTableViewCell.xib in Resources */,
 				C6E886951DF91DA500360E67 /* VideoCommentTableViewCell.xib in Resources */,
 				704C3D1D1DF0F8DD0058C379 /* Assets.xcassets in Resources */,
+				C6E886AA1DF93FCB00360E67 /* SlidesViewController.xib in Resources */,
 				C6E886851DF90DAC00360E67 /* DetailViewController.xib in Resources */,
 				C66BE1B71DF1894700C36593 /* NewsVideoTableViewCell.xib in Resources */,
 				704C3D1B1DF0F8DD0058C379 /* Main.storyboard in Resources */,
@@ -855,7 +853,6 @@
 				C69EC4331DF53FCF0033B4A4 /* SDCollectionViewCell.m in Sources */,
 				C66BE1B81DF1894700C36593 /* NewsNavViewController.m in Sources */,
 				C66BE1AF1DF1894700C36593 /* MyTableViewController.m in Sources */,
-				C6E0A22E1DF6C8F3005EC263 /* WebViewController.m in Sources */,
 				C66BE1AB1DF1894700C36593 /* FoundViewController.m in Sources */,
 				C6B804961DF57E6600332972 /* BeautyTableViewController.m in Sources */,
 				C6626A5A1DF7AFFB00E45C8F /* SlideModel.m in Sources */,
@@ -865,7 +862,6 @@
 				C66BE1BA1DF1894700C36593 /* NewsViewController.m in Sources */,
 				C66BE1AD1DF1894700C36593 /* VideosViewController.m in Sources */,
 				C6E8869E1DF91F5500360E67 /* UIView+Category.m in Sources */,
-				C6072B4C1DF8057900AF91F5 /* TopicTableViewController.m in Sources */,
 				C69EC4311DF53FCF0033B4A4 /* TADotView.m in Sources */,
 				C6626A571DF7AA0600E45C8F /* DetailViewController.m in Sources */,
 				C6E886A81DF933E200360E67 /* NewsCommentViewController.m in Sources */,

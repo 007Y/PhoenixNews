@@ -11,4 +11,5 @@
 @interface DetailViewController : UIViewController
 @property(nonatomic,strong)NSString *url;
 @property(nonatomic,strong)NSString * commenturl;
+@property(nonatomic,strong)NSString * commentall;
 @end

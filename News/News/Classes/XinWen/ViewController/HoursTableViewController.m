@@ -121,7 +121,10 @@ static NSString * const topRedifier = @"topRedifier";
     DetailViewController * detail = [[DetailViewController alloc] init];
     detail.url = model.ID;
     detail.commenturl = model.commentsUrl;
-    [self.navigationController pushViewController:detail animated:YES];
+    detail.commentall = model.commentsall;
+    [self presentViewController:detail animated:YES completion:^{
+        
+    }];
 //    NewsCommentViewController * com = [[NewsCommentViewController alloc] init];
 //    com.commenturl = model.commentsUrl;
 //    com.url = model.ID;

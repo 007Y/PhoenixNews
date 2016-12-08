@@ -51,11 +51,10 @@ static NSString * const HeaderId = @"reuse";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpTableView];
-    //    [self requestData];
+    [self.commentbutton setTitle:self.commentall forState:UIControlStateNormal];
     // Do any additional setup after loading the view from its nib.
 }
 - (void)setUpTableView{
-    //    [self requestData];
     _page = 1;
     [self setupRefresh];
     UITableView * tableview = [[UITableView alloc] initWithFrame:CGRectMake(0,0, ScreenWidth, ScreenHeight-60)];
@@ -97,15 +96,7 @@ static NSString * const HeaderId = @"reuse";
         DetailsPage * model = [[DetailsPage alloc] init];
         [model setValuesForKeysWithDictionary:responseObject[@"body"]];
         
-        
-        
-//        给评论量按钮赋值
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [weakSelf.commentbutton setTitle:[NSString stringWithFormat:@"%d",model.commentCount]  forState:UIControlStateNormal];
-                });
-        
-        
-        [weakSelf label:model.title time:model.updateTime source:model.source webViw:model.text commenturl:self.commenturl];
+               [weakSelf label:model.title time:model.updateTime source:model.source webViw:model.text commenturl:self.commenturl];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     }];
 }
@@ -254,7 +245,10 @@ static NSString * const HeaderId = @"reuse";
     CGRect rect = [[self.latestComments[indexPath.row] comment_contents] boundingRectWithSize:CGSizeMake(200, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil];
     return rect.size.height+100;
 }
-
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    NSArray * arr = @[@"热门评论",@"最新评论"];
+    return arr[section];
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
 }
@@ -284,6 +278,9 @@ static NSString * const HeaderId = @"reuse";
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)backclick:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 

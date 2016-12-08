@@ -168,20 +168,15 @@ static NSString * const picRedifier = @"picRedifier";
     }else{
         DetailViewController * detail = [[DetailViewController alloc] init];
         detail.url = model.ID;
-        
-        [self.navigationController pushViewController:detail animated:YES];
+        detail.commenturl = model.commentsUrl;
+        detail.commentall = model.commentsall;
+        [self presentViewController:detail animated:YES completion:^{
+            
+        }];
     }
     
 }
 
-- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
-{
-    NewsModel * model = _slideArray[index];
-    SlidesViewController * slide = [[SlidesViewController alloc] init];
-    slide.url = model.ID;
-    [self.navigationController pushViewController:slide animated:YES];
-    
-}
 
 /*
  // Override to support conditional editing of the table view.

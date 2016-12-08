@@ -10,4 +10,7 @@
 
 @interface SlidesViewController : UIViewController
 @property(nonatomic,retain)NSString *url;
+@property(nonatomic,strong)NSString *commentall;
+@property(nonatomic,strong)NSString *commenturl;
+
 @end

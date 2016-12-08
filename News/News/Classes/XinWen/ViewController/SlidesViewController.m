@@ -8,7 +8,17 @@
 
 #import "SlidesViewController.h"
 #import "SlideModel.h"
+#import "NewsCommentViewController.h"
 @interface SlidesViewController ()<UIGestureRecognizerDelegate,UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *back;
+@property (weak, nonatomic) IBOutlet UITextField *commenttext;
+@property (weak, nonatomic) IBOutlet UIButton *comment;
+@property (weak, nonatomic) IBOutlet UIButton *shoucangbutton;
+
+
+
+
 @property(nonatomic,strong)NSMutableArray *slideArray;
 @property(nonatomic,strong)UIScrollView *scroll;
 @property(nonatomic,strong)UILabel * label;
@@ -19,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self requstData];
+    [self.comment setTitle:self.commentall forState:UIControlStateNormal];
     // Do any additional setup after loading the view.
 }
 - (void)requstData{
@@ -41,14 +52,14 @@
     
 }
 - (void)getscroll{
-    UIScrollView * scroll = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UIScrollView * scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 60)];
     scroll.pagingEnabled = YES;
     scroll.showsVerticalScrollIndicator = NO;
     scroll.showsHorizontalScrollIndicator = NO;
     scroll.delegate = self;
     scroll.contentSize =CGSizeMake(ScreenWidth * _slideArray.count, ScreenHeight);
     for (int i = 0 ; i < _slideArray.count; i ++) {
-        UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, ScreenHeight)];
+        UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, ScreenHeight - 60)];
         
         
         SlideModel * model = _slideArray[i];
@@ -72,6 +83,25 @@
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+}
+- (IBAction)shoucang:(id)sender {
+}
+- (IBAction)fengxiang:(id)sender {
+}
+- (IBAction)comment:(id)sender {
+    
+    NewsCommentViewController * com = [[NewsCommentViewController alloc] init];
+    com.url = self.commenturl;
+    [self presentViewController:com animated:YES completion:^{
+        
+    }];
+    
+    
+}
+- (IBAction)backbutton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 //- (void)pan{

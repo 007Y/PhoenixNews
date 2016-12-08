@@ -16,9 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    LikeTableViewController * like = [[LikeTableViewController alloc] init];
-    [self addChildViewController:like];
-     [self.view addSubview:like.view];
+    LikeTableViewController * like1 = [[LikeTableViewController alloc] init];
+    [self addChildViewController:like1];
+     [self.view addSubview:like1.view];
     // Do any additional setup after loading the view.
 }
 

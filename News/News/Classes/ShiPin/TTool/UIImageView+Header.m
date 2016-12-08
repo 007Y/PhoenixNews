@@ -16,7 +16,7 @@
 }
 - (void)setCircleHeader:(NSString *)url
 {
-    WeakSelf;
+    WEAKSELF;
     
     UIImage *placeholder = [[UIImage imageNamed:@"defaultUserIcon"] circleImage];
     [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:placeholder completed:

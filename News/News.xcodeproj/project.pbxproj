@@ -14,6 +14,26 @@
 		704C3D201DF0F8DD0058C379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704C3D1E1DF0F8DD0058C379 /* LaunchScreen.storyboard */; };
 		704C3D2B1DF0F8DD0058C379 /* NewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 704C3D2A1DF0F8DD0058C379 /* NewsTests.m */; };
 		704C3D361DF0F8DD0058C379 /* NewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 704C3D351DF0F8DD0058C379 /* NewsUITests.m */; };
+		70F8AE931DF94EEF0092880C /* RelativeVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE6D1DF94EEF0092880C /* RelativeVideoTableViewCell.m */; };
+		70F8AE941DF94EEF0092880C /* RelativeVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F8AE6E1DF94EEF0092880C /* RelativeVideoTableViewCell.xib */; };
+		70F8AE951DF94EEF0092880C /* VideoCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE701DF94EEF0092880C /* VideoCommentTableViewCell.m */; };
+		70F8AE961DF94EEF0092880C /* VideoCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F8AE711DF94EEF0092880C /* VideoCommentTableViewCell.xib */; };
+		70F8AE971DF94EEF0092880C /* CommentVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE741DF94EEF0092880C /* CommentVideoModel.m */; };
+		70F8AE981DF94EEF0092880C /* RelativeVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE761DF94EEF0092880C /* RelativeVideoModel.m */; };
+		70F8AE991DF94EEF0092880C /* CommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE791DF94EEF0092880C /* CommentHeaderView.m */; };
+		70F8AE9A1DF94EEF0092880C /* DetailVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE7B1DF94EEF0092880C /* DetailVideoViewController.m */; };
+		70F8AE9B1DF94EEF0092880C /* DetailVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F8AE7C1DF94EEF0092880C /* DetailVideoViewController.xib */; };
+		70F8AE9C1DF94EEF0092880C /* TotalCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE7E1DF94EEF0092880C /* TotalCommentViewController.m */; };
+		70F8AE9D1DF94EEF0092880C /* TotalCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F8AE7F1DF94EEF0092880C /* TotalCommentViewController.xib */; };
+		70F8AE9E1DF94EEF0092880C /* UIImage+Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE821DF94EEF0092880C /* UIImage+Circle.m */; };
+		70F8AE9F1DF94EEF0092880C /* UIImageView+Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE841DF94EEF0092880C /* UIImageView+Header.m */; };
+		70F8AEA01DF94EEF0092880C /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE861DF94EEF0092880C /* UIView+Category.m */; };
+		70F8AEA11DF94EEF0092880C /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE8A1DF94EEF0092880C /* VideoModel.m */; };
+		70F8AEA21DF94EEF0092880C /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE8C1DF94EEF0092880C /* VideoTableViewCell.m */; };
+		70F8AEA31DF94EEF0092880C /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F8AE8D1DF94EEF0092880C /* VideoTableViewCell.xib */; };
+		70F8AEA41DF94EEF0092880C /* VideoTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE8F1DF94EEF0092880C /* VideoTypeModel.m */; };
+		70F8AEA51DF94EEF0092880C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8AE911DF94EEF0092880C /* ViewController.m */; };
+		70F8AEA61DF94EEF0092880C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F8AE921DF94EEF0092880C /* ViewController.xib */; };
 		C6072B411DF7EA2F00AF91F5 /* NuanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6072B401DF7EA2F00AF91F5 /* NuanTableViewController.m */; };
 		C6072B471DF7F52400AF91F5 /* MyViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C6072B461DF7F52400AF91F5 /* MyViewHeader.m */; };
 		C6072B491DF7F53500AF91F5 /* MyViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6072B481DF7F53500AF91F5 /* MyViewHeader.xib */; };
@@ -23,8 +43,6 @@
 		C66BE1AA1DF1894700C36593 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE16D1DF1894700C36593 /* AppDelegate.m */; };
 		C66BE1AB1DF1894700C36593 /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1751DF1894700C36593 /* FoundViewController.m */; };
 		C66BE1AC1DF1894700C36593 /* PublicTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE17E1DF1894700C36593 /* PublicTabBarViewController.m */; };
-		C66BE1AD1DF1894700C36593 /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1861DF1894700C36593 /* VideosViewController.m */; };
-		C66BE1AE1DF1894700C36593 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1881DF1894700C36593 /* ViewController.m */; };
 		C66BE1AF1DF1894700C36593 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1901DF1894700C36593 /* MyTableViewController.m */; };
 		C66BE1B01DF1894700C36593 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE1941DF1894700C36593 /* NewsModel.m */; };
 		C66BE1B21DF1894700C36593 /* NewsPicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C66BE19B1DF1894700C36593 /* NewsPicTableViewCell.m */; };
@@ -53,12 +71,6 @@
 		C6E886801DF8F8B200360E67 /* FoundSlidesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E8867F1DF8F8B200360E67 /* FoundSlidesTableViewCell.xib */; };
 		C6E886831DF8FC5300360E67 /* LikeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E886821DF8FC5300360E67 /* LikeTableViewController.m */; };
 		C6E886851DF90DAC00360E67 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E886841DF90DAC00360E67 /* DetailViewController.xib */; };
-		C6E8868B1DF91CB700360E67 /* CommentVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E8868A1DF91CB700360E67 /* CommentVideoModel.m */; };
-		C6E886941DF91DA500360E67 /* VideoCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E886921DF91DA500360E67 /* VideoCommentTableViewCell.m */; };
-		C6E886951DF91DA500360E67 /* VideoCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E886931DF91DA500360E67 /* VideoCommentTableViewCell.xib */; };
-		C6E8869C1DF91F5500360E67 /* UIImage+Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E886971DF91F5500360E67 /* UIImage+Circle.m */; };
-		C6E8869D1DF91F5500360E67 /* UIImageView+Header.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E886991DF91F5500360E67 /* UIImageView+Header.m */; };
-		C6E8869E1DF91F5500360E67 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E8869B1DF91F5500360E67 /* UIView+Category.m */; };
 		C6E886A81DF933E200360E67 /* NewsCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E886A71DF933E200360E67 /* NewsCommentViewController.m */; };
 		C6E886AA1DF93FCB00360E67 /* SlidesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E886A91DF93FCB00360E67 /* SlidesViewController.xib */; };
 		C6E886AC1DF9422700360E67 /* NewsCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E886AB1DF9422700360E67 /* NewsCommentViewController.xib */; };
@@ -95,6 +107,41 @@
 		704C3D311DF0F8DD0058C379 /* NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		704C3D351DF0F8DD0058C379 /* NewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsUITests.m; sourceTree = "<group>"; };
 		704C3D371DF0F8DD0058C379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F8AE6C1DF94EEF0092880C /* RelativeVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeVideoTableViewCell.h; sourceTree = "<group>"; };
+		70F8AE6D1DF94EEF0092880C /* RelativeVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeVideoTableViewCell.m; sourceTree = "<group>"; };
+		70F8AE6E1DF94EEF0092880C /* RelativeVideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelativeVideoTableViewCell.xib; sourceTree = "<group>"; };
+		70F8AE6F1DF94EEF0092880C /* VideoCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCommentTableViewCell.h; sourceTree = "<group>"; };
+		70F8AE701DF94EEF0092880C /* VideoCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCommentTableViewCell.m; sourceTree = "<group>"; };
+		70F8AE711DF94EEF0092880C /* VideoCommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCommentTableViewCell.xib; sourceTree = "<group>"; };
+		70F8AE731DF94EEF0092880C /* CommentVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentVideoModel.h; sourceTree = "<group>"; };
+		70F8AE741DF94EEF0092880C /* CommentVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentVideoModel.m; sourceTree = "<group>"; };
+		70F8AE751DF94EEF0092880C /* RelativeVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeVideoModel.h; sourceTree = "<group>"; };
+		70F8AE761DF94EEF0092880C /* RelativeVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeVideoModel.m; sourceTree = "<group>"; };
+		70F8AE781DF94EEF0092880C /* CommentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentHeaderView.h; sourceTree = "<group>"; };
+		70F8AE791DF94EEF0092880C /* CommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentHeaderView.m; sourceTree = "<group>"; };
+		70F8AE7A1DF94EEF0092880C /* DetailVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVideoViewController.h; sourceTree = "<group>"; };
+		70F8AE7B1DF94EEF0092880C /* DetailVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVideoViewController.m; sourceTree = "<group>"; };
+		70F8AE7C1DF94EEF0092880C /* DetailVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailVideoViewController.xib; sourceTree = "<group>"; };
+		70F8AE7D1DF94EEF0092880C /* TotalCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalCommentViewController.h; sourceTree = "<group>"; };
+		70F8AE7E1DF94EEF0092880C /* TotalCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalCommentViewController.m; sourceTree = "<group>"; };
+		70F8AE7F1DF94EEF0092880C /* TotalCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TotalCommentViewController.xib; sourceTree = "<group>"; };
+		70F8AE811DF94EEF0092880C /* UIImage+Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Circle.h"; sourceTree = "<group>"; };
+		70F8AE821DF94EEF0092880C /* UIImage+Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Circle.m"; sourceTree = "<group>"; };
+		70F8AE831DF94EEF0092880C /* UIImageView+Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Header.h"; sourceTree = "<group>"; };
+		70F8AE841DF94EEF0092880C /* UIImageView+Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Header.m"; sourceTree = "<group>"; };
+		70F8AE851DF94EEF0092880C /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		70F8AE861DF94EEF0092880C /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		70F8AE871DF94EEF0092880C /* URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URL.h; sourceTree = "<group>"; };
+		70F8AE891DF94EEF0092880C /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		70F8AE8A1DF94EEF0092880C /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		70F8AE8B1DF94EEF0092880C /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTableViewCell.h; sourceTree = "<group>"; };
+		70F8AE8C1DF94EEF0092880C /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
+		70F8AE8D1DF94EEF0092880C /* VideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		70F8AE8E1DF94EEF0092880C /* VideoTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTypeModel.h; sourceTree = "<group>"; };
+		70F8AE8F1DF94EEF0092880C /* VideoTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTypeModel.m; sourceTree = "<group>"; };
+		70F8AE901DF94EEF0092880C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		70F8AE911DF94EEF0092880C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		70F8AE921DF94EEF0092880C /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		A6695801003149B944C365E5 /* libPods-News.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-News.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6072B3F1DF7EA2F00AF91F5 /* NuanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuanTableViewController.h; sourceTree = "<group>"; };
 		C6072B401DF7EA2F00AF91F5 /* NuanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuanTableViewController.m; sourceTree = "<group>"; };
@@ -114,10 +161,6 @@
 		C66BE1761DF1894700C36593 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C66BE17D1DF1894700C36593 /* PublicTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTabBarViewController.h; sourceTree = "<group>"; };
 		C66BE17E1DF1894700C36593 /* PublicTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTabBarViewController.m; sourceTree = "<group>"; };
-		C66BE1851DF1894700C36593 /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosViewController.h; sourceTree = "<group>"; };
-		C66BE1861DF1894700C36593 /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosViewController.m; sourceTree = "<group>"; };
-		C66BE1871DF1894700C36593 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/ViewController.h; sourceTree = "<group>"; };
-		C66BE1881DF1894700C36593 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/ViewController.m; sourceTree = "<group>"; };
 		C66BE18F1DF1894700C36593 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		C66BE1901DF1894700C36593 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		C66BE1931DF1894700C36593 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
@@ -168,17 +211,6 @@
 		C6E886811DF8FC5300360E67 /* LikeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeTableViewController.h; sourceTree = "<group>"; };
 		C6E886821DF8FC5300360E67 /* LikeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeTableViewController.m; sourceTree = "<group>"; };
 		C6E886841DF90DAC00360E67 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		C6E886891DF91BE400360E67 /* CommentVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentVideoModel.h; sourceTree = "<group>"; };
-		C6E8868A1DF91CB700360E67 /* CommentVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentVideoModel.m; sourceTree = "<group>"; };
-		C6E886911DF91DA500360E67 /* VideoCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCommentTableViewCell.h; sourceTree = "<group>"; };
-		C6E886921DF91DA500360E67 /* VideoCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCommentTableViewCell.m; sourceTree = "<group>"; };
-		C6E886931DF91DA500360E67 /* VideoCommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCommentTableViewCell.xib; sourceTree = "<group>"; };
-		C6E886961DF91F5500360E67 /* UIImage+Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Circle.h"; sourceTree = "<group>"; };
-		C6E886971DF91F5500360E67 /* UIImage+Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Circle.m"; sourceTree = "<group>"; };
-		C6E886981DF91F5500360E67 /* UIImageView+Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Header.h"; sourceTree = "<group>"; };
-		C6E886991DF91F5500360E67 /* UIImageView+Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Header.m"; sourceTree = "<group>"; };
-		C6E8869A1DF91F5500360E67 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
-		C6E8869B1DF91F5500360E67 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		C6E886A61DF933E200360E67 /* NewsCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCommentViewController.h; sourceTree = "<group>"; };
 		C6E886A71DF933E200360E67 /* NewsCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCommentViewController.m; sourceTree = "<group>"; };
 		C6E886A91DF93FCB00360E67 /* SlidesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlidesViewController.xib; sourceTree = "<group>"; };
@@ -249,8 +281,6 @@
 				C66BE16B1DF1894700C36593 /* Classes */,
 				704C3D191DF0F8DD0058C379 /* Main.storyboard */,
 				704C3D1C1DF0F8DD0058C379 /* Assets.xcassets */,
-				C66BE1871DF1894700C36593 /* ViewController.h */,
-				C66BE1881DF1894700C36593 /* ViewController.m */,
 				704C3D1E1DF0F8DD0058C379 /* LaunchScreen.storyboard */,
 				704C3D211DF0F8DD0058C379 /* Info.plist */,
 				704C3D101DF0F8DD0058C379 /* Supporting Files */,
@@ -282,6 +312,86 @@
 				704C3D371DF0F8DD0058C379 /* Info.plist */,
 			);
 			path = NewsUITests;
+			sourceTree = "<group>";
+		};
+		70F8AE6A1DF94EEF0092880C /* DetailVideo */ = {
+			isa = PBXGroup;
+			children = (
+				70F8AE6B1DF94EEF0092880C /* Cell */,
+				70F8AE721DF94EEF0092880C /* Model */,
+				70F8AE771DF94EEF0092880C /* VIewController */,
+			);
+			path = DetailVideo;
+			sourceTree = "<group>";
+		};
+		70F8AE6B1DF94EEF0092880C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70F8AE6C1DF94EEF0092880C /* RelativeVideoTableViewCell.h */,
+				70F8AE6D1DF94EEF0092880C /* RelativeVideoTableViewCell.m */,
+				70F8AE6E1DF94EEF0092880C /* RelativeVideoTableViewCell.xib */,
+				70F8AE6F1DF94EEF0092880C /* VideoCommentTableViewCell.h */,
+				70F8AE701DF94EEF0092880C /* VideoCommentTableViewCell.m */,
+				70F8AE711DF94EEF0092880C /* VideoCommentTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		70F8AE721DF94EEF0092880C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70F8AE731DF94EEF0092880C /* CommentVideoModel.h */,
+				70F8AE741DF94EEF0092880C /* CommentVideoModel.m */,
+				70F8AE751DF94EEF0092880C /* RelativeVideoModel.h */,
+				70F8AE761DF94EEF0092880C /* RelativeVideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70F8AE771DF94EEF0092880C /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				70F8AE781DF94EEF0092880C /* CommentHeaderView.h */,
+				70F8AE791DF94EEF0092880C /* CommentHeaderView.m */,
+				70F8AE7A1DF94EEF0092880C /* DetailVideoViewController.h */,
+				70F8AE7B1DF94EEF0092880C /* DetailVideoViewController.m */,
+				70F8AE7C1DF94EEF0092880C /* DetailVideoViewController.xib */,
+				70F8AE7D1DF94EEF0092880C /* TotalCommentViewController.h */,
+				70F8AE7E1DF94EEF0092880C /* TotalCommentViewController.m */,
+				70F8AE7F1DF94EEF0092880C /* TotalCommentViewController.xib */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		70F8AE801DF94EEF0092880C /* TTool */ = {
+			isa = PBXGroup;
+			children = (
+				70F8AE811DF94EEF0092880C /* UIImage+Circle.h */,
+				70F8AE821DF94EEF0092880C /* UIImage+Circle.m */,
+				70F8AE831DF94EEF0092880C /* UIImageView+Header.h */,
+				70F8AE841DF94EEF0092880C /* UIImageView+Header.m */,
+				70F8AE851DF94EEF0092880C /* UIView+Category.h */,
+				70F8AE861DF94EEF0092880C /* UIView+Category.m */,
+				70F8AE871DF94EEF0092880C /* URL.h */,
+			);
+			path = TTool;
+			sourceTree = "<group>";
+		};
+		70F8AE881DF94EEF0092880C /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				70F8AE891DF94EEF0092880C /* VideoModel.h */,
+				70F8AE8A1DF94EEF0092880C /* VideoModel.m */,
+				70F8AE8B1DF94EEF0092880C /* VideoTableViewCell.h */,
+				70F8AE8C1DF94EEF0092880C /* VideoTableViewCell.m */,
+				70F8AE8D1DF94EEF0092880C /* VideoTableViewCell.xib */,
+				70F8AE8E1DF94EEF0092880C /* VideoTypeModel.h */,
+				70F8AE8F1DF94EEF0092880C /* VideoTypeModel.m */,
+				70F8AE901DF94EEF0092880C /* ViewController.h */,
+				70F8AE911DF94EEF0092880C /* ViewController.m */,
+				70F8AE921DF94EEF0092880C /* ViewController.xib */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		C66BE16B1DF1894700C36593 /* Classes */ = {
@@ -405,61 +515,11 @@
 		C66BE17F1DF1894700C36593 /* ShiPin */ = {
 			isa = PBXGroup;
 			children = (
-				C66BE1801DF1894700C36593 /* Others */,
-				C66BE1811DF1894700C36593 /* SDKs */,
-				C66BE1821DF1894700C36593 /* Tool */,
-				C66BE1831DF1894700C36593 /* View */,
-				C66BE1841DF1894700C36593 /* ViewController */,
+				70F8AE6A1DF94EEF0092880C /* DetailVideo */,
+				70F8AE801DF94EEF0092880C /* TTool */,
+				70F8AE881DF94EEF0092880C /* Video */,
 			);
 			path = ShiPin;
-			sourceTree = "<group>";
-		};
-		C66BE1801DF1894700C36593 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				C6E886891DF91BE400360E67 /* CommentVideoModel.h */,
-				C6E8868A1DF91CB700360E67 /* CommentVideoModel.m */,
-			);
-			path = Others;
-			sourceTree = "<group>";
-		};
-		C66BE1811DF1894700C36593 /* SDKs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SDKs;
-			sourceTree = "<group>";
-		};
-		C66BE1821DF1894700C36593 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				C6E886961DF91F5500360E67 /* UIImage+Circle.h */,
-				C6E886971DF91F5500360E67 /* UIImage+Circle.m */,
-				C6E886981DF91F5500360E67 /* UIImageView+Header.h */,
-				C6E886991DF91F5500360E67 /* UIImageView+Header.m */,
-				C6E8869A1DF91F5500360E67 /* UIView+Category.h */,
-				C6E8869B1DF91F5500360E67 /* UIView+Category.m */,
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
-		C66BE1831DF1894700C36593 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C6E886911DF91DA500360E67 /* VideoCommentTableViewCell.h */,
-				C6E886921DF91DA500360E67 /* VideoCommentTableViewCell.m */,
-				C6E886931DF91DA500360E67 /* VideoCommentTableViewCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C66BE1841DF1894700C36593 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C66BE1851DF1894700C36593 /* VideosViewController.h */,
-				C66BE1861DF1894700C36593 /* VideosViewController.m */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		C66BE1891DF1894700C36593 /* WoDe */ = {
@@ -750,14 +810,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69EC43D1DF574AF0033B4A4 /* BeautyTableViewCell.xib in Resources */,
+				70F8AE961DF94EEF0092880C /* VideoCommentTableViewCell.xib in Resources */,
 				704C3D201DF0F8DD0058C379 /* LaunchScreen.storyboard in Resources */,
 				C6E886AC1DF9422700360E67 /* NewsCommentViewController.xib in Resources */,
 				C66BE1B31DF1894700C36593 /* NewsPicTableViewCell.xib in Resources */,
+				70F8AE9D1DF94EEF0092880C /* TotalCommentViewController.xib in Resources */,
 				C6E886801DF8F8B200360E67 /* FoundSlidesTableViewCell.xib in Resources */,
+				70F8AEA31DF94EEF0092880C /* VideoTableViewCell.xib in Resources */,
 				C6072B491DF7F53500AF91F5 /* MyViewHeader.xib in Resources */,
+				70F8AE9B1DF94EEF0092880C /* DetailVideoViewController.xib in Resources */,
+				70F8AEA61DF94EEF0092880C /* ViewController.xib in Resources */,
 				C66BE1B51DF1894700C36593 /* NewsTopTableViewCell.xib in Resources */,
-				C6E886951DF91DA500360E67 /* VideoCommentTableViewCell.xib in Resources */,
 				704C3D1D1DF0F8DD0058C379 /* Assets.xcassets in Resources */,
+				70F8AE941DF94EEF0092880C /* RelativeVideoTableViewCell.xib in Resources */,
 				C6E886AA1DF93FCB00360E67 /* SlidesViewController.xib in Resources */,
 				C6E886851DF90DAC00360E67 /* DetailViewController.xib in Resources */,
 				C66BE1B71DF1894700C36593 /* NewsVideoTableViewCell.xib in Resources */,
@@ -834,40 +899,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C66BE1AE1DF1894700C36593 /* ViewController.m in Sources */,
-				C6E886941DF91DA500360E67 /* VideoCommentTableViewCell.m in Sources */,
 				C69EC42F1DF53FCF0033B4A4 /* TAAbstractDotView.m in Sources */,
+				70F8AEA21DF94EEF0092880C /* VideoTableViewCell.m in Sources */,
+				70F8AE9E1DF94EEF0092880C /* UIImage+Circle.m in Sources */,
 				C66BE1AA1DF1894700C36593 /* AppDelegate.m in Sources */,
 				C66BE1B91DF1894700C36593 /* NewsTopTableViewController.m in Sources */,
 				C66BE1B61DF1894700C36593 /* NewsVideoTableViewCell.m in Sources */,
-				C6E8869C1DF91F5500360E67 /* UIImage+Circle.m in Sources */,
 				C66BE1AC1DF1894700C36593 /* PublicTabBarViewController.m in Sources */,
 				704C3D121DF0F8DD0058C379 /* main.m in Sources */,
+				70F8AEA11DF94EEF0092880C /* VideoModel.m in Sources */,
+				70F8AE931DF94EEF0092880C /* RelativeVideoTableViewCell.m in Sources */,
+				70F8AE951DF94EEF0092880C /* VideoCommentTableViewCell.m in Sources */,
 				C69EC4351DF53FCF0033B4A4 /* UIView+SDExtension.m in Sources */,
 				C66BE1B01DF1894700C36593 /* NewsModel.m in Sources */,
 				C69EC43C1DF574AF0033B4A4 /* BeautyTableViewCell.m in Sources */,
+				70F8AEA41DF94EEF0092880C /* VideoTypeModel.m in Sources */,
+				70F8AE981DF94EEF0092880C /* RelativeVideoModel.m in Sources */,
 				C6E0A1861DF662FD005EC263 /* BeautyCateTableViewController.m in Sources */,
+				70F8AE9A1DF94EEF0092880C /* DetailVideoViewController.m in Sources */,
 				C69EC4301DF53FCF0033B4A4 /* TAAnimatedDotView.m in Sources */,
-				C6E8869D1DF91F5500360E67 /* UIImageView+Header.m in Sources */,
-				C6E8868B1DF91CB700360E67 /* CommentVideoModel.m in Sources */,
 				C69EC4331DF53FCF0033B4A4 /* SDCollectionViewCell.m in Sources */,
+				70F8AEA51DF94EEF0092880C /* ViewController.m in Sources */,
 				C66BE1B81DF1894700C36593 /* NewsNavViewController.m in Sources */,
 				C66BE1AF1DF1894700C36593 /* MyTableViewController.m in Sources */,
+				70F8AE9C1DF94EEF0092880C /* TotalCommentViewController.m in Sources */,
 				C66BE1AB1DF1894700C36593 /* FoundViewController.m in Sources */,
 				C6B804961DF57E6600332972 /* BeautyTableViewController.m in Sources */,
+				70F8AEA01DF94EEF0092880C /* UIView+Category.m in Sources */,
 				C6626A5A1DF7AFFB00E45C8F /* SlideModel.m in Sources */,
 				C6072B471DF7F52400AF91F5 /* MyViewHeader.m in Sources */,
 				C6072B411DF7EA2F00AF91F5 /* NuanTableViewController.m in Sources */,
 				C66BE1B41DF1894700C36593 /* NewsTopTableViewCell.m in Sources */,
 				C66BE1BA1DF1894700C36593 /* NewsViewController.m in Sources */,
-				C66BE1AD1DF1894700C36593 /* VideosViewController.m in Sources */,
-				C6E8869E1DF91F5500360E67 /* UIView+Category.m in Sources */,
 				C69EC4311DF53FCF0033B4A4 /* TADotView.m in Sources */,
 				C6626A571DF7AA0600E45C8F /* DetailViewController.m in Sources */,
 				C6E886A81DF933E200360E67 /* NewsCommentViewController.m in Sources */,
 				C66BE1B21DF1894700C36593 /* NewsPicTableViewCell.m in Sources */,
 				C69EC4321DF53FCF0033B4A4 /* TAPageControl.m in Sources */,
+				70F8AE971DF94EEF0092880C /* CommentVideoModel.m in Sources */,
+				70F8AE991DF94EEF0092880C /* CommentHeaderView.m in Sources */,
 				C69EC4341DF53FCF0033B4A4 /* SDCycleScrollView.m in Sources */,
+				70F8AE9F1DF94EEF0092880C /* UIImageView+Header.m in Sources */,
 				C6E8867E1DF8F89D00360E67 /* FoundSlidesTableViewCell.m in Sources */,
 				C6E886831DF8FC5300360E67 /* LikeTableViewController.m in Sources */,
 				C69EC4381DF55AE50033B4A4 /* HoursTableViewController.m in Sources */,
@@ -1021,7 +1093,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/wyzcld/Desktop/PhoenixNews/News/News/Classes/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/News/Classes/PrefixHeader.pch";
 				INFOPLIST_FILE = News/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.News;
@@ -1035,7 +1107,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/wyzcld/Desktop/PhoenixNews/News/News/Classes/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/News/Classes/PrefixHeader.pch";
 				INFOPLIST_FILE = News/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.News;

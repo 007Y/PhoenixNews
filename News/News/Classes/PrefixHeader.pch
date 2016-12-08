@@ -47,6 +47,9 @@
 
 #import "Masonry.h"
 
-
+#import "UIView+Category.h"
+#import "URL.h"
+// 弱引用
+#define WEAKSELF __weak typeof(self) weakSelf = self
 
 #endif /* PrefixHeader_pch */

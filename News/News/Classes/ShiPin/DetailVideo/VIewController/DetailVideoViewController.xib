@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailVideoViewController">
+            <connections>
+                <outlet property="commentButton" destination="CIT-8c-dAk" id="AZ3-tQ-yVi"/>
+                <outlet property="detailTableView" destination="Djc-ee-O2s" id="Pfu-bl-EwZ"/>
+                <outlet property="playButton" destination="HKW-iR-e8i" id="fFe-pJ-ECX"/>
+                <outlet property="titleLable" destination="i9i-Vt-SXH" id="vBv-vM-F41"/>
+                <outlet property="videoImageView" destination="6lJ-cp-2MY" id="1VR-nN-Dkx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6lJ-cp-2MY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="FEI-m7-6q8"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKW-iR-e8i">
+                    <rect key="frame" x="153" y="65" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="6BJ-D3-Sb9"/>
+                        <constraint firstAttribute="width" constant="70" id="GOz-AT-UFc"/>
+                    </constraints>
+                    <state key="normal" image="fm_column_play_night.png"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ro-1z-pKZ">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rO-JU-B1a">
+                            <rect key="frame" x="10" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="fAd-bH-bsa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="liveRoom_reporter_back.png"/>
+                            <connections>
+                                <action selector="backClick:" destination="-1" eventType="touchUpInside" id="V8i-Oy-zOF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIT-8c-dAk">
+                            <rect key="frame" x="230" y="10" width="35" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="N6E-nw-GMv"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="video_comment.png">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QJ-hT-hIb">
+                            <rect key="frame" x="285" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="JnD-iy-8Mi"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="tb_lit_collect.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRD-y2-Ybv">
+                            <rect key="frame" x="335" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="gfe-ti-pqc"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="liveRoom_reporter_share.png"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.89757702819999996" blue="0.53464987090000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="3QJ-hT-hIb" firstAttribute="top" secondItem="2ro-1z-pKZ" secondAttribute="top" constant="10" id="2xV-hl-K59"/>
+                        <constraint firstAttribute="bottom" secondItem="3rO-JU-B1a" secondAttribute="bottom" constant="10" id="4zX-av-TNV"/>
+                        <constraint firstAttribute="bottom" secondItem="CIT-8c-dAk" secondAttribute="bottom" constant="10" id="5ms-W6-bN1"/>
+                        <constraint firstItem="dRD-y2-Ybv" firstAttribute="top" secondItem="2ro-1z-pKZ" secondAttribute="top" constant="10" id="Ajw-xc-tMW"/>
+                        <constraint firstItem="dRD-y2-Ybv" firstAttribute="leading" secondItem="3QJ-hT-hIb" secondAttribute="trailing" constant="20" id="E9s-X7-mU6"/>
+                        <constraint firstAttribute="height" constant="50" id="WKd-2x-qBJ"/>
+                        <constraint firstItem="3rO-JU-B1a" firstAttribute="leading" secondItem="2ro-1z-pKZ" secondAttribute="leading" constant="10" id="gkf-yL-Xkx"/>
+                        <constraint firstItem="3QJ-hT-hIb" firstAttribute="leading" secondItem="CIT-8c-dAk" secondAttribute="trailing" constant="20" id="oFI-fL-o7m"/>
+                        <constraint firstAttribute="bottom" secondItem="dRD-y2-Ybv" secondAttribute="bottom" constant="10" id="oSe-iH-GNS"/>
+                        <constraint firstItem="CIT-8c-dAk" firstAttribute="top" secondItem="2ro-1z-pKZ" secondAttribute="top" constant="10" id="qke-Sb-hpR"/>
+                        <constraint firstAttribute="bottom" secondItem="3QJ-hT-hIb" secondAttribute="bottom" constant="10" id="uIJ-nU-Aik"/>
+                        <constraint firstAttribute="trailing" secondItem="dRD-y2-Ybv" secondAttribute="trailing" constant="10" id="vbc-J3-pRN"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9i-Vt-SXH">
+                    <rect key="frame" x="10" y="210" width="355" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Djc-ee-O2s">
+                    <rect key="frame" x="0.0" y="240.5" width="375" height="376.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="i9i-Vt-SXH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="5om-qj-B73"/>
+                <constraint firstAttribute="bottom" secondItem="2ro-1z-pKZ" secondAttribute="bottom" id="9vn-kD-ClO"/>
+                <constraint firstItem="HKW-iR-e8i" firstAttribute="centerY" secondItem="6lJ-cp-2MY" secondAttribute="centerY" id="DyJ-Fs-F8q"/>
+                <constraint firstAttribute="trailing" secondItem="6lJ-cp-2MY" secondAttribute="trailing" id="IfK-Lw-Hbc"/>
+                <constraint firstItem="2ro-1z-pKZ" firstAttribute="top" secondItem="Djc-ee-O2s" secondAttribute="bottom" id="Q7G-Bo-a3O"/>
+                <constraint firstAttribute="trailing" secondItem="i9i-Vt-SXH" secondAttribute="trailing" constant="10" id="QPv-39-bsi"/>
+                <constraint firstItem="6lJ-cp-2MY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rfs-y5-vNA"/>
+                <constraint firstItem="Djc-ee-O2s" firstAttribute="top" secondItem="i9i-Vt-SXH" secondAttribute="bottom" constant="10" id="Rjz-3b-qoy"/>
+                <constraint firstItem="i9i-Vt-SXH" firstAttribute="top" secondItem="6lJ-cp-2MY" secondAttribute="bottom" constant="10" id="Tc8-n5-HZo"/>
+                <constraint firstItem="2ro-1z-pKZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="X0e-Qz-OSf"/>
+                <constraint firstItem="HKW-iR-e8i" firstAttribute="centerX" secondItem="6lJ-cp-2MY" secondAttribute="centerX" id="XO8-bM-p6q"/>
+                <constraint firstAttribute="trailing" secondItem="Djc-ee-O2s" secondAttribute="trailing" id="Xsi-xK-egC"/>
+                <constraint firstItem="6lJ-cp-2MY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a8N-uj-i1I"/>
+                <constraint firstAttribute="trailing" secondItem="2ro-1z-pKZ" secondAttribute="trailing" id="ggm-JY-kNr"/>
+                <constraint firstItem="Djc-ee-O2s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wbB-8L-Pas"/>
+            </constraints>
+            <point key="canvasLocation" x="30" y="-73"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fm_column_play_night.png" width="50" height="50"/>
+        <image name="liveRoom_reporter_back.png" width="30" height="30"/>
+        <image name="liveRoom_reporter_share.png" width="30" height="30"/>
+        <image name="tb_lit_collect.png" width="30" height="30"/>
+        <image name="video_comment.png" width="50" height="50"/>
+    </resources>
+</document>

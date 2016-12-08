@@ -10,7 +10,7 @@
 #import "NewsViewController.h"
 #import "NewsNavViewController.h"
 #import "MyTableViewController.h"
-#import "VideosViewController.h"
+#import "ViewController.h"
 #import "FoundViewController.h"
 @interface PublicTabBarViewController ()
 
@@ -47,7 +47,7 @@
 - (void)setChildVc{
     NewsViewController * news = [[NewsViewController alloc] init];
     [self addChildVc:news title:@"新闻" image:@"tabbar_news" selectedImage:@"tabbar_news_selected"];
-    VideosViewController * video = [[VideosViewController alloc] init];
+    ViewController * video = [[ViewController alloc] init];
     video.navigationController.navigationBarHidden = YES;
     [self addChildVc:video title:@"视频" image:@"tabbar_vision" selectedImage:@"tabbar_vision_selected"];
     FoundViewController * found = [[FoundViewController alloc] init];

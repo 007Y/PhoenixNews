@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="276" id="KGk-i7-Jjw" customClass="SuperViewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROz-Ne-7w6">
+                        <rect key="frame" x="8" y="40" width="398" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULU-p4-Z2s">
+                        <rect key="frame" x="0.0" y="241" width="414" height="35"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cell-content-line" translatesAutoresizingMaskIntoConstraints="NO" id="GLp-Hd-LYU">
+                                <rect key="frame" x="0.0" y="0.0" width="456" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx6-bl-XEv">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="pt7-Po-C8O"/>
+                                </constraints>
+                                <state key="normal" image="mainCellDing"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w30-Cl-MpD">
+                                <rect key="frame" x="314" y="0.0" width="50" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Yc1-uO-rRV"/>
+                                </constraints>
+                                <state key="normal" title="评论">
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Neg-Lw-VR1">
+                                <rect key="frame" x="364" y="0.0" width="50" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="U3U-t1-vcY"/>
+                                </constraints>
+                                <state key="normal" title="分享">
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Neg-Lw-VR1" secondAttribute="trailing" id="2Je-GC-NiW"/>
+                            <constraint firstAttribute="bottom" secondItem="Neg-Lw-VR1" secondAttribute="bottom" id="6qw-MW-DMM"/>
+                            <constraint firstItem="Qx6-bl-XEv" firstAttribute="leading" secondItem="ULU-p4-Z2s" secondAttribute="leading" id="9vb-xA-RU8"/>
+                            <constraint firstItem="Neg-Lw-VR1" firstAttribute="top" secondItem="ULU-p4-Z2s" secondAttribute="top" id="Dxd-Nv-y5F"/>
+                            <constraint firstItem="Qx6-bl-XEv" firstAttribute="top" secondItem="ULU-p4-Z2s" secondAttribute="top" id="NjH-11-3jl"/>
+                            <constraint firstItem="w30-Cl-MpD" firstAttribute="top" secondItem="ULU-p4-Z2s" secondAttribute="top" id="OAq-iz-61x"/>
+                            <constraint firstAttribute="height" constant="35" id="hS2-eO-ATT"/>
+                            <constraint firstAttribute="bottom" secondItem="Qx6-bl-XEv" secondAttribute="bottom" id="jFq-0T-NRA"/>
+                            <constraint firstAttribute="bottom" secondItem="w30-Cl-MpD" secondAttribute="bottom" id="ohI-5t-yl9"/>
+                            <constraint firstItem="Neg-Lw-VR1" firstAttribute="leading" secondItem="w30-Cl-MpD" secondAttribute="trailing" id="vFb-AH-8cQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ROz-Ne-7w6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="9Ns-a3-OUb"/>
+                    <constraint firstAttribute="trailing" secondItem="ROz-Ne-7w6" secondAttribute="trailing" constant="8" id="Buy-um-dIM"/>
+                    <constraint firstItem="ROz-Ne-7w6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Shc-aU-43W"/>
+                    <constraint firstAttribute="bottom" secondItem="ULU-p4-Z2s" secondAttribute="bottom" id="YJR-lO-BVB"/>
+                    <constraint firstAttribute="trailing" secondItem="ULU-p4-Z2s" secondAttribute="trailing" id="eFP-Fq-wLS"/>
+                    <constraint firstItem="ULU-p4-Z2s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="f1r-Ir-xD2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentButton" destination="w30-Cl-MpD" id="uCW-LD-2zh"/>
+                <outlet property="dingButton" destination="Qx6-bl-XEv" id="33w-yv-Vi0"/>
+                <outlet property="repostButton" destination="Neg-Lw-VR1" id="swf-SG-8uc"/>
+                <outlet property="text_label" destination="ROz-Ne-7w6" id="trs-rV-1xg"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="64"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cell-content-line" width="299" height="1"/>
+        <image name="mainCellDing" width="20" height="20"/>
+    </resources>
+</document>

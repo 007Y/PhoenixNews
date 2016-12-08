@@ -33,6 +33,7 @@
 #define BeautyCate(page)   [NSString stringWithFormat:@"http://api.3g.ifeng.com/clientShortNews?type=%@&page=1&ltime=0",page]
 #define like @"http://api.irecommend.ifeng.com/read.php?uid=8b292e121a7e4522a7cb9d9eb06da5f0&action=down&userId=8b292e121a7e4522a7cb9d9eb06da5f0&count=6"
 
+#define FUWUQIDIZHi  @"http://api.budejie.com/api/api_open.php"
 
 //#import "UIView+Category.h"
 #import "AFNetworking.h"

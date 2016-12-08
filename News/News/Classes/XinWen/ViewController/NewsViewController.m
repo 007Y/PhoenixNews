@@ -11,6 +11,7 @@
 #import "HoursTableViewController.h"
 #import "BeautyTableViewController.h"
 #import "NuanTableViewController.h"
+#import "WorldViewController.h"
 @interface NewsViewController ()<UIScrollViewDelegate>
 @property(nonatomic,strong)NSMutableArray * buttonArray;
 @property(nonatomic,strong)UIButton *selectedTitleButton;
@@ -121,6 +122,7 @@
     //确定选中的button
     [self inView:self.buttonArray[index]];
 }
+
 - (void)addChildVc{
     NewsTopTableViewController * top = [[NewsTopTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
     [self addChildViewController:top];
@@ -138,7 +140,12 @@
     beauty.view.frame = CGRectMake(ScreenWidth * 2, 0, ScreenWidth, ScreenHeight);
     [self.scroll addSubview:beauty.view];
     
+    WorldViewController * world = [[WorldViewController alloc] init];
+    [self addChildViewController:world];
     
+    world.view.frame = CGRectMake(ScreenWidth * 3, 0, ScreenWidth, ScreenHeight);
+    [self.scroll addSubview:world.view];
+
     
     
     

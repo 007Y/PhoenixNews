@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0542CBE81DF95919000C7FDE /* WorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CBE21DF95919000C7FDE /* WorldViewController.m */; };
+		0542CBE91DF95919000C7FDE /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CBE41DF95919000C7FDE /* SuperViewController.m */; };
+		0542CBEA1DF95919000C7FDE /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CBE61DF95919000C7FDE /* BigImageViewController.m */; };
+		0542CBEB1DF95919000C7FDE /* BigImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0542CBE71DF95919000C7FDE /* BigImageViewController.xib */; };
+		0542CBF21DF9592A000C7FDE /* SuperModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CBED1DF9592A000C7FDE /* SuperModel.m */; };
+		0542CBF31DF9592A000C7FDE /* EssenceComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CBEF1DF9592A000C7FDE /* EssenceComment.m */; };
+		0542CBF41DF9592A000C7FDE /* EssenceUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CBF11DF9592A000C7FDE /* EssenceUser.m */; };
+		0542CC1D1DF959E0000C7FDE /* UIBarButtonItem+Creat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CC131DF959E0000C7FDE /* UIBarButtonItem+Creat.m */; };
+		0542CC1E1DF959E0000C7FDE /* SuperViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CC151DF959E0000C7FDE /* SuperViewTableViewCell.m */; };
+		0542CC1F1DF959E0000C7FDE /* SuperViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0542CC161DF959E0000C7FDE /* SuperViewTableViewCell.xib */; };
+		0542CC201DF959E0000C7FDE /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0542CC181DF959E0000C7FDE /* CommentTableViewCell.m */; };
+		0542CC211DF959E0000C7FDE /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0542CC191DF959E0000C7FDE /* CommentTableViewCell.xib */; };
 		107FBE5D6BA07EA466134910 /* libPods-News.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6695801003149B944C365E5 /* libPods-News.a */; };
 		704C3D121DF0F8DD0058C379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 704C3D111DF0F8DD0058C379 /* main.m */; };
 		704C3D1B1DF0F8DD0058C379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704C3D191DF0F8DD0058C379 /* Main.storyboard */; };
@@ -94,6 +106,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0542CBE11DF95919000C7FDE /* WorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorldViewController.h; path = ../View/WorldViewController.h; sourceTree = "<group>"; };
+		0542CBE21DF95919000C7FDE /* WorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorldViewController.m; path = ../View/WorldViewController.m; sourceTree = "<group>"; };
+		0542CBE31DF95919000C7FDE /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperViewController.h; path = ../View/SuperViewController.h; sourceTree = "<group>"; };
+		0542CBE41DF95919000C7FDE /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperViewController.m; path = ../View/SuperViewController.m; sourceTree = "<group>"; };
+		0542CBE51DF95919000C7FDE /* BigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageViewController.h; sourceTree = "<group>"; };
+		0542CBE61DF95919000C7FDE /* BigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageViewController.m; sourceTree = "<group>"; };
+		0542CBE71DF95919000C7FDE /* BigImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigImageViewController.xib; sourceTree = "<group>"; };
+		0542CBEC1DF9592A000C7FDE /* SuperModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperModel.h; path = ../View/SuperModel.h; sourceTree = "<group>"; };
+		0542CBED1DF9592A000C7FDE /* SuperModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperModel.m; path = ../View/SuperModel.m; sourceTree = "<group>"; };
+		0542CBEE1DF9592A000C7FDE /* EssenceComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EssenceComment.h; path = ../View/EssenceComment.h; sourceTree = "<group>"; };
+		0542CBEF1DF9592A000C7FDE /* EssenceComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EssenceComment.m; path = ../View/EssenceComment.m; sourceTree = "<group>"; };
+		0542CBF01DF9592A000C7FDE /* EssenceUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EssenceUser.h; path = ../View/EssenceUser.h; sourceTree = "<group>"; };
+		0542CBF11DF9592A000C7FDE /* EssenceUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EssenceUser.m; path = ../View/EssenceUser.m; sourceTree = "<group>"; };
+		0542CC121DF959E0000C7FDE /* UIBarButtonItem+Creat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Creat.h"; sourceTree = "<group>"; };
+		0542CC131DF959E0000C7FDE /* UIBarButtonItem+Creat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Creat.m"; sourceTree = "<group>"; };
+		0542CC141DF959E0000C7FDE /* SuperViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewTableViewCell.h; sourceTree = "<group>"; };
+		0542CC151DF959E0000C7FDE /* SuperViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewTableViewCell.m; sourceTree = "<group>"; };
+		0542CC161DF959E0000C7FDE /* SuperViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperViewTableViewCell.xib; sourceTree = "<group>"; };
+		0542CC171DF959E0000C7FDE /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		0542CC181DF959E0000C7FDE /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		0542CC191DF959E0000C7FDE /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		52DA1627C4D7149FD5D23F2B /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
 		704C3D0D1DF0F8DD0058C379 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704C3D111DF0F8DD0058C379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -579,7 +612,6 @@
 			children = (
 				C66BE1921DF1894700C36593 /* Others */,
 				C66BE1971DF1894700C36593 /* SDKs */,
-				C66BE1981DF1894700C36593 /* Tool */,
 				C66BE1991DF1894700C36593 /* View */,
 				C66BE1A31DF1894700C36593 /* ViewController */,
 			);
@@ -595,6 +627,12 @@
 				C6E0A2271DF6C80F005EC263 /* DetailsPage.m */,
 				C6626A581DF7AFFB00E45C8F /* SlideModel.h */,
 				C6626A591DF7AFFB00E45C8F /* SlideModel.m */,
+				0542CBEC1DF9592A000C7FDE /* SuperModel.h */,
+				0542CBED1DF9592A000C7FDE /* SuperModel.m */,
+				0542CBEE1DF9592A000C7FDE /* EssenceComment.h */,
+				0542CBEF1DF9592A000C7FDE /* EssenceComment.m */,
+				0542CBF01DF9592A000C7FDE /* EssenceUser.h */,
+				0542CBF11DF9592A000C7FDE /* EssenceUser.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -605,13 +643,6 @@
 				C69EC41F1DF53FCF0033B4A4 /* SDCycleScrollView */,
 			);
 			path = SDKs;
-			sourceTree = "<group>";
-		};
-		C66BE1981DF1894700C36593 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		C66BE1991DF1894700C36593 /* View */ = {
@@ -629,6 +660,9 @@
 				C69EC4391DF574AF0033B4A4 /* BeautyTableViewCell.h */,
 				C69EC43A1DF574AF0033B4A4 /* BeautyTableViewCell.m */,
 				C69EC43B1DF574AF0033B4A4 /* BeautyTableViewCell.xib */,
+				0542CBE51DF95919000C7FDE /* BigImageViewController.h */,
+				0542CBE61DF95919000C7FDE /* BigImageViewController.m */,
+				0542CBE71DF95919000C7FDE /* BigImageViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,12 +670,16 @@
 		C66BE1A31DF1894700C36593 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C66BE1A81DF1894700C36593 /* NewsViewController.h */,
+				C66BE1A91DF1894700C36593 /* NewsViewController.m */,
+				0542CBE11DF95919000C7FDE /* WorldViewController.h */,
+				0542CBE21DF95919000C7FDE /* WorldViewController.m */,
+				0542CBE31DF95919000C7FDE /* SuperViewController.h */,
+				0542CBE41DF95919000C7FDE /* SuperViewController.m */,
 				C66BE1A41DF1894700C36593 /* NewsNavViewController.h */,
 				C66BE1A51DF1894700C36593 /* NewsNavViewController.m */,
 				C66BE1A61DF1894700C36593 /* NewsTopTableViewController.h */,
 				C66BE1A71DF1894700C36593 /* NewsTopTableViewController.m */,
-				C66BE1A81DF1894700C36593 /* NewsViewController.h */,
-				C66BE1A91DF1894700C36593 /* NewsViewController.m */,
 				C69EC4361DF55AE50033B4A4 /* HoursTableViewController.h */,
 				C69EC4371DF55AE50033B4A4 /* HoursTableViewController.m */,
 				C6B804941DF57E6600332972 /* BeautyTableViewController.h */,
@@ -659,6 +697,14 @@
 				C6E886A61DF933E200360E67 /* NewsCommentViewController.h */,
 				C6E886A71DF933E200360E67 /* NewsCommentViewController.m */,
 				C6E886AB1DF9422700360E67 /* NewsCommentViewController.xib */,
+				0542CC121DF959E0000C7FDE /* UIBarButtonItem+Creat.h */,
+				0542CC131DF959E0000C7FDE /* UIBarButtonItem+Creat.m */,
+				0542CC141DF959E0000C7FDE /* SuperViewTableViewCell.h */,
+				0542CC151DF959E0000C7FDE /* SuperViewTableViewCell.m */,
+				0542CC161DF959E0000C7FDE /* SuperViewTableViewCell.xib */,
+				0542CC171DF959E0000C7FDE /* CommentTableViewCell.h */,
+				0542CC181DF959E0000C7FDE /* CommentTableViewCell.m */,
+				0542CC191DF959E0000C7FDE /* CommentTableViewCell.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -809,9 +855,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0542CC1F1DF959E0000C7FDE /* SuperViewTableViewCell.xib in Resources */,
 				C69EC43D1DF574AF0033B4A4 /* BeautyTableViewCell.xib in Resources */,
 				70F8AE961DF94EEF0092880C /* VideoCommentTableViewCell.xib in Resources */,
 				704C3D201DF0F8DD0058C379 /* LaunchScreen.storyboard in Resources */,
+				0542CC211DF959E0000C7FDE /* CommentTableViewCell.xib in Resources */,
 				C6E886AC1DF9422700360E67 /* NewsCommentViewController.xib in Resources */,
 				C66BE1B31DF1894700C36593 /* NewsPicTableViewCell.xib in Resources */,
 				70F8AE9D1DF94EEF0092880C /* TotalCommentViewController.xib in Resources */,
@@ -827,6 +875,7 @@
 				C6E886851DF90DAC00360E67 /* DetailViewController.xib in Resources */,
 				C66BE1B71DF1894700C36593 /* NewsVideoTableViewCell.xib in Resources */,
 				704C3D1B1DF0F8DD0058C379 /* Main.storyboard in Resources */,
+				0542CBEB1DF95919000C7FDE /* BigImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,9 +949,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69EC42F1DF53FCF0033B4A4 /* TAAbstractDotView.m in Sources */,
+				0542CBEA1DF95919000C7FDE /* BigImageViewController.m in Sources */,
 				70F8AEA21DF94EEF0092880C /* VideoTableViewCell.m in Sources */,
 				70F8AE9E1DF94EEF0092880C /* UIImage+Circle.m in Sources */,
 				C66BE1AA1DF1894700C36593 /* AppDelegate.m in Sources */,
+				0542CBF21DF9592A000C7FDE /* SuperModel.m in Sources */,
 				C66BE1B91DF1894700C36593 /* NewsTopTableViewController.m in Sources */,
 				C66BE1B61DF1894700C36593 /* NewsVideoTableViewCell.m in Sources */,
 				C66BE1AC1DF1894700C36593 /* PublicTabBarViewController.m in Sources */,
@@ -911,8 +962,10 @@
 				70F8AE931DF94EEF0092880C /* RelativeVideoTableViewCell.m in Sources */,
 				70F8AE951DF94EEF0092880C /* VideoCommentTableViewCell.m in Sources */,
 				C69EC4351DF53FCF0033B4A4 /* UIView+SDExtension.m in Sources */,
+				0542CC1D1DF959E0000C7FDE /* UIBarButtonItem+Creat.m in Sources */,
 				C66BE1B01DF1894700C36593 /* NewsModel.m in Sources */,
 				C69EC43C1DF574AF0033B4A4 /* BeautyTableViewCell.m in Sources */,
+				0542CBE91DF95919000C7FDE /* SuperViewController.m in Sources */,
 				70F8AEA41DF94EEF0092880C /* VideoTypeModel.m in Sources */,
 				70F8AE981DF94EEF0092880C /* RelativeVideoModel.m in Sources */,
 				C6E0A1861DF662FD005EC263 /* BeautyCateTableViewController.m in Sources */,
@@ -921,10 +974,13 @@
 				C69EC4331DF53FCF0033B4A4 /* SDCollectionViewCell.m in Sources */,
 				70F8AEA51DF94EEF0092880C /* ViewController.m in Sources */,
 				C66BE1B81DF1894700C36593 /* NewsNavViewController.m in Sources */,
+				0542CC1E1DF959E0000C7FDE /* SuperViewTableViewCell.m in Sources */,
 				C66BE1AF1DF1894700C36593 /* MyTableViewController.m in Sources */,
 				70F8AE9C1DF94EEF0092880C /* TotalCommentViewController.m in Sources */,
 				C66BE1AB1DF1894700C36593 /* FoundViewController.m in Sources */,
+				0542CC201DF959E0000C7FDE /* CommentTableViewCell.m in Sources */,
 				C6B804961DF57E6600332972 /* BeautyTableViewController.m in Sources */,
+				0542CBE81DF95919000C7FDE /* WorldViewController.m in Sources */,
 				70F8AEA01DF94EEF0092880C /* UIView+Category.m in Sources */,
 				C6626A5A1DF7AFFB00E45C8F /* SlideModel.m in Sources */,
 				C6072B471DF7F52400AF91F5 /* MyViewHeader.m in Sources */,
@@ -940,9 +996,11 @@
 				70F8AE991DF94EEF0092880C /* CommentHeaderView.m in Sources */,
 				C69EC4341DF53FCF0033B4A4 /* SDCycleScrollView.m in Sources */,
 				70F8AE9F1DF94EEF0092880C /* UIImageView+Header.m in Sources */,
+				0542CBF31DF9592A000C7FDE /* EssenceComment.m in Sources */,
 				C6E8867E1DF8F89D00360E67 /* FoundSlidesTableViewCell.m in Sources */,
 				C6E886831DF8FC5300360E67 /* LikeTableViewController.m in Sources */,
 				C69EC4381DF55AE50033B4A4 /* HoursTableViewController.m in Sources */,
+				0542CBF41DF9592A000C7FDE /* EssenceUser.m in Sources */,
 				C6626A5D1DF7B24600E45C8F /* SlidesViewController.m in Sources */,
 				C6E0A2281DF6C80F005EC263 /* DetailsPage.m in Sources */,
 			);
@@ -1096,6 +1154,38 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/News/Classes/PrefixHeader.pch";
 				INFOPLIST_FILE = News/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-l\"AFNetworking\"",
+					"-l\"DACircularProgress\"",
+					"-l\"GDataXML-HTML\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"NJKWebViewProgress\"",
+					"-l\"SDWebImage\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"c++\"",
+					"-l\"pop\"",
+					"-l\"xml2\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1110,6 +1200,38 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/News/Classes/PrefixHeader.pch";
 				INFOPLIST_FILE = News/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-l\"AFNetworking\"",
+					"-l\"DACircularProgress\"",
+					"-l\"GDataXML-HTML\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"NJKWebViewProgress\"",
+					"-l\"SDWebImage\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"c++\"",
+					"-l\"pop\"",
+					"-l\"xml2\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

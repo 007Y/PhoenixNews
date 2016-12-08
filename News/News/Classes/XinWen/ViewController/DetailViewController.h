@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SuperModel.h"
 @interface DetailViewController : UIViewController
 @property(nonatomic,strong)NSString *url;
 @property(nonatomic,strong)NSString * commenturl;
 @property(nonatomic,strong)NSString * commentall;
+@property(nonatomic,strong) SuperModel *model;
 @end

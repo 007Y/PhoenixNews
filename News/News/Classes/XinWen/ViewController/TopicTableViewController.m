@@ -1,34 +1,50 @@
 //
-//  MyTableViewController.m
+//  TopicTableViewController.m
 //  News
 //
-//  Created by 李冬 on 2016/12/1.
+//  Created by 李冬 on 2016/12/7.
 //  Copyright © 2016年 wyzc. All rights reserved.
 //
 
-#import "MyTableViewController.h"
-#import "MyViewHeader.h"
-@interface MyTableViewController ()
-@property(nonatomic,strong)NSArray * titles;
+#import "TopicTableViewController.h"
+
+@interface TopicTableViewController ()
+@property(nonatomic,strong)NSMutableArray * _dataArray;
 @end
-static NSString * const MyRedifier = @"MyRedifier";
-@implementation MyTableViewController
+
+@implementation TopicTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _titles = @[@"  夜间",@"  设置",@"  清除缓存"];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSArray* nibView =  [[NSBundle mainBundle] loadNibNamed:@"MyViewHeader" owner:nil options:nil];
-    MyViewHeader * view = nibView[0];
-    view.frame = CGRectMake(0, 0, ScreenWidth, 200);
-    self.tableView.tableHeaderView =view;
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:MyRedifier];
+    
+    
+    
+    
 }
+- (void)requestData{
+    WeakSelf;
+    AFHTTPSessionManager * session = [AFHTTPSessionManager manager];
+    [session GET:self.url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSDictionary * dic = responseObject[@"body"];
+        NSArray * array = dic[@"subjects"];
+        NSDictionary * headerImage = array[0];
+        NSString * imagestr= headerImage[@"bgImage"];
+        NSString * title = array[1][@"content"][@"intro"];
+        
+        [weakSelf.tableView reloadData];
+        [weakSelf.tableView.mj_header endRefreshing];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [weakSelf.tableView.mj_header endRefreshing];
+    }];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -38,25 +54,24 @@ static NSString * const MyRedifier = @"MyRedifier";
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _titles.count;
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyRedifier forIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.text = _titles[indexPath.row];
-    NSArray *pics= @[@"userCenter_NightMode",@"userCenter_setting",@"setting_clearCache"];
-
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    [cell.left.view addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:pics[indexPath.row]]]];
+    // Configure the cell...
+    
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.

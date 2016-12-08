@@ -7,7 +7,7 @@
 //
 
 #import "FoundViewController.h"
-
+#import "LikeTableViewController.h"
 @interface FoundViewController ()
 
 @end
@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    LikeTableViewController * like = [[LikeTableViewController alloc] init];
+    [self addChildViewController:like];
+     [self.view addSubview:like.view];
     // Do any additional setup after loading the view.
 }
 

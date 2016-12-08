@@ -21,11 +21,26 @@
 }
 - (NSString *)updateTime{
     if (_updateTime.length > 0) {
+        NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+        fmt.dateFormat = @"yyyy/MM/dd HH:mm:ss";
+        NSDate *date = [NSDate date];
+        NSString * dateStr = [fmt stringFromDate:date];
+        NSArray * arr = [dateStr componentsSeparatedByString:@" "];
+        
         NSArray * arrtime = [_updateTime componentsSeparatedByString:@" "];
-        NSString * timeb = [arrtime.lastObject substringToIndex:5];
-        return timeb;
+        if ([arr[0] isEqualToString:arrtime[0]]) {
+            NSString * timeb1 = [arrtime.lastObject substringToIndex:5];
+            return timeb1;
+        }else{
+            
+            NSString * timeb = [arrtime.firstObject substringFromIndex:5];
+
+            return timeb;
+        }
+        
 
     }
+    
     return _updateTime;
 }
 - (NSString *)commentsall{
@@ -42,6 +57,7 @@
     int height = [sizeDic[@"size"][@"height"] intValue];
     return height * ScreenWidth / width +10 + 10 + 15;
 }
+
 
 
 

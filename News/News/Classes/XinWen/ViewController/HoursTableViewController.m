@@ -11,6 +11,7 @@
 #import "NewsTopTableViewCell.h"
 #import "WebViewController.h"
 #import "DetailViewController.h"
+#import "NewsCommentViewController.h"
 @interface HoursTableViewController ()
 @property(nonatomic,strong)NSMutableArray * dataArray;
 @property(nonatomic,strong)NSMutableArray * timeArray;
@@ -119,9 +120,13 @@ static NSString * const topRedifier = @"topRedifier";
     NewsModel * model = ar[indexPath.row];
     DetailViewController * detail = [[DetailViewController alloc] init];
     detail.url = model.ID;
-//    WebViewController * web = [[WebViewController alloc] init];
-//    web.url = model.commentsUrl;
+    detail.commenturl = model.commentsUrl;
     [self.navigationController pushViewController:detail animated:YES];
+//    NewsCommentViewController * com = [[NewsCommentViewController alloc] init];
+//    com.commenturl = model.commentsUrl;
+//    com.url = model.ID;
+//    [self.navigationController pushViewController:com animated:YES];
+//    
      }
 
 /*

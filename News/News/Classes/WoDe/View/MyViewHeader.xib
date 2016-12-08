@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="etV-58-HgY" customClass="MyViewHeader">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="311"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTj-M5-FXh">
+                    <rect key="frame" x="198" y="105.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="3S8-F0-2OY"/>
+                        <constraint firstAttribute="width" constant="100" id="Gg5-3f-Lws"/>
+                    </constraints>
+                    <state key="normal" image="new_usercenter_usericon"/>
+                    <connections>
+                        <action selector="click:" destination="etV-58-HgY" eventType="touchUpInside" id="Qaa-FQ-n8j"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp1-X4-WFg">
+                    <rect key="frame" x="197" y="205.5" width="102" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="立即登陆">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="etV-58-HgY" eventType="touchUpInside" id="JJf-47-aQ9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.45155584946489602" blue="0.37447082089521488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fp1-X4-WFg" firstAttribute="centerX" secondItem="qTj-M5-FXh" secondAttribute="centerX" id="84j-hs-fGQ"/>
+                <constraint firstItem="Fp1-X4-WFg" firstAttribute="top" secondItem="qTj-M5-FXh" secondAttribute="bottom" id="E1G-yE-4nX"/>
+                <constraint firstItem="qTj-M5-FXh" firstAttribute="centerY" secondItem="etV-58-HgY" secondAttribute="centerY" id="GdJ-EA-UUw"/>
+                <constraint firstItem="qTj-M5-FXh" firstAttribute="centerX" secondItem="etV-58-HgY" secondAttribute="centerX" id="Spe-qN-pll"/>
+                <constraint firstItem="qTj-M5-FXh" firstAttribute="centerX" secondItem="etV-58-HgY" secondAttribute="centerX" id="r1D-Gj-zQ3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="160" y="-394.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="new_usercenter_usericon" width="142" height="142"/>
+    </resources>
+</document>

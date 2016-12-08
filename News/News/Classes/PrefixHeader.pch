@@ -9,12 +9,6 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-
-
-//请求的服务器地址
-#define FUWUQIDIZHi  @""
-
-
 // 日志输出
 #ifdef DEBUG // 开发阶段-DEBUG阶段:使用Log
 #define NSLog(...) NSLog(__VA_ARGS__)
@@ -23,23 +17,28 @@
 #endif
 
 // 弱引用
+#define WEAKSELF __weak typeof(self) weakSelf = self
+
 #define WeakSelf __weak typeof(self) weakSelf = self;
 // 屏幕尺寸
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define NewsTopUrl(page) [NSString stringWithFormat:@"http://api.iclient.ifeng.com/ClientNews?id=SYLB10,SYDT10,SYRECOMMEND&page=%ld&gv=5.3.2&av=5.3.2",page]
+
+#define NewsComment(url) [NSString stringWithFormat:@"http://icomment.ifeng.com/geti.php?pagesize=20&p=0&docurl=%@",url]
+
+
 #define HoursUrl @"http://api.3g.ifeng.com/ClientNews?id=24H&search_date="
 #define Beauty(page)   [NSString stringWithFormat:@"http://api.3g.ifeng.com/clientShortNews?type=beauty&page=%d&ltime=0",page]
 #define BeautyCate(page)   [NSString stringWithFormat:@"http://api.3g.ifeng.com/clientShortNews?type=%@&page=1&ltime=0",page]
+#define like @"http://api.irecommend.ifeng.com/read.php?uid=8b292e121a7e4522a7cb9d9eb06da5f0&action=down&userId=8b292e121a7e4522a7cb9d9eb06da5f0&count=6"
 
-#define warmPage(page) [NSString stringWithFormat:@"http://api.iclient.ifeng.com/ClientNews?id=NXWPD,FOCUSNXWPD&page=%d",page]
 
 //#import "UIView+Category.h"
 #import "AFNetworking.h"
 #import "MJRefresh.h"
 #import "UIImageView+WebCache.h"
 #import "MJExtension.h"
-
 #import "SVProgressHUD.h"
 #import "SDCycleScrollView.h"
 #import "GDataXMLNode.h"

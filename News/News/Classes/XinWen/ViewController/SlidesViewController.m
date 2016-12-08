@@ -42,25 +42,23 @@
 }
 - (void)getscroll{
     UIScrollView * scroll = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    scroll.backgroundColor = [UIColor whiteColor];
     scroll.pagingEnabled = YES;
     scroll.showsVerticalScrollIndicator = NO;
     scroll.showsHorizontalScrollIndicator = NO;
     scroll.delegate = self;
     scroll.contentSize =CGSizeMake(ScreenWidth * _slideArray.count, ScreenHeight);
     for (int i = 0 ; i < _slideArray.count; i ++) {
-        UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, ScreenHeight/2)];
+        UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, ScreenHeight)];
         
         
         SlideModel * model = _slideArray[i];
         [imageView sd_setImageWithURL:[NSURL URLWithString:model.image]];
         [scroll addSubview:imageView];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
         NSString *str = [NSString stringWithFormat:@"  %d/%ld  %@",i + 1,_slideArray.count,model.descriptio];
         CGRect rect = [str boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 40,2000)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]} context:nil];
-
-        CGFloat  y = CGRectGetMaxY(imageView.frame);
-        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(i * ScreenWidth + 10, y, ScreenWidth - 20, rect.size.height)];
-
+        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(i * ScreenWidth + 10, ScreenHeight - 200 - rect.size.height, ScreenWidth - 20, rect.size.height)];
+        label.textColor = [UIColor whiteColor];
         label.userInteractionEnabled = YES;
         label.numberOfLines = 0;
         label.tag = 500 + i;
@@ -69,6 +67,7 @@
         
         
     }
+    
     [self.view addSubview:scroll];
 }
 
@@ -77,9 +76,11 @@
 
 //- (void)pan{
 //    UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+//    
 //    int index = self.scroll.contentOffset.x / ScreenWidth;
 //    UILabel * label = [self.view viewWithTag:index + 500];
 //    [label addGestureRecognizer:pan];
+//    
 //}
 //- (void)panAction:(UIPanGestureRecognizer *)sender{
 //        CGPoint  ponit = [sender translationInView:self.view];

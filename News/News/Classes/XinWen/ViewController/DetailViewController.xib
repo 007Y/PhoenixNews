@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
+            <connections>
+                <outlet property="back" destination="rNK-Tn-0Te" id="Aiz-pw-B9l"/>
+                <outlet property="commentbutton" destination="TQZ-QG-HKK" id="za9-Z2-VG1"/>
+                <outlet property="share" destination="DoA-b3-wDM" id="yNQ-18-dCh"/>
+                <outlet property="shoucang" destination="IDc-jl-HQg" id="KS9-3f-iRn"/>
+                <outlet property="text" destination="Vlu-9a-FmY" id="LlW-u2-z14"/>
+                <outlet property="view" destination="0aL-dd-4KB" id="L8K-lx-0de"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0aL-dd-4KB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2l-NJ-FGR">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNK-Tn-0Te">
+                            <rect key="frame" x="10" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="QeN-Ig-zgI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="liveRoom_reporter_back"/>
+                            <connections>
+                                <action selector="backclick:" destination="-1" eventType="touchUpInside" id="Vpu-Lv-U1b"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQZ-QG-HKK">
+                            <rect key="frame" x="230" y="10" width="35" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="ivS-V6-MDq"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="video_comment">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDc-jl-HQg">
+                            <rect key="frame" x="285" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="pcU-ad-jkZ"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="tb_lit_collect"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoA-b3-wDM">
+                            <rect key="frame" x="335" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Eny-8R-Jnh"/>
+                            </constraints>
+                            <state key="normal" image="liveRoom_reporter_share"/>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vlu-9a-FmY">
+                            <rect key="frame" x="50" y="10" width="170" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.89757702819999996" blue="0.53464987090000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="TQZ-QG-HKK" secondAttribute="bottom" constant="10" id="2EK-ea-ghW"/>
+                        <constraint firstItem="rNK-Tn-0Te" firstAttribute="leading" secondItem="Y2l-NJ-FGR" secondAttribute="leading" constant="10" id="95c-wk-YTe"/>
+                        <constraint firstItem="Vlu-9a-FmY" firstAttribute="top" secondItem="rNK-Tn-0Te" secondAttribute="top" id="Bxg-tI-5ub"/>
+                        <constraint firstItem="DoA-b3-wDM" firstAttribute="leading" secondItem="IDc-jl-HQg" secondAttribute="trailing" constant="20" id="FOS-uF-KKO"/>
+                        <constraint firstAttribute="bottom" secondItem="rNK-Tn-0Te" secondAttribute="bottom" constant="10" id="MlD-2C-eLr"/>
+                        <constraint firstItem="TQZ-QG-HKK" firstAttribute="top" secondItem="Y2l-NJ-FGR" secondAttribute="top" constant="10" id="Sdd-jI-aDc"/>
+                        <constraint firstAttribute="height" constant="50" id="T1v-6k-pGU"/>
+                        <constraint firstAttribute="bottom" secondItem="DoA-b3-wDM" secondAttribute="bottom" constant="10" id="TJN-YC-OiD"/>
+                        <constraint firstItem="TQZ-QG-HKK" firstAttribute="leading" secondItem="Vlu-9a-FmY" secondAttribute="trailing" constant="10" id="eik-hO-dcv"/>
+                        <constraint firstItem="IDc-jl-HQg" firstAttribute="leading" secondItem="TQZ-QG-HKK" secondAttribute="trailing" constant="20" id="jMv-zS-RAM"/>
+                        <constraint firstItem="DoA-b3-wDM" firstAttribute="top" secondItem="Y2l-NJ-FGR" secondAttribute="top" constant="10" id="jvU-wP-APO"/>
+                        <constraint firstAttribute="bottom" secondItem="IDc-jl-HQg" secondAttribute="bottom" constant="10" id="k2o-eH-qC3"/>
+                        <constraint firstItem="Vlu-9a-FmY" firstAttribute="leading" secondItem="rNK-Tn-0Te" secondAttribute="trailing" constant="10" id="nJD-8T-yeo"/>
+                        <constraint firstItem="IDc-jl-HQg" firstAttribute="top" secondItem="Y2l-NJ-FGR" secondAttribute="top" constant="10" id="r05-HI-DWJ"/>
+                        <constraint firstAttribute="trailing" secondItem="DoA-b3-wDM" secondAttribute="trailing" constant="10" id="sXN-ON-Ut1"/>
+                        <constraint firstItem="rNK-Tn-0Te" firstAttribute="top" secondItem="Y2l-NJ-FGR" secondAttribute="top" constant="10" id="wQu-xP-8gc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Y2l-NJ-FGR" secondAttribute="trailing" id="DZ7-w1-Hhc"/>
+                <constraint firstItem="Y2l-NJ-FGR" firstAttribute="leading" secondItem="0aL-dd-4KB" secondAttribute="leading" id="aay-dh-OQQ"/>
+                <constraint firstAttribute="bottom" secondItem="Y2l-NJ-FGR" secondAttribute="bottom" id="miE-ka-hbX"/>
+            </constraints>
+            <point key="canvasLocation" x="-65.5" y="11.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="liveRoom_reporter_back" width="60" height="60"/>
+        <image name="liveRoom_reporter_share" width="60" height="60"/>
+        <image name="tb_lit_collect" width="60" height="60"/>
+        <image name="video_comment" width="21" height="21"/>
+    </resources>
+</document>

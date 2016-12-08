@@ -15,6 +15,8 @@
 @property(nonatomic,strong)NSString *title;
 //id
 @property(nonatomic,strong)NSString *ID;
+//url
+@property(nonatomic,strong)NSString *url;
 //type
 @property(nonatomic,strong)NSString *type;
 //评论地址commentsUrl

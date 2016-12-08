@@ -1,31 +1,17 @@
 //
-//  DetailViewController.m
-//  News
+//  TotalCommentViewController.m
+//  Team
 //
-//  Created by 李冬 on 2016/12/7.
+//  Created by wyzc on 16/12/7.
 //  Copyright © 2016年 wyzc. All rights reserved.
 //
 
-#import "DetailViewController.h"
-#import "DetailsPage.h"
-#import <WebKit/WebKit.h>
+#import "NewsCommentViewController.h"
 #import "VideoCommentTableViewCell.h"
 #import "DetailsPage.h"
 #define CELLHOTCOMMNETVIDEOURL(page,guid) [NSString stringWithFormat:@"http://icomment.ifeng.com/geti.php?pagesize=20&p=%d&docurl=%@",page,guid]
-
-#import "NewsCommentViewController.h"
-@interface DetailViewController ()<UITableViewDelegate,UITableViewDataSource,UIWebViewDelegate>
-@property (weak, nonatomic) IBOutlet UIButton *back;
-@property (weak, nonatomic) IBOutlet UITextField *text;
-@property (weak, nonatomic) IBOutlet UIButton *commentbutton;
-@property (weak, nonatomic) IBOutlet UIButton *shoucang;
-@property (weak, nonatomic) IBOutlet UIButton *share;
-
-@property(nonatomic,strong)UIScrollView * scroll;
-
-@property(nonatomic,strong)NSArray *dataArray;
-
-@property (weak, nonatomic)UITableView *totalTableView;
+@interface NewsCommentViewController ()<UITableViewDelegate,UITableViewDataSource,UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *totalTableView;
 
 @property (nonatomic, weak) AFHTTPSessionManager *manager;
 
@@ -37,9 +23,12 @@
 @property(nonatomic,assign)int page;
 
 @end
+
 static NSString * const reuseID = @"reuse";
 static NSString * const HeaderId = @"reuse";
-@implementation DetailViewController
+
+@implementation NewsCommentViewController
+
 - (AFHTTPSessionManager *)manager
 {
     if (!_manager) {
@@ -58,7 +47,7 @@ static NSString * const HeaderId = @"reuse";
     //    [self requestData];
     _page = 1;
     [self setupRefresh];
-    UITableView * tableview = [[UITableView alloc] initWithFrame:CGRectMake(0,0, ScreenWidth, ScreenHeight-60)];
+    UITableView * tableview = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _totalTableView = tableview;
     self.totalTableView.delegate = self;
     self.totalTableView.dataSource = self;
@@ -99,10 +88,10 @@ static NSString * const HeaderId = @"reuse";
         
         
         
-//        给评论量按钮赋值
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [weakSelf.commentbutton setTitle:[NSString stringWithFormat:@"%d",model.commentCount]  forState:UIControlStateNormal];
-                });
+        //给评论量按钮赋值
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [weakSelf.commentbutton setTitle:[NSString stringWithFormat:@"%d",model.commentCount]  forState:UIControlStateNormal];
+//        });
         
         
         [weakSelf label:model.title time:model.updateTime source:model.source webViw:model.text commenturl:self.commenturl];
@@ -124,7 +113,7 @@ static NSString * const HeaderId = @"reuse";
     
     
     
-    UIWebView *web = [[UIWebView alloc] initWithFrame:CGRectMake(0,0, ScreenWidth, ScreenHeight-60)];
+    UIWebView *web = [[UIWebView alloc] initWithFrame:CGRectMake(0,0, ScreenWidth, ScreenHeight-120)];
     
     [web.scrollView addSubview:titleLabel];
     [web.scrollView addSubview:timeLabel];
@@ -283,19 +272,17 @@ static NSString * const HeaderId = @"reuse";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)backclick:(id)sender {
-}
 
 
 
 /*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

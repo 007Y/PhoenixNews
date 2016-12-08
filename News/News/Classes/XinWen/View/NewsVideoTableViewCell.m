@@ -36,7 +36,7 @@
         self.timeLabel.textColor = [UIColor whiteColor];
         int fen;
         int miao = tim % 60;
-        self.timeLabel.text = [NSString stringWithFormat:@"%02d",miao];
+        self.timeLabel.text = [NSString stringWithFormat:@"%02d\"",miao];
         if (tim > 60) {
             fen =  tim / 60;
             self.timeLabel.text = [NSString stringWithFormat:@"%02d'%02d\"",fen,miao];

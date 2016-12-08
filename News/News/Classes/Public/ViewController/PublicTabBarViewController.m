@@ -45,21 +45,26 @@
     
 }
 - (void)setChildVc{
-    NewsNavViewController * nav = [[NewsNavViewController alloc] initWithRootViewController:[[NewsViewController alloc] init]];
-    [self addChildVc:nav title:@"新闻" image:@"tabbar_news" selectedImage:@"tabbar_news_selected"];
+    NewsViewController * news = [[NewsViewController alloc] init];
+    [self addChildVc:news title:@"新闻" image:@"tabbar_news" selectedImage:@"tabbar_news_selected"];
     VideosViewController * video = [[VideosViewController alloc] init];
+    video.navigationController.navigationBarHidden = YES;
     [self addChildVc:video title:@"视频" image:@"tabbar_vision" selectedImage:@"tabbar_vision_selected"];
     FoundViewController * found = [[FoundViewController alloc] init];
+    found.navigationController.navigationBarHidden = YES;
+
     [self addChildVc:found title:@"发现" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
     MyTableViewController * my = [[MyTableViewController alloc] init];
+    my.navigationController.navigationBarHidden = YES;
+
     [self addChildVc:my title:@"我的" image:@"tabbar_my" selectedImage:@"tabbar_my_selected"];
 
 }
 - (void)addChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
 {
     
-    
-    [self addChildViewController:vc];
+     NewsNavViewController * nav = [[NewsNavViewController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nav];
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];

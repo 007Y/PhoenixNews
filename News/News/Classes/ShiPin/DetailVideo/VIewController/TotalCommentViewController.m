@@ -225,6 +225,49 @@ static NSString * const HeaderId = @"reuse";
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    // 取出cell
+    VideoCommentTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    UIMenuController *menu = [UIMenuController sharedMenuController];
+    
+    // 设置菜单内容
+    menu.menuItems = @[
+                       [[UIMenuItem alloc] initWithTitle:@"顶" action:@selector(ding:)],
+                       [[UIMenuItem alloc] initWithTitle:@"回复" action:@selector(reply:)],
+                       [[UIMenuItem alloc] initWithTitle:@"举报" action:@selector(warn:)]
+                       ];
+    
+    // 显示位置
+    CGRect rect = CGRectMake(0, cell.height * 0.5, cell.width, 1);
+    [menu setTargetRect:rect inView:cell];
+    
+    // 显示出来
+    [menu setMenuVisible:YES animated:YES];
+}
+
+#pragma mark - UIMenuController处理
+//只有成为第一响应者时menu才会弹出
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+//顶
+- (void)ding:(UIMenuController *)menu
+{
+    
+}
+//回复
+- (void)reply:(UIMenuController *)menu
+{
+}
+//举报
+- (void)warn:(UIMenuController *)menu
+{
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

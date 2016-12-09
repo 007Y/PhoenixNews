@@ -255,12 +255,35 @@ static NSString * const HeaderId = @"reuse";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    
+    
+    
     if (self.hotComments.count > 0) {
         //判断是否是最后一个cell
         if (indexPath.row == [self.detailTableView numberOfRowsInSection:0]-1 ) {
             TotalCommentViewController * totalVC = [[TotalCommentViewController alloc]init];
             totalVC.guid = self.guid;
             [self presentViewController:totalVC animated:YES completion:nil];
+        }else{
+            
+            // 取出cell
+            VideoCommentTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            
+            UIMenuController *menu = [UIMenuController sharedMenuController];
+            
+            // 设置菜单内容
+            menu.menuItems = @[
+                               [[UIMenuItem alloc] initWithTitle:@"顶" action:@selector(ding:)],
+                               [[UIMenuItem alloc] initWithTitle:@"回复" action:@selector(reply:)],
+                               [[UIMenuItem alloc] initWithTitle:@"举报" action:@selector(warn:)]
+                               ];
+            
+            // 显示位置
+            CGRect rect = CGRectMake(0, cell.height * 0.5, cell.width, 1);
+            [menu setTargetRect:rect inView:cell];
+            
+            // 显示出来
+            [menu setMenuVisible:YES animated:YES];
         }
     }
 
@@ -288,6 +311,27 @@ static NSString * const HeaderId = @"reuse";
 
 }
 
+#pragma mark - UIMenuController处理
+//只有成为第一响应者时menu才会弹出
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+//顶
+- (void)ding:(UIMenuController *)menu
+{
+   
+}
+//回复
+- (void)reply:(UIMenuController *)menu
+{
+    }
+//举报
+- (void)warn:(UIMenuController *)menu
+{
+    
+}
 /*
 #pragma mark - Navigation
 

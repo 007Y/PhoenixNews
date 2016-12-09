@@ -98,9 +98,10 @@ static NSString * const reuseID = @"reuse";
 {
 
     self.automaticallyAdjustsScrollViewInsets = NO;
-    _scrollView.showsHorizontalScrollIndicator = NO;
-    _scrollView.showsVerticalScrollIndicator= NO;
+    
     _scrollView = [[UIScrollView alloc] init];
+    
+    _scrollView.showsHorizontalScrollIndicator = NO;
     
     _scrollView.frame = self.topView.frame;
     _scrollView.backgroundColor = [UIColor colorWithWhite:0.75 alpha:1];
